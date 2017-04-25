@@ -1,0 +1,372 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SerialPortConfig"
+- "SerialPortFunction"
+- "Baudrate"
+provides-nominal:
+- "C4Eaze16SerialPortConfig"
+- "O4Eaze18SerialPortFunction"
+- "O4Eaze8Baudrate"
+provides-member:
+- ["C4Eaze16SerialPortConfig", ""]
+- ["O4Eaze18SerialPortFunction", ""]
+- ["O4Eaze8Baudrate", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- !private "??"
+- !private "Array"
+- "AssignmentPrecedence"
+- "Baudrate"
+- "Copyable"
+- "Dictionary"
+- "Int"
+- "SerialPortConfig"
+- "SerialPortFunction"
+- "String"
+- "StringLiteralType"
+- !private "~="
+depends-member:
+- !private ["Ps9AnyObject", "BLACKBOX_baudrate"]
+- ["Ps9AnyObject", "Baudrate"]
+- !private ["Ps9AnyObject", "GPS_baudrate"]
+- !private ["Ps9AnyObject", "MSP_baudrate"]
+- !private ["Ps9AnyObject", "SerialPortConfig"]
+- !private ["Ps9AnyObject", "TELEMETRY_baudrate"]
+- !private ["Ps9AnyObject", "functions"]
+- !private ["Ps9AnyObject", "identifier"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "portIdentifierToNameMapping"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "subscript"]
+- ["O4Eaze8Baudrate", "Baudrate"]
+- ["O4Eaze8Baudrate", "Int"]
+- ["O4Eaze8Baudrate", "RawValue"]
+- ["O4Eaze8Baudrate", "String"]
+- ["O4Eaze8Baudrate", "_toAnyHashable"]
+- ["O4Eaze8Baudrate", "all"]
+- ["O4Eaze8Baudrate", "auto"]
+- ["O4Eaze8Baudrate", "b115200"]
+- ["O4Eaze8Baudrate", "b19200"]
+- ["O4Eaze8Baudrate", "b230400"]
+- ["O4Eaze8Baudrate", "b250000"]
+- ["O4Eaze8Baudrate", "b38400"]
+- ["O4Eaze8Baudrate", "b57600"]
+- ["O4Eaze8Baudrate", "b9600"]
+- ["O4Eaze8Baudrate", "deinit"]
+- ["O4Eaze8Baudrate", "hashValue"]
+- ["O4Eaze8Baudrate", "init"]
+- ["O4Eaze8Baudrate", "intValue"]
+- ["O4Eaze8Baudrate", "name"]
+- ["O4Eaze8Baudrate", "rawValue"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "hashValue"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "hashValue"]
+- ["Ps10Comparable", "init"]
+- !private ["P4Eaze8Copyable", "BLACKBOX_baudrate"]
+- ["P4Eaze8Copyable", "Baudrate"]
+- !private ["P4Eaze8Copyable", "GPS_baudrate"]
+- !private ["P4Eaze8Copyable", "MSP_baudrate"]
+- !private ["P4Eaze8Copyable", "SerialPortConfig"]
+- !private ["P4Eaze8Copyable", "TELEMETRY_baudrate"]
+- !private ["P4Eaze8Copyable", "functions"]
+- !private ["P4Eaze8Copyable", "identifier"]
+- ["P4Eaze8Copyable", "init"]
+- !private ["P4Eaze8Copyable", "portIdentifierToNameMapping"]
+- ["P4Eaze8Copyable", ""]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- ["Ps9Equatable", "auto"]
+- !private ["Ps9Equatable", "b115200"]
+- !private ["Ps9Equatable", "b19200"]
+- !private ["Ps9Equatable", "b230400"]
+- !private ["Ps9Equatable", "b250000"]
+- !private ["Ps9Equatable", "b38400"]
+- !private ["Ps9Equatable", "b57600"]
+- !private ["Ps9Equatable", "b9600"]
+- !private ["Ps9Equatable", "blackbox"]
+- !private ["Ps9Equatable", "gps"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "msp"]
+- ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "rx_SERIAL"]
+- !private ["Ps9Equatable", "telemetry_FRSKY"]
+- !private ["Ps9Equatable", "telemetry_HOTT"]
+- !private ["Ps9Equatable", "telemetry_MAVLINK"]
+- !private ["Ps9Equatable", "telemetry_MSP_LTM"]
+- !private ["Ps9Equatable", "telemetry_SMARTPORT"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- ["Ps8Hashable", "auto"]
+- !private ["Ps8Hashable", "b115200"]
+- !private ["Ps8Hashable", "b19200"]
+- !private ["Ps8Hashable", "b230400"]
+- !private ["Ps8Hashable", "b250000"]
+- !private ["Ps8Hashable", "b38400"]
+- !private ["Ps8Hashable", "b57600"]
+- !private ["Ps8Hashable", "b9600"]
+- !private ["Ps8Hashable", "blackbox"]
+- !private ["Ps8Hashable", "gps"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "msp"]
+- ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "rx_SERIAL"]
+- !private ["Ps8Hashable", "telemetry_FRSKY"]
+- !private ["Ps8Hashable", "telemetry_HOTT"]
+- !private ["Ps8Hashable", "telemetry_MAVLINK"]
+- !private ["Ps8Hashable", "telemetry_MSP_LTM"]
+- !private ["Ps8Hashable", "telemetry_SMARTPORT"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "hashValue"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "subscript"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
+- ["Ps16RawRepresentable", "_toAnyHashable"]
+- ["Ps16RawRepresentable", "auto"]
+- !private ["Ps16RawRepresentable", "b115200"]
+- !private ["Ps16RawRepresentable", "b19200"]
+- !private ["Ps16RawRepresentable", "b230400"]
+- !private ["Ps16RawRepresentable", "b250000"]
+- !private ["Ps16RawRepresentable", "b38400"]
+- !private ["Ps16RawRepresentable", "b57600"]
+- !private ["Ps16RawRepresentable", "b9600"]
+- !private ["Ps16RawRepresentable", "blackbox"]
+- !private ["Ps16RawRepresentable", "gps"]
+- ["Ps16RawRepresentable", "hashValue"]
+- ["Ps16RawRepresentable", "init"]
+- !private ["Ps16RawRepresentable", "msp"]
+- ["Ps16RawRepresentable", "rawValue"]
+- !private ["Ps16RawRepresentable", "rx_SERIAL"]
+- !private ["Ps16RawRepresentable", "telemetry_FRSKY"]
+- !private ["Ps16RawRepresentable", "telemetry_HOTT"]
+- !private ["Ps16RawRepresentable", "telemetry_MAVLINK"]
+- !private ["Ps16RawRepresentable", "telemetry_MSP_LTM"]
+- !private ["Ps16RawRepresentable", "telemetry_SMARTPORT"]
+- ["Ps16RawRepresentable", ""]
+- !private ["Ps8Sequence", "subscript"]
+- ["C4Eaze16SerialPortConfig", "BLACKBOX_baudrate"]
+- ["C4Eaze16SerialPortConfig", "Baudrate"]
+- ["C4Eaze16SerialPortConfig", "GPS_baudrate"]
+- ["C4Eaze16SerialPortConfig", "MSP_baudrate"]
+- ["C4Eaze16SerialPortConfig", "SerialPortConfig"]
+- ["C4Eaze16SerialPortConfig", "SerialPortFunction"]
+- ["C4Eaze16SerialPortConfig", "String"]
+- ["C4Eaze16SerialPortConfig", "TELEMETRY_baudrate"]
+- ["C4Eaze16SerialPortConfig", "deinit"]
+- ["C4Eaze16SerialPortConfig", "functions"]
+- ["C4Eaze16SerialPortConfig", "identifier"]
+- ["C4Eaze16SerialPortConfig", "init"]
+- ["C4Eaze16SerialPortConfig", "name"]
+- !private ["C4Eaze16SerialPortConfig", "portIdentifierToNameMapping"]
+- ["O4Eaze18SerialPortFunction", "RawValue"]
+- ["O4Eaze18SerialPortFunction", "SerialPortFunction"]
+- ["O4Eaze18SerialPortFunction", "_toAnyHashable"]
+- ["O4Eaze18SerialPortFunction", "all"]
+- ["O4Eaze18SerialPortFunction", "blackbox"]
+- ["O4Eaze18SerialPortFunction", "deinit"]
+- ["O4Eaze18SerialPortFunction", "gps"]
+- ["O4Eaze18SerialPortFunction", "hashValue"]
+- ["O4Eaze18SerialPortFunction", "init"]
+- ["O4Eaze18SerialPortFunction", "msp"]
+- ["O4Eaze18SerialPortFunction", "rawValue"]
+- ["O4Eaze18SerialPortFunction", "rx_SERIAL"]
+- ["O4Eaze18SerialPortFunction", "telemetry_FRSKY"]
+- ["O4Eaze18SerialPortFunction", "telemetry_HOTT"]
+- ["O4Eaze18SerialPortFunction", "telemetry_MAVLINK"]
+- ["O4Eaze18SerialPortFunction", "telemetry_MSP_LTM"]
+- ["O4Eaze18SerialPortFunction", "telemetry_SMARTPORT"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- !private ["Ps10Strideable", "hashValue"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- ["Ps9_Hashable", "auto"]
+- !private ["Ps9_Hashable", "b115200"]
+- !private ["Ps9_Hashable", "b19200"]
+- !private ["Ps9_Hashable", "b230400"]
+- !private ["Ps9_Hashable", "b250000"]
+- !private ["Ps9_Hashable", "b38400"]
+- !private ["Ps9_Hashable", "b57600"]
+- !private ["Ps9_Hashable", "b9600"]
+- !private ["Ps9_Hashable", "blackbox"]
+- !private ["Ps9_Hashable", "gps"]
+- ["Ps9_Hashable", "hashValue"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "msp"]
+- ["Ps9_Hashable", "rawValue"]
+- !private ["Ps9_Hashable", "rx_SERIAL"]
+- !private ["Ps9_Hashable", "telemetry_FRSKY"]
+- !private ["Ps9_Hashable", "telemetry_HOTT"]
+- !private ["Ps9_Hashable", "telemetry_MAVLINK"]
+- !private ["Ps9_Hashable", "telemetry_MSP_LTM"]
+- !private ["Ps9_Hashable", "telemetry_SMARTPORT"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps17_MutableIndexable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps11_Strideable", "hashValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- "O4Eaze8Baudrate"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- "Ps10Comparable"
+- "P4Eaze8Copyable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- "Ps16RawRepresentable"
+- !private "Ps8Sequence"
+- "C4Eaze16SerialPortConfig"
+- "O4Eaze18SerialPortFunction"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps17_MutableIndexable"
+- "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Supporting_Files/Eaze-Bridging-Header.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/ProgressView/Components/MRProgressOverlayView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreBluetooth.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Modules/PeerKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MultipeerConnectivity.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-umbrella.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Modules/module.modulemap"
+interface-hash: "c3657ecccbc36bcde91d4f705c4a6509"

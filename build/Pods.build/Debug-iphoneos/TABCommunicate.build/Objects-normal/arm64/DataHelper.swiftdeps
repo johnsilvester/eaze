@@ -1,0 +1,153 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DataHelper"
+provides-nominal:
+- "V14TABCommunicate10DataHelper"
+provides-member:
+- ["V14TABCommunicate10DataHelper", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AnyObject"
+- "CastingPrecedence"
+- "DataHelper"
+- "NSData"
+- !private "NSError"
+- !private "NSKeyedArchiver"
+- !private "NSKeyedUnarchiver"
+- "String"
+- !private "StringLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "archivedDataWithRootObject"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "unarchiveObjectWithData"]
+- !private ["Ps7CVarArg", "archivedDataWithRootObject"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "unarchiveObjectWithData"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "None"]
+- !private ["Ps28CustomDebugStringConvertible", "archivedDataWithRootObject"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "unarchiveObjectWithData"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "None"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "archivedDataWithRootObject"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "unarchiveObjectWithData"]
+- ["V14TABCommunicate10DataHelper", "AnyObject"]
+- ["V14TABCommunicate10DataHelper", "NSData"]
+- !private ["V14TABCommunicate10DataHelper", "NSError"]
+- !private ["V14TABCommunicate10DataHelper", "NSKeyedArchiver"]
+- !private ["V14TABCommunicate10DataHelper", "NSKeyedUnarchiver"]
+- ["V14TABCommunicate10DataHelper", "String"]
+- ["V14TABCommunicate10DataHelper", "init"]
+- ["V14TABCommunicate10DataHelper", "toDataFromDict"]
+- ["V14TABCommunicate10DataHelper", "toDictFromData"]
+- !private ["Ps9Equatable", "archivedDataWithRootObject"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "unarchiveObjectWithData"]
+- !private ["Ps5Error", "init"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps23ExpressibleByNilLiteral", "None"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "archivedDataWithRootObject"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "unarchiveObjectWithData"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["CSo7NSCoder", "archivedDataWithRootObject"]
+- !private ["CSo7NSCoder", "unarchiveObjectWithData"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["CSo7NSError", "init"]
+- !private ["CSo15NSKeyedArchiver", "archivedDataWithRootObject"]
+- !private ["CSo17NSKeyedUnarchiver", "unarchiveObjectWithData"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "archivedDataWithRootObject"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "unarchiveObjectWithData"]
+- !private ["PSo16NSObjectProtocol", "archivedDataWithRootObject"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "unarchiveObjectWithData"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Sq", "None"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "archivedDataWithRootObject"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "unarchiveObjectWithData"]
+- !private ["Ps21_ObjectiveCBridgeable", "None"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- !private "Ps7CVarArg"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "V14TABCommunicate10DataHelper"
+- !private "Ps9Equatable"
+- !private "Ps5Error"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "CSo7NSCoder"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo7NSError"
+- !private "CSo15NSKeyedArchiver"
+- !private "CSo17NSKeyedUnarchiver"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Sq"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Pods/Target Support Files/TABCommunicate/TABCommunicate-umbrella.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Pods.build/Debug-iphoneos/TABCommunicate.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MultipeerConnectivity.apinotesc"
+interface-hash: "4bc48e235cfb937d186aec210376b399"

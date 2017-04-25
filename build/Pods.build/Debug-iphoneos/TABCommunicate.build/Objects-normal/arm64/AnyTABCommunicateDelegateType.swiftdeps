@@ -1,0 +1,64 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AnyTABCommunicatorDelegateType"
+provides-nominal:
+- "C14TABCommunicate30AnyTABCommunicatorDelegateType"
+provides-member:
+- ["C14TABCommunicate30AnyTABCommunicatorDelegateType", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AnyTABCommunicatorDelegateType"
+- "AssignmentPrecedence"
+- "Bool"
+- "TABCommunicatable"
+- "TABCommunicatorDelegate"
+- "Void"
+depends-member:
+- !private ["Ps9AnyObject", "_communicatableObjectRecieved"]
+- !private ["Ps9AnyObject", "_connectionDidUpdate"]
+- ["Ps9AnyObject", "communicatableObjectRecieved"]
+- ["Ps9AnyObject", "connectionDidUpdate"]
+- ["Ps9AnyObject", ""]
+- ["C14TABCommunicate30AnyTABCommunicatorDelegateType", "Bool"]
+- ["C14TABCommunicate30AnyTABCommunicatorDelegateType", "Object"]
+- ["C14TABCommunicate30AnyTABCommunicatorDelegateType", "T"]
+- ["C14TABCommunicate30AnyTABCommunicatorDelegateType", "TABCommunicatorDelegate"]
+- ["C14TABCommunicate30AnyTABCommunicatorDelegateType", "Void"]
+- !private ["C14TABCommunicate30AnyTABCommunicatorDelegateType", "_communicatableObjectRecieved"]
+- !private ["C14TABCommunicate30AnyTABCommunicatorDelegateType", "_connectionDidUpdate"]
+- ["C14TABCommunicate30AnyTABCommunicatorDelegateType", "communicatableObjectRecieved"]
+- ["C14TABCommunicate30AnyTABCommunicatorDelegateType", "connectionDidUpdate"]
+- ["C14TABCommunicate30AnyTABCommunicatorDelegateType", "deinit"]
+- ["C14TABCommunicate30AnyTABCommunicatorDelegateType", "init"]
+- !private ["P14TABCommunicate23TABCommunicatorDelegate", "_communicatableObjectRecieved"]
+- !private ["P14TABCommunicate23TABCommunicatorDelegate", "_connectionDidUpdate"]
+- ["P14TABCommunicate23TABCommunicatorDelegate", "communicatableObjectRecieved"]
+- ["P14TABCommunicate23TABCommunicatorDelegate", "connectionDidUpdate"]
+- ["P14TABCommunicate23TABCommunicatorDelegate", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "C14TABCommunicate30AnyTABCommunicatorDelegateType"
+- "P14TABCommunicate23TABCommunicatorDelegate"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Pods/Target Support Files/TABCommunicate/TABCommunicate-umbrella.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Pods.build/Debug-iphoneos/TABCommunicate.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MultipeerConnectivity.apinotesc"
+interface-hash: "2cdc68d5368b1cbed77faf07a29f2b28"

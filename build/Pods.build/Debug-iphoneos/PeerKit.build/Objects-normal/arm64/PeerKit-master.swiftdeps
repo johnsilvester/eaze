@@ -1,0 +1,9 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.51 clang-802.0.41)"
+options: "75dcaf19a104f1fec7019462a9609057"
+build_time: [546451757, 738107000]
+inputs:
+  "/Users/John/Documents/FlyPhone/Development/eaze/Pods/PeerKit/PeerKit/Advertiser.swift": [545365669, 0]
+  "/Users/John/Documents/FlyPhone/Development/eaze/Pods/PeerKit/PeerKit/Browser.swift": [545365669, 0]
+  "/Users/John/Documents/FlyPhone/Development/eaze/Pods/PeerKit/PeerKit/PeerKit.swift": [545365702, 0]
+  "/Users/John/Documents/FlyPhone/Development/eaze/Pods/PeerKit/PeerKit/Session.swift": [545365728, 0]
+  "/Users/John/Documents/FlyPhone/Development/eaze/Pods/PeerKit/PeerKit/Transceiver.swift": [545365728, 0]

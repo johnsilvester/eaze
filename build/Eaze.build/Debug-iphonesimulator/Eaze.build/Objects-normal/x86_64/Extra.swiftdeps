@@ -1,0 +1,292 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "delay"
+- "Copyable"
+- "ConfigScreen"
+- "WeakSet"
+provides-nominal:
+- "P4Eaze8Copyable"
+- "P4Eaze12ConfigScreen"
+- "C4Eaze7WeakSet"
+provides-member:
+- ["P4Eaze8Copyable", ""]
+- ["P4Eaze12ConfigScreen", ""]
+- ["C4Eaze7WeakSet", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+"
+- "AnyIterator"
+- "AnyObject"
+- "Bool"
+- "CastingPrecedence"
+- "ConfigScreen"
+- "Copyable"
+- !private "DispatchQueue"
+- !private "DispatchTime"
+- "Double"
+- "Int"
+- "NSHashTable"
+- "Sequence"
+- "WeakSet"
+- "delay"
+depends-member:
+- !private ["Vs11AnyIterator", "init"]
+- !private ["Ps9AnyObject", "AnyIterator"]
+- ["Ps9AnyObject", "NSHashTable"]
+- ["Ps9AnyObject", "_copyContents"]
+- ["Ps9AnyObject", "_copyToContiguousArray"]
+- ["Ps9AnyObject", "_customContainsEquatableElement"]
+- ["Ps9AnyObject", "_preprocessingPass"]
+- !private ["Ps9AnyObject", "add"]
+- !private ["Ps9AnyObject", "addObject"]
+- !private ["Ps9AnyObject", "asyncAfter"]
+- !private ["Ps9AnyObject", "contains"]
+- !private ["Ps9AnyObject", "count"]
+- ["Ps9AnyObject", "drop"]
+- ["Ps9AnyObject", "dropFirst"]
+- ["Ps9AnyObject", "dropLast"]
+- ["Ps9AnyObject", "filter"]
+- ["Ps9AnyObject", "forEach"]
+- !private ["Ps9AnyObject", "main"]
+- ["Ps9AnyObject", "makeIterator"]
+- ["Ps9AnyObject", "map"]
+- !private ["Ps9AnyObject", "nextObject"]
+- !private ["Ps9AnyObject", "objectEnumerator"]
+- ["Ps9AnyObject", "prefix"]
+- !private ["Ps9AnyObject", "remove"]
+- !private ["Ps9AnyObject", "removeAllObjects"]
+- ["Ps9AnyObject", "split"]
+- ["Ps9AnyObject", "suffix"]
+- ["Ps9AnyObject", "underestimatedCount"]
+- ["Ps9AnyObject", "weakObjects"]
+- !private ["Ps9AnyObject", "weakStorage"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps7CVarArg", "add"]
+- !private ["Ps7CVarArg", "asyncAfter"]
+- !private ["Ps7CVarArg", "contains"]
+- !private ["Ps7CVarArg", "count"]
+- !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "nextObject"]
+- !private ["Ps7CVarArg", "objectEnumerator"]
+- !private ["Ps7CVarArg", "remove"]
+- !private ["Ps7CVarArg", "removeAllObjects"]
+- ["Ps7CVarArg", "weakObjects"]
+- !private ["Ps10Comparable", "now"]
+- ["P4Eaze12ConfigScreen", "willBecomePrimaryView"]
+- ["P4Eaze8Copyable", "Self"]
+- ["P4Eaze8Copyable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "add"]
+- !private ["Ps28CustomDebugStringConvertible", "asyncAfter"]
+- !private ["Ps28CustomDebugStringConvertible", "contains"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "main"]
+- !private ["Ps28CustomDebugStringConvertible", "nextObject"]
+- !private ["Ps28CustomDebugStringConvertible", "objectEnumerator"]
+- !private ["Ps28CustomDebugStringConvertible", "remove"]
+- !private ["Ps28CustomDebugStringConvertible", "removeAllObjects"]
+- ["Ps28CustomDebugStringConvertible", "weakObjects"]
+- !private ["Ps23CustomStringConvertible", "add"]
+- !private ["Ps23CustomStringConvertible", "asyncAfter"]
+- !private ["Ps23CustomStringConvertible", "contains"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "main"]
+- !private ["Ps23CustomStringConvertible", "nextObject"]
+- !private ["Ps23CustomStringConvertible", "objectEnumerator"]
+- !private ["Ps23CustomStringConvertible", "remove"]
+- !private ["Ps23CustomStringConvertible", "removeAllObjects"]
+- ["Ps23CustomStringConvertible", "weakObjects"]
+- !private ["CSo14DispatchObject", "asyncAfter"]
+- !private ["CSo14DispatchObject", "main"]
+- !private ["CSo13DispatchQueue", "asyncAfter"]
+- !private ["CSo13DispatchQueue", "main"]
+- !private ["V8Dispatch12DispatchTime", "now"]
+- !private ["Ps9Equatable", "add"]
+- !private ["Ps9Equatable", "asyncAfter"]
+- !private ["Ps9Equatable", "contains"]
+- !private ["Ps9Equatable", "count"]
+- !private ["Ps9Equatable", "main"]
+- !private ["Ps9Equatable", "nextObject"]
+- !private ["Ps9Equatable", "now"]
+- !private ["Ps9Equatable", "objectEnumerator"]
+- !private ["Ps9Equatable", "remove"]
+- !private ["Ps9Equatable", "removeAllObjects"]
+- ["Ps9Equatable", "weakObjects"]
+- !private ["Ps8Hashable", "add"]
+- !private ["Ps8Hashable", "asyncAfter"]
+- !private ["Ps8Hashable", "contains"]
+- !private ["Ps8Hashable", "count"]
+- !private ["Ps8Hashable", "main"]
+- !private ["Ps8Hashable", "nextObject"]
+- !private ["Ps8Hashable", "objectEnumerator"]
+- !private ["Ps8Hashable", "remove"]
+- !private ["Ps8Hashable", "removeAllObjects"]
+- ["Ps8Hashable", "weakObjects"]
+- !private ["Ps16IteratorProtocol", "init"]
+- !private ["PSo8NSCoding", "add"]
+- !private ["PSo8NSCoding", "contains"]
+- !private ["PSo8NSCoding", "count"]
+- !private ["PSo8NSCoding", "objectEnumerator"]
+- !private ["PSo8NSCoding", "remove"]
+- !private ["PSo8NSCoding", "removeAllObjects"]
+- ["PSo8NSCoding", "weakObjects"]
+- !private ["PSo9NSCopying", "add"]
+- !private ["PSo9NSCopying", "contains"]
+- !private ["PSo9NSCopying", "count"]
+- !private ["PSo9NSCopying", "objectEnumerator"]
+- !private ["PSo9NSCopying", "remove"]
+- !private ["PSo9NSCopying", "removeAllObjects"]
+- ["PSo9NSCopying", "weakObjects"]
+- !private ["CSo12NSEnumerator", "nextObject"]
+- !private ["PSo17NSFastEnumeration", "add"]
+- !private ["PSo17NSFastEnumeration", "contains"]
+- !private ["PSo17NSFastEnumeration", "count"]
+- !private ["PSo17NSFastEnumeration", "nextObject"]
+- !private ["PSo17NSFastEnumeration", "objectEnumerator"]
+- !private ["PSo17NSFastEnumeration", "remove"]
+- !private ["PSo17NSFastEnumeration", "removeAllObjects"]
+- ["PSo17NSFastEnumeration", "weakObjects"]
+- !private ["CSo11NSHashTable", "add"]
+- !private ["CSo11NSHashTable", "contains"]
+- !private ["CSo11NSHashTable", "count"]
+- !private ["CSo11NSHashTable", "objectEnumerator"]
+- !private ["CSo11NSHashTable", "remove"]
+- !private ["CSo11NSHashTable", "removeAllObjects"]
+- ["CSo11NSHashTable", "weakObjects"]
+- !private ["CSo8NSObject", "add"]
+- !private ["CSo8NSObject", "asyncAfter"]
+- !private ["CSo8NSObject", "contains"]
+- !private ["CSo8NSObject", "count"]
+- !private ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "nextObject"]
+- !private ["CSo8NSObject", "objectEnumerator"]
+- !private ["CSo8NSObject", "remove"]
+- !private ["CSo8NSObject", "removeAllObjects"]
+- ["CSo8NSObject", "weakObjects"]
+- !private ["PSo16NSObjectProtocol", "add"]
+- !private ["PSo16NSObjectProtocol", "asyncAfter"]
+- !private ["PSo16NSObjectProtocol", "contains"]
+- !private ["PSo16NSObjectProtocol", "count"]
+- !private ["PSo16NSObjectProtocol", "main"]
+- !private ["PSo16NSObjectProtocol", "nextObject"]
+- !private ["PSo16NSObjectProtocol", "objectEnumerator"]
+- !private ["PSo16NSObjectProtocol", "remove"]
+- !private ["PSo16NSObjectProtocol", "removeAllObjects"]
+- ["PSo16NSObjectProtocol", "weakObjects"]
+- !private ["CSo9OS_object", "asyncAfter"]
+- !private ["CSo9OS_object", "main"]
+- !private ["Ps8Sequence", "AnyIterator"]
+- ["Ps8Sequence", "NSHashTable"]
+- ["Ps8Sequence", "_copyContents"]
+- ["Ps8Sequence", "_copyToContiguousArray"]
+- ["Ps8Sequence", "_customContainsEquatableElement"]
+- ["Ps8Sequence", "_preprocessingPass"]
+- !private ["Ps8Sequence", "addObject"]
+- ["Ps8Sequence", "drop"]
+- ["Ps8Sequence", "dropFirst"]
+- ["Ps8Sequence", "dropLast"]
+- ["Ps8Sequence", "filter"]
+- ["Ps8Sequence", "forEach"]
+- !private ["Ps8Sequence", "init"]
+- ["Ps8Sequence", "makeIterator"]
+- ["Ps8Sequence", "map"]
+- !private ["Ps8Sequence", "nextObject"]
+- ["Ps8Sequence", "prefix"]
+- ["Ps8Sequence", "split"]
+- ["Ps8Sequence", "suffix"]
+- ["Ps8Sequence", "underestimatedCount"]
+- !private ["Ps8Sequence", "weakStorage"]
+- ["Ps8Sequence", ""]
+- ["C4Eaze7WeakSet", "AnyIterator"]
+- ["C4Eaze7WeakSet", "AnyObject"]
+- ["C4Eaze7WeakSet", "Bool"]
+- ["C4Eaze7WeakSet", "Int"]
+- ["C4Eaze7WeakSet", "Iterator"]
+- ["C4Eaze7WeakSet", "NSHashTable"]
+- ["C4Eaze7WeakSet", "ObjectType"]
+- ["C4Eaze7WeakSet", "SubSequence"]
+- ["C4Eaze7WeakSet", "_copyContents"]
+- ["C4Eaze7WeakSet", "_copyToContiguousArray"]
+- ["C4Eaze7WeakSet", "_customContainsEquatableElement"]
+- ["C4Eaze7WeakSet", "_preprocessingPass"]
+- ["C4Eaze7WeakSet", "addObject"]
+- ["C4Eaze7WeakSet", "containsObject"]
+- ["C4Eaze7WeakSet", "count"]
+- ["C4Eaze7WeakSet", "deinit"]
+- ["C4Eaze7WeakSet", "drop"]
+- ["C4Eaze7WeakSet", "dropFirst"]
+- ["C4Eaze7WeakSet", "dropLast"]
+- ["C4Eaze7WeakSet", "filter"]
+- ["C4Eaze7WeakSet", "forEach"]
+- ["C4Eaze7WeakSet", "init"]
+- ["C4Eaze7WeakSet", "makeIterator"]
+- ["C4Eaze7WeakSet", "map"]
+- ["C4Eaze7WeakSet", "prefix"]
+- ["C4Eaze7WeakSet", "removeAllObjects"]
+- ["C4Eaze7WeakSet", "removeObject"]
+- ["C4Eaze7WeakSet", "split"]
+- ["C4Eaze7WeakSet", "suffix"]
+- ["C4Eaze7WeakSet", "underestimatedCount"]
+- !private ["C4Eaze7WeakSet", "weakStorage"]
+- !private ["Ps9_Hashable", "add"]
+- !private ["Ps9_Hashable", "asyncAfter"]
+- !private ["Ps9_Hashable", "contains"]
+- !private ["Ps9_Hashable", "count"]
+- !private ["Ps9_Hashable", "main"]
+- !private ["Ps9_Hashable", "nextObject"]
+- !private ["Ps9_Hashable", "objectEnumerator"]
+- !private ["Ps9_Hashable", "remove"]
+- !private ["Ps9_Hashable", "removeAllObjects"]
+- ["Ps9_Hashable", "weakObjects"]
+depends-nominal:
+- !private "Vs11AnyIterator"
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "P4Eaze12ConfigScreen"
+- "P4Eaze8Copyable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "CSo14DispatchObject"
+- !private "CSo13DispatchQueue"
+- !private "V8Dispatch12DispatchTime"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- !private "Ps16IteratorProtocol"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- !private "CSo12NSEnumerator"
+- "PSo17NSFastEnumeration"
+- "CSo11NSHashTable"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo9OS_object"
+- "Ps8Sequence"
+- "C4Eaze7WeakSet"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Supporting_Files/Eaze-Bridging-Header.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/ProgressView/Components/MRProgressOverlayView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreBluetooth.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Modules/PeerKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MultipeerConnectivity.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Headers/PeerKit-umbrella.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Modules/module.modulemap"
+interface-hash: "ffa52de3be681af30a4e322e31b78676"

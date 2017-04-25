@@ -1,0 +1,157 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TABCommunicatorDelegate"
+- "TABCommunicator"
+provides-nominal:
+- "P14TABCommunicate23TABCommunicatorDelegate"
+- "C14TABCommunicate15TABCommunicator"
+provides-member:
+- ["P14TABCommunicate23TABCommunicatorDelegate", ""]
+- ["C14TABCommunicate15TABCommunicator", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private ">"
+- "AnyTABCommunicatorDelegateType"
+- "AssignmentPrecedence"
+- "Bool"
+- "Int"
+- "NSData"
+- "TABCommunicatable"
+- "TABCommunicateConfiguration"
+- "TABCommunicateResult"
+- "TABCommunicateServiceManager"
+- "TABCommunicateServiceManagerDelegate"
+- "TABCommunicator"
+- "TABCommunicatorDelegate"
+- "Void"
+- !private "dispatch_async"
+- !private "dispatch_get_main_queue"
+depends-member:
+- !private ["Ps9AnyObject", "AnyTABCommunicatorDelegateType"]
+- !private ["Ps9AnyObject", "T"]
+- !private ["Ps9AnyObject", "TABCommunicateServiceManager"]
+- ["Ps9AnyObject", "communicatableDataRecieved"]
+- !private ["Ps9AnyObject", "communicateServiceManager"]
+- !private ["Ps9AnyObject", "config"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "dispatch_async"]
+- !private ["Ps9AnyObject", "dispatch_get_main_queue"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "newNumberOfPeers"]
+- !private ["Ps9AnyObject", "objectRecievedFunction"]
+- !private ["Ps9AnyObject", "sendCommunicatableObject"]
+- ["Ps9AnyObject", ""]
+- !private ["C14TABCommunicate30AnyTABCommunicatorDelegateType", "init"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "sendCommunicatableObject"]
+- !private ["Ps28CustomDebugStringConvertible", "None"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "sendCommunicatableObject"]
+- !private ["Ps17CustomReflectable", "None"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "sendCommunicatableObject"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "sendCommunicatableObject"]
+- !private ["Ps23ExpressibleByNilLiteral", "None"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "sendCommunicatableObject"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "init"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "sendCommunicatableObject"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "init"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "sendCommunicatableObject"]
+- !private ["PSo17MCSessionDelegate", "init"]
+- !private ["PSo17MCSessionDelegate", "sendCommunicatableObject"]
+- !private ["CSo8NSObject", "sendCommunicatableObject"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "sendCommunicatableObject"]
+- !private ["Sq", "None"]
+- !private ["P14TABCommunicate17TABCommunicatable", "create"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "init"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "sendCommunicatableObject"]
+- !private ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", "AnyTABCommunicatorDelegateType"]
+- !private ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", "T"]
+- !private ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", "TABCommunicateServiceManager"]
+- ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", "communicatableDataRecieved"]
+- !private ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", "communicateServiceManager"]
+- !private ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", "config"]
+- !private ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", "delegate"]
+- !private ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", "dispatch_async"]
+- !private ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", "dispatch_get_main_queue"]
+- ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", "newNumberOfPeers"]
+- !private ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", "objectRecievedFunction"]
+- ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", ""]
+- ["C14TABCommunicate15TABCommunicator", "AnyTABCommunicatorDelegateType"]
+- ["C14TABCommunicate15TABCommunicator", "Int"]
+- ["C14TABCommunicate15TABCommunicator", "NSData"]
+- ["C14TABCommunicate15TABCommunicator", "T"]
+- ["C14TABCommunicate15TABCommunicator", "TABCommunicateConfiguration"]
+- ["C14TABCommunicate15TABCommunicator", "TABCommunicateResult"]
+- ["C14TABCommunicate15TABCommunicator", "TABCommunicateServiceManager"]
+- ["C14TABCommunicate15TABCommunicator", "TABCommunicatorDelegate"]
+- ["C14TABCommunicate15TABCommunicator", "Void"]
+- ["C14TABCommunicate15TABCommunicator", "communicatableDataRecieved"]
+- !private ["C14TABCommunicate15TABCommunicator", "communicateServiceManager"]
+- !private ["C14TABCommunicate15TABCommunicator", "config"]
+- ["C14TABCommunicate15TABCommunicator", "deinit"]
+- !private ["C14TABCommunicate15TABCommunicator", "delegate"]
+- !private ["C14TABCommunicate15TABCommunicator", "dispatch_async"]
+- !private ["C14TABCommunicate15TABCommunicator", "dispatch_get_main_queue"]
+- ["C14TABCommunicate15TABCommunicator", "init"]
+- ["C14TABCommunicate15TABCommunicator", "newNumberOfPeers"]
+- !private ["C14TABCommunicate15TABCommunicator", "objectRecievedFunction"]
+- ["C14TABCommunicate15TABCommunicator", "resetConnection"]
+- ["C14TABCommunicate15TABCommunicator", "sendCommunicatableObject"]
+- ["P14TABCommunicate23TABCommunicatorDelegate", "Bool"]
+- ["P14TABCommunicate23TABCommunicatorDelegate", "Object"]
+- ["P14TABCommunicate23TABCommunicatorDelegate", "TABCommunicatable"]
+- ["P14TABCommunicate23TABCommunicatorDelegate", "communicatableObjectRecieved"]
+- ["P14TABCommunicate23TABCommunicatorDelegate", "connectionDidUpdate"]
+- !private ["P14TABCommunicate23TABCommunicatorDelegate", "init"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "sendCommunicatableObject"]
+- !private ["Ps21_ObjectiveCBridgeable", "None"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "C14TABCommunicate30AnyTABCommunicatorDelegateType"
+- !private "Ps7CVarArg"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps23ExpressibleByNilLiteral"
+- !private "Ps8Hashable"
+- !private "PSo33MCNearbyServiceAdvertiserDelegate"
+- !private "PSo30MCNearbyServiceBrowserDelegate"
+- !private "PSo17MCSessionDelegate"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "Sq"
+- !private "P14TABCommunicate17TABCommunicatable"
+- !private "C14TABCommunicate28TABCommunicateServiceManager"
+- "P14TABCommunicate36TABCommunicateServiceManagerDelegate"
+- "C14TABCommunicate15TABCommunicator"
+- "P14TABCommunicate23TABCommunicatorDelegate"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Pods/Target Support Files/TABCommunicate/TABCommunicate-umbrella.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Pods.build/Debug-iphonesimulator/TABCommunicate.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MultipeerConnectivity.apinotesc"
+interface-hash: "c7765f3a9b1afa0b704b2adc936775be"

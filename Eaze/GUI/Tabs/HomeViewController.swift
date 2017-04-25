@@ -11,6 +11,8 @@
 //
 
 import UIKit
+import MultipeerConnectivity
+import PeerKit
 
 final class HomeViewController: UIViewController, MSPUpdateSubscriber {
     
@@ -104,10 +106,47 @@ final class HomeViewController: UIViewController, MSPUpdateSubscriber {
                               selector: #selector(didBecomeActive),
                                   name: Notification.Name.App.didBecomeActive,
                                 object: nil)
+        
+     
+        
+        // Send a StartGame event with attached data to all peers
+        
+        // Automatically detect and attach to other peers with this service type
+        
+        
+      
+        
+        
     }
+    @IBAction func didPressButton(_ sender: Any) {
+        let session = MCSession(peer: MCPeerID(displayName: "Mary"))
+        let serviceType = "io-objc-mpc" // Limited to 15 ASCII characters
+        let browser = MCBrowserViewController(serviceType: serviceType, session: session)
+        //self.view = browser.view
+        
+        self.navigationController?.pushViewController(browser, animated: true)
+    }
+    
+    @IBAction func didPressSend(_ sender: Any) {
+        
+        
+        
+        ConnectionManager.sendEvent(event: .sayHello)
+        
+    }
+    
     
     deinit {
         notificationCenter.removeObserver(self)
+    }
+    
+    @IBAction func testEvent(){
+        print("here")
+       
+        
+        
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

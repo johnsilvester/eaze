@@ -69,6 +69,9 @@ final class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerD
         
         // ready!
         log("App started")
+        
+        // Simultaneously advertise and browse for other players
+        //ConnectionManager.start()
 
         return true
     }

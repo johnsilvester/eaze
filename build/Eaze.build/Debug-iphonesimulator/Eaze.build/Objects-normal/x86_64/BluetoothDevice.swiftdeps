@@ -1,0 +1,510 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BluetoothDevice"
+provides-nominal:
+- "C4Eaze15BluetoothDevice"
+provides-member:
+- ["C4Eaze15BluetoothDevice", ""]
+provides-dynamic-lookup:
+- "UUID"
+- "autoConnect"
+- "deviceWithUUID"
+- "devices"
+- "name"
+- "saveDevices"
+- "writeWithResponse"
+depends-top-level:
+- !private "!"
+- !private "<"
+- !private "=="
+- "AssignmentPrecedence"
+- "BluetoothDevice"
+- "Bool"
+- !private "FileManager"
+- "Foundation"
+- "NSObject"
+- "String"
+- !private "StringLiteralType"
+- !private "VJson"
+- !private "log"
+depends-member:
+- ["Ps9AnyObject", "BluetoothDevice"]
+- !private ["Ps9AnyObject", "FileManager"]
+- !private ["Ps9AnyObject", "Foundation"]
+- !private ["Ps9AnyObject", "UUID"]
+- !private ["Ps9AnyObject", "VJson"]
+- !private ["Ps9AnyObject", "arrayValue"]
+- !private ["Ps9AnyObject", "autoConnect"]
+- !private ["Ps9AnyObject", "boolValue"]
+- !private ["Ps9AnyObject", "default"]
+- !private ["Ps9AnyObject", "devices"]
+- !private ["Ps9AnyObject", "fileExists"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "loadBluetoothDevices"]
+- !private ["Ps9AnyObject", "log"]
+- !private ["Ps9AnyObject", "name"]
+- !private ["Ps9AnyObject", "parse"]
+- !private ["Ps9AnyObject", "save"]
+- !private ["Ps9AnyObject", "stringValue"]
+- !private ["Ps9AnyObject", "subscript"]
+- !private ["Ps9AnyObject", "urls"]
+- !private ["Ps9AnyObject", "writeWithResponse"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "append"]
+- !private ["Sa", "enumerated"]
+- !private ["Sa", "find"]
+- !private ["Sa", "first"]
+- !private ["Sa", "sorted"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "enumerated"]
+- !private ["Ps23BidirectionalCollection", "find"]
+- !private ["Ps23BidirectionalCollection", "first"]
+- !private ["Ps23BidirectionalCollection", "sorted"]
+- ["C4Eaze15BluetoothDevice", "BluetoothDevice"]
+- ["C4Eaze15BluetoothDevice", "Bool"]
+- !private ["C4Eaze15BluetoothDevice", "FileManager"]
+- ["C4Eaze15BluetoothDevice", "Foundation"]
+- ["C4Eaze15BluetoothDevice", "String"]
+- ["C4Eaze15BluetoothDevice", "UUID"]
+- !private ["C4Eaze15BluetoothDevice", "VJson"]
+- ["C4Eaze15BluetoothDevice", "autoConnect"]
+- ["C4Eaze15BluetoothDevice", "deinit"]
+- ["C4Eaze15BluetoothDevice", "deviceWithUUID"]
+- ["C4Eaze15BluetoothDevice", "devices"]
+- ["C4Eaze15BluetoothDevice", "init"]
+- ["C4Eaze15BluetoothDevice", "loadBluetoothDevices"]
+- !private ["C4Eaze15BluetoothDevice", "log"]
+- ["C4Eaze15BluetoothDevice", "name"]
+- ["C4Eaze15BluetoothDevice", "saveDevices"]
+- ["C4Eaze15BluetoothDevice", "writeWithResponse"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Ps7CVarArg", "BluetoothDevice"]
+- !private ["Ps7CVarArg", "FileManager"]
+- !private ["Ps7CVarArg", "Foundation"]
+- !private ["Ps7CVarArg", "UUID"]
+- !private ["Ps7CVarArg", "VJson"]
+- !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "autoConnect"]
+- !private ["Ps7CVarArg", "default"]
+- !private ["Ps7CVarArg", "devices"]
+- !private ["Ps7CVarArg", "enumerated"]
+- !private ["Ps7CVarArg", "fileExists"]
+- !private ["Ps7CVarArg", "find"]
+- !private ["Ps7CVarArg", "first"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "loadBluetoothDevices"]
+- !private ["Ps7CVarArg", "log"]
+- !private ["Ps7CVarArg", "name"]
+- !private ["Ps7CVarArg", "sorted"]
+- !private ["Ps7CVarArg", "urls"]
+- !private ["Ps7CVarArg", "writeWithResponse"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "enumerated"]
+- !private ["Ps10Collection", "find"]
+- !private ["Ps10Collection", "first"]
+- !private ["Ps10Collection", "sorted"]
+- !private ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "BluetoothDevice"]
+- !private ["Ps28CustomDebugStringConvertible", "FileManager"]
+- !private ["Ps28CustomDebugStringConvertible", "Foundation"]
+- !private ["Ps28CustomDebugStringConvertible", "UUID"]
+- !private ["Ps28CustomDebugStringConvertible", "VJson"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "appendingPathComponent"]
+- !private ["Ps28CustomDebugStringConvertible", "autoConnect"]
+- !private ["Ps28CustomDebugStringConvertible", "default"]
+- !private ["Ps28CustomDebugStringConvertible", "devices"]
+- !private ["Ps28CustomDebugStringConvertible", "enumerated"]
+- !private ["Ps28CustomDebugStringConvertible", "fileExists"]
+- !private ["Ps28CustomDebugStringConvertible", "find"]
+- !private ["Ps28CustomDebugStringConvertible", "first"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "loadBluetoothDevices"]
+- !private ["Ps28CustomDebugStringConvertible", "log"]
+- !private ["Ps28CustomDebugStringConvertible", "name"]
+- !private ["Ps28CustomDebugStringConvertible", "path"]
+- !private ["Ps28CustomDebugStringConvertible", "sorted"]
+- !private ["Ps28CustomDebugStringConvertible", "urls"]
+- !private ["Ps28CustomDebugStringConvertible", "uuidString"]
+- !private ["Ps28CustomDebugStringConvertible", "writeWithResponse"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "appendingPathComponent"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "path"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "enumerated"]
+- !private ["Ps17CustomReflectable", "find"]
+- !private ["Ps17CustomReflectable", "first"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "sorted"]
+- !private ["Ps17CustomReflectable", "uuidString"]
+- ["Ps23CustomStringConvertible", "BluetoothDevice"]
+- !private ["Ps23CustomStringConvertible", "FileManager"]
+- !private ["Ps23CustomStringConvertible", "Foundation"]
+- !private ["Ps23CustomStringConvertible", "UUID"]
+- !private ["Ps23CustomStringConvertible", "VJson"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "appendingPathComponent"]
+- !private ["Ps23CustomStringConvertible", "arrayValue"]
+- !private ["Ps23CustomStringConvertible", "autoConnect"]
+- !private ["Ps23CustomStringConvertible", "boolValue"]
+- !private ["Ps23CustomStringConvertible", "default"]
+- !private ["Ps23CustomStringConvertible", "devices"]
+- !private ["Ps23CustomStringConvertible", "enumerated"]
+- !private ["Ps23CustomStringConvertible", "fileExists"]
+- !private ["Ps23CustomStringConvertible", "find"]
+- !private ["Ps23CustomStringConvertible", "first"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "loadBluetoothDevices"]
+- !private ["Ps23CustomStringConvertible", "log"]
+- !private ["Ps23CustomStringConvertible", "name"]
+- !private ["Ps23CustomStringConvertible", "parse"]
+- !private ["Ps23CustomStringConvertible", "path"]
+- !private ["Ps23CustomStringConvertible", "save"]
+- !private ["Ps23CustomStringConvertible", "sorted"]
+- !private ["Ps23CustomStringConvertible", "stringValue"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "urls"]
+- !private ["Ps23CustomStringConvertible", "uuidString"]
+- !private ["Ps23CustomStringConvertible", "writeWithResponse"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "BluetoothDevice"]
+- !private ["Ps9Equatable", "Error"]
+- !private ["Ps9Equatable", "FileManager"]
+- !private ["Ps9Equatable", "Foundation"]
+- !private ["Ps9Equatable", "UUID"]
+- !private ["Ps9Equatable", "VJson"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "appendingPathComponent"]
+- !private ["Ps9Equatable", "arrayValue"]
+- !private ["Ps9Equatable", "autoConnect"]
+- !private ["Ps9Equatable", "boolValue"]
+- !private ["Ps9Equatable", "default"]
+- !private ["Ps9Equatable", "devices"]
+- !private ["Ps9Equatable", "documentDirectory"]
+- !private ["Ps9Equatable", "fileExists"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "loadBluetoothDevices"]
+- !private ["Ps9Equatable", "log"]
+- !private ["Ps9Equatable", "name"]
+- !private ["Ps9Equatable", "parse"]
+- !private ["Ps9Equatable", "path"]
+- !private ["Ps9Equatable", "save"]
+- !private ["Ps9Equatable", "stringValue"]
+- !private ["Ps9Equatable", "subscript"]
+- !private ["Ps9Equatable", "urls"]
+- !private ["Ps9Equatable", "userDomainMask"]
+- !private ["Ps9Equatable", "uuidString"]
+- !private ["Ps9Equatable", "writeWithResponse"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "enumerated"]
+- !private ["Ps25ExpressibleByArrayLiteral", "find"]
+- !private ["Ps25ExpressibleByArrayLiteral", "first"]
+- !private ["Ps25ExpressibleByArrayLiteral", "sorted"]
+- !private ["Ps25ExpressibleByArrayLiteral", "userDomainMask"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["CSo11FileManager", "default"]
+- !private ["CSo11FileManager", "fileExists"]
+- !private ["CSo11FileManager", "urls"]
+- ["Ps8Hashable", "BluetoothDevice"]
+- !private ["Ps8Hashable", "Error"]
+- !private ["Ps8Hashable", "FileManager"]
+- !private ["Ps8Hashable", "Foundation"]
+- !private ["Ps8Hashable", "UUID"]
+- !private ["Ps8Hashable", "VJson"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "appendingPathComponent"]
+- !private ["Ps8Hashable", "autoConnect"]
+- !private ["Ps8Hashable", "default"]
+- !private ["Ps8Hashable", "devices"]
+- !private ["Ps8Hashable", "documentDirectory"]
+- !private ["Ps8Hashable", "fileExists"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "loadBluetoothDevices"]
+- !private ["Ps8Hashable", "log"]
+- !private ["Ps8Hashable", "name"]
+- !private ["Ps8Hashable", "path"]
+- !private ["Ps8Hashable", "urls"]
+- !private ["Ps8Hashable", "uuidString"]
+- !private ["Ps8Hashable", "writeWithResponse"]
+- ["Ps8Hashable", ""]
+- !private ["OC4Eaze6AppLog5Level", "Error"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "enumerated"]
+- !private ["Ps17MutableCollection", "find"]
+- !private ["Ps17MutableCollection", "first"]
+- !private ["Ps17MutableCollection", "sorted"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "BluetoothDevice"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "FileManager"]
+- ["CSo8NSObject", "Foundation"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UUID"]
+- !private ["CSo8NSObject", "VJson"]
+- ["CSo8NSObject", "autoConnect"]
+- !private ["CSo8NSObject", "default"]
+- ["CSo8NSObject", "deviceWithUUID"]
+- ["CSo8NSObject", "devices"]
+- !private ["CSo8NSObject", "fileExists"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "loadBluetoothDevices"]
+- !private ["CSo8NSObject", "log"]
+- ["CSo8NSObject", "name"]
+- ["CSo8NSObject", "saveDevices"]
+- !private ["CSo8NSObject", "urls"]
+- ["CSo8NSObject", "writeWithResponse"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "BluetoothDevice"]
+- !private ["PSo16NSObjectProtocol", "FileManager"]
+- !private ["PSo16NSObjectProtocol", "Foundation"]
+- !private ["PSo16NSObjectProtocol", "UUID"]
+- !private ["PSo16NSObjectProtocol", "VJson"]
+- !private ["PSo16NSObjectProtocol", "autoConnect"]
+- !private ["PSo16NSObjectProtocol", "default"]
+- !private ["PSo16NSObjectProtocol", "devices"]
+- !private ["PSo16NSObjectProtocol", "fileExists"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "loadBluetoothDevices"]
+- !private ["PSo16NSObjectProtocol", "log"]
+- !private ["PSo16NSObjectProtocol", "name"]
+- !private ["PSo16NSObjectProtocol", "urls"]
+- !private ["PSo16NSObjectProtocol", "writeWithResponse"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps9OptionSet", "userDomainMask"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "enumerated"]
+- !private ["Ps22RandomAccessCollection", "find"]
+- !private ["Ps22RandomAccessCollection", "first"]
+- !private ["Ps22RandomAccessCollection", "sorted"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "enumerated"]
+- !private ["Ps26RangeReplaceableCollection", "find"]
+- !private ["Ps26RangeReplaceableCollection", "first"]
+- !private ["Ps26RangeReplaceableCollection", "sorted"]
+- !private ["Ps16RawRepresentable", "Error"]
+- !private ["Ps16RawRepresentable", "documentDirectory"]
+- !private ["Ps16RawRepresentable", "userDomainMask"]
+- !private ["P10Foundation20ReferenceConvertible", "appendingPathComponent"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- !private ["P10Foundation20ReferenceConvertible", "path"]
+- !private ["P10Foundation20ReferenceConvertible", "uuidString"]
+- !private ["OCSo11FileManager19SearchPathDirectory", "documentDirectory"]
+- !private ["VCSo11FileManager20SearchPathDomainMask", "userDomainMask"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "arrayValue"]
+- !private ["Ps8Sequence", "boolValue"]
+- !private ["Ps8Sequence", "enumerated"]
+- !private ["Ps8Sequence", "find"]
+- !private ["Ps8Sequence", "first"]
+- !private ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "parse"]
+- !private ["Ps8Sequence", "save"]
+- !private ["Ps8Sequence", "sorted"]
+- !private ["Ps8Sequence", "stringValue"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Ps10SetAlgebra", "userDomainMask"]
+- !private ["Vs12StaticString", "init"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["V10Foundation3URL", "appendingPathComponent"]
+- !private ["V10Foundation3URL", "path"]
+- !private ["V10Foundation4UUID", "init"]
+- !private ["V10Foundation4UUID", "uuidString"]
+- !private ["C4Eaze5VJson", "arrayValue"]
+- !private ["C4Eaze5VJson", "boolValue"]
+- !private ["C4Eaze5VJson", "init"]
+- !private ["C4Eaze5VJson", "parse"]
+- !private ["C4Eaze5VJson", "save"]
+- !private ["C4Eaze5VJson", "stringValue"]
+- !private ["C4Eaze5VJson", "subscript"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "enumerated"]
+- !private ["Ps14_ArrayProtocol", "find"]
+- !private ["Ps14_ArrayProtocol", "first"]
+- !private ["Ps14_ArrayProtocol", "sorted"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "enumerated"]
+- !private ["Ps23_BidirectionalIndexable", "find"]
+- !private ["Ps23_BidirectionalIndexable", "first"]
+- !private ["Ps23_BidirectionalIndexable", "sorted"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "enumerated"]
+- !private ["Ps24_DestructorSafeContainer", "find"]
+- !private ["Ps24_DestructorSafeContainer", "first"]
+- !private ["Ps24_DestructorSafeContainer", "sorted"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "appendingPathComponent"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "path"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps9_Hashable", "BluetoothDevice"]
+- !private ["Ps9_Hashable", "Error"]
+- !private ["Ps9_Hashable", "FileManager"]
+- !private ["Ps9_Hashable", "Foundation"]
+- !private ["Ps9_Hashable", "UUID"]
+- !private ["Ps9_Hashable", "VJson"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "appendingPathComponent"]
+- !private ["Ps9_Hashable", "autoConnect"]
+- !private ["Ps9_Hashable", "default"]
+- !private ["Ps9_Hashable", "devices"]
+- !private ["Ps9_Hashable", "documentDirectory"]
+- !private ["Ps9_Hashable", "fileExists"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "loadBluetoothDevices"]
+- !private ["Ps9_Hashable", "log"]
+- !private ["Ps9_Hashable", "name"]
+- !private ["Ps9_Hashable", "path"]
+- !private ["Ps9_Hashable", "urls"]
+- !private ["Ps9_Hashable", "uuidString"]
+- !private ["Ps9_Hashable", "writeWithResponse"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "enumerated"]
+- !private ["Ps10_Indexable", "find"]
+- !private ["Ps10_Indexable", "first"]
+- !private ["Ps10_Indexable", "sorted"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "enumerated"]
+- !private ["Ps14_IndexableBase", "find"]
+- !private ["Ps14_IndexableBase", "first"]
+- !private ["Ps14_IndexableBase", "sorted"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "enumerated"]
+- !private ["Ps17_MutableIndexable", "find"]
+- !private ["Ps17_MutableIndexable", "first"]
+- !private ["Ps17_MutableIndexable", "sorted"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "appendingPathComponent"]
+- !private ["Ps21_ObjectiveCBridgeable", "enumerated"]
+- !private ["Ps21_ObjectiveCBridgeable", "find"]
+- !private ["Ps21_ObjectiveCBridgeable", "first"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "path"]
+- !private ["Ps21_ObjectiveCBridgeable", "sorted"]
+- !private ["Ps21_ObjectiveCBridgeable", "uuidString"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "enumerated"]
+- !private ["Ps22_RandomAccessIndexable", "find"]
+- !private ["Ps22_RandomAccessIndexable", "first"]
+- !private ["Ps22_RandomAccessIndexable", "sorted"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "enumerated"]
+- !private ["Ps26_RangeReplaceableIndexable", "find"]
+- !private ["Ps26_RangeReplaceableIndexable", "first"]
+- !private ["Ps26_RangeReplaceableIndexable", "sorted"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
+- "C4Eaze15BluetoothDevice"
+- !private "Sb"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "CSo11FileManager"
+- "Ps8Hashable"
+- !private "OC4Eaze6AppLog5Level"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps9OptionSet"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps16RawRepresentable"
+- !private "P10Foundation20ReferenceConvertible"
+- !private "OCSo11FileManager19SearchPathDirectory"
+- !private "VCSo11FileManager20SearchPathDomainMask"
+- !private "Ps8Sequence"
+- !private "Ps10SetAlgebra"
+- !private "Vs12StaticString"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "V10Foundation3URL"
+- !private "V10Foundation4UUID"
+- !private "C4Eaze5VJson"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps34_ExpressibleByFileReferenceLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Supporting_Files/Eaze-Bridging-Header.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/ProgressView/Components/MRProgressOverlayView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreBluetooth.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Modules/PeerKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MultipeerConnectivity.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Headers/PeerKit-umbrella.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Modules/module.modulemap"
+interface-hash: "28456d8acca44642ff3f5b2f1b9418b4"

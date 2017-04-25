@@ -1,0 +1,6 @@
+framework module Pods_Eaze {
+  umbrella header "Pods-Eaze-umbrella.h"
+
+  export *
+  module * { export * }
+}

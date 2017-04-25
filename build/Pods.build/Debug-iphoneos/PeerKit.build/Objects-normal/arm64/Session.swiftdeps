@@ -1,0 +1,253 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SessionDelegate"
+- "Session"
+provides-nominal:
+- "P7PeerKit15SessionDelegate"
+- "C7PeerKit7Session"
+provides-member:
+- ["P7PeerKit15SessionDelegate", ""]
+- ["C7PeerKit7Session", ""]
+provides-dynamic-lookup:
+- "disconnect"
+- "mcSession"
+- "myPeerID"
+- "session"
+depends-top-level:
+- !private "=="
+- "AssignmentPrecedence"
+- "Data"
+- "Error"
+- "InputStream"
+- "MCPeerID"
+- "MCSession"
+- "MCSessionDelegate"
+- "MCSessionState"
+- "NSObject"
+- "Progress"
+- "Session"
+- "SessionDelegate"
+- "String"
+- !private "StringLiteralType"
+- "URL"
+depends-member:
+- !private ["Ps9AnyObject", "MCPeerID"]
+- !private ["Ps9AnyObject", "MCSession"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "disconnect"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "mcSession"]
+- !private ["Ps9AnyObject", "myPeerID"]
+- ["Ps9AnyObject", "session"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "MCPeerID"]
+- !private ["Ps7CVarArg", "MCSession"]
+- !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "disconnect"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "mcSession"]
+- !private ["Ps7CVarArg", "myPeerID"]
+- ["Ps7CVarArg", "session"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "MCPeerID"]
+- !private ["Ps28CustomDebugStringConvertible", "MCSession"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "disconnect"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "mcSession"]
+- !private ["Ps28CustomDebugStringConvertible", "myPeerID"]
+- ["Ps28CustomDebugStringConvertible", "session"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "MCPeerID"]
+- !private ["Ps23CustomStringConvertible", "MCSession"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "disconnect"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "mcSession"]
+- !private ["Ps23CustomStringConvertible", "myPeerID"]
+- ["Ps23CustomStringConvertible", "session"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "MCPeerID"]
+- !private ["Ps9Equatable", "MCSession"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "connected"]
+- ["Ps9Equatable", "connecting"]
+- !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "disconnect"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "mcSession"]
+- !private ["Ps9Equatable", "myPeerID"]
+- ["Ps9Equatable", "notConnected"]
+- ["Ps9Equatable", "session"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "MCPeerID"]
+- !private ["Ps8Hashable", "MCSession"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "connected"]
+- ["Ps8Hashable", "connecting"]
+- !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "disconnect"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "mcSession"]
+- !private ["Ps8Hashable", "myPeerID"]
+- ["Ps8Hashable", "notConnected"]
+- ["Ps8Hashable", "session"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["CSo8MCPeerID", "init"]
+- !private ["CSo9MCSession", "delegate"]
+- !private ["CSo9MCSession", "disconnect"]
+- !private ["CSo9MCSession", "init"]
+- !private ["PSo17MCSessionDelegate", "MCPeerID"]
+- !private ["PSo17MCSessionDelegate", "MCSession"]
+- !private ["PSo17MCSessionDelegate", "delegate"]
+- !private ["PSo17MCSessionDelegate", "mcSession"]
+- !private ["PSo17MCSessionDelegate", "myPeerID"]
+- ["PSo17MCSessionDelegate", "session"]
+- ["PSo17MCSessionDelegate", ""]
+- ["OSC14MCSessionState", "connected"]
+- ["OSC14MCSessionState", "connecting"]
+- ["OSC14MCSessionState", "notConnected"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- ["CSo8NSObject", "Data"]
+- ["CSo8NSObject", "Error"]
+- ["CSo8NSObject", "InputStream"]
+- ["CSo8NSObject", "MCPeerID"]
+- ["CSo8NSObject", "MCSession"]
+- ["CSo8NSObject", "MCSessionState"]
+- ["CSo8NSObject", "Progress"]
+- ["CSo8NSObject", "SessionDelegate"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "URL"]
+- ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "disconnect"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "mcSession"]
+- ["CSo8NSObject", "myPeerID"]
+- ["CSo8NSObject", "session"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "MCPeerID"]
+- !private ["PSo16NSObjectProtocol", "MCSession"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "disconnect"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "mcSession"]
+- !private ["PSo16NSObjectProtocol", "myPeerID"]
+- ["PSo16NSObjectProtocol", "session"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- ["Ps16RawRepresentable", "connected"]
+- ["Ps16RawRepresentable", "connecting"]
+- ["Ps16RawRepresentable", "notConnected"]
+- ["C7PeerKit7Session", "Data"]
+- ["C7PeerKit7Session", "Error"]
+- ["C7PeerKit7Session", "InputStream"]
+- ["C7PeerKit7Session", "MCPeerID"]
+- ["C7PeerKit7Session", "MCSession"]
+- ["C7PeerKit7Session", "MCSessionState"]
+- ["C7PeerKit7Session", "Progress"]
+- ["C7PeerKit7Session", "SessionDelegate"]
+- ["C7PeerKit7Session", "String"]
+- ["C7PeerKit7Session", "URL"]
+- ["C7PeerKit7Session", "deinit"]
+- ["C7PeerKit7Session", "delegate"]
+- ["C7PeerKit7Session", "disconnect"]
+- ["C7PeerKit7Session", "init"]
+- ["C7PeerKit7Session", "mcSession"]
+- ["C7PeerKit7Session", "myPeerID"]
+- ["C7PeerKit7Session", "session"]
+- ["P7PeerKit15SessionDelegate", "Data"]
+- ["P7PeerKit15SessionDelegate", "MCPeerID"]
+- ["P7PeerKit15SessionDelegate", "String"]
+- ["P7PeerKit15SessionDelegate", "URL"]
+- ["P7PeerKit15SessionDelegate", "connected"]
+- ["P7PeerKit15SessionDelegate", "connecting"]
+- ["P7PeerKit15SessionDelegate", "disconnected"]
+- ["P7PeerKit15SessionDelegate", "finishReceivingResource"]
+- ["P7PeerKit15SessionDelegate", "receivedData"]
+- !private ["Vs12StaticString", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps9_Hashable", "MCPeerID"]
+- !private ["Ps9_Hashable", "MCSession"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "connected"]
+- ["Ps9_Hashable", "connecting"]
+- !private ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "disconnect"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "mcSession"]
+- !private ["Ps9_Hashable", "myPeerID"]
+- ["Ps9_Hashable", "notConnected"]
+- ["Ps9_Hashable", "session"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "CSo8MCPeerID"
+- !private "CSo9MCSession"
+- "PSo17MCSessionDelegate"
+- "OSC14MCSessionState"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "Ps16RawRepresentable"
+- "C7PeerKit7Session"
+- "P7PeerKit15SessionDelegate"
+- !private "Vs12StaticString"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Pods/Target Support Files/PeerKit/PeerKit-umbrella.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Pods.build/Debug-iphoneos/PeerKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MultipeerConnectivity.apinotesc"
+interface-hash: "e7e9522c764f94a24627007187f84fbd"

@@ -1,0 +1,417 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DataStorage"
+provides-nominal:
+- "C4Eaze11DataStorage"
+provides-member:
+- ["C4Eaze11DataStorage", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "..."
+- !private "..<"
+- !private "<"
+- !private "=="
+- !private "??"
+- "Array"
+- "BooleanLiteralType"
+- "DataStorage"
+- "Double"
+- "Int"
+- "ModeRange"
+- "SerialPortConfig"
+- "String"
+- "StringLiteralType"
+- "UInt32"
+- "Version"
+- !private "boards"
+- !private "flightControllerVariants"
+depends-member:
+- ["Ps9AnyObject", "Int"]
+- !private ["Ps9AnyObject", "PIDs"]
+- !private ["Ps9AnyObject", "apiVersion"]
+- !private ["Ps9AnyObject", "auxConfigNames"]
+- !private ["Ps9AnyObject", "boardIdentifier"]
+- !private ["Ps9AnyObject", "boards"]
+- !private ["Ps9AnyObject", "flightControllerIdentifier"]
+- !private ["Ps9AnyObject", "flightControllerVariants"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "mode"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "find"]
+- ["Sa", "init"]
+- !private ["Sa", "sort"]
+- !private ["Sa", "subscript"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "count"]
+- !private ["Ps23BidirectionalCollection", "find"]
+- ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps23BidirectionalCollection", "sort"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
+- !private ["Ps17BitwiseOperations", "bitCheck"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "bitCheck"]
+- !private ["Ps7CVarArg", "count"]
+- !private ["Ps7CVarArg", "find"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "sort"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "count"]
+- !private ["Ps10Collection", "find"]
+- ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "sort"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "bitCheck"]
+- ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "find"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "sort"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "bitCheck"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "bitCheck"]
+- !private ["Ps17CustomReflectable", "count"]
+- !private ["Ps17CustomReflectable", "find"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "sort"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "bitCheck"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "find"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "sort"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- ["C4Eaze11DataStorage", "BFFeatures"]
+- ["C4Eaze11DataStorage", "Double"]
+- ["C4Eaze11DataStorage", "Int"]
+- ["C4Eaze11DataStorage", "ModeRange"]
+- ["C4Eaze11DataStorage", "PIDController"]
+- ["C4Eaze11DataStorage", "PIDControllerNames"]
+- ["C4Eaze11DataStorage", "PIDNames"]
+- ["C4Eaze11DataStorage", "PIDs"]
+- ["C4Eaze11DataStorage", "RC_MAP"]
+- ["C4Eaze11DataStorage", "SerialPortConfig"]
+- ["C4Eaze11DataStorage", "String"]
+- ["C4Eaze11DataStorage", "UInt32"]
+- ["C4Eaze11DataStorage", "Version"]
+- ["C4Eaze11DataStorage", "accTrimPitch"]
+- ["C4Eaze11DataStorage", "accTrimRoll"]
+- ["C4Eaze11DataStorage", "accelerometer"]
+- ["C4Eaze11DataStorage", "activeChannels"]
+- ["C4Eaze11DataStorage", "activeFlightModes"]
+- ["C4Eaze11DataStorage", "activeSensors"]
+- ["C4Eaze11DataStorage", "amperage"]
+- ["C4Eaze11DataStorage", "apiVersion"]
+- ["C4Eaze11DataStorage", "attitude"]
+- ["C4Eaze11DataStorage", "autoDisarmDelay"]
+- ["C4Eaze11DataStorage", "auxConfigIDs"]
+- ["C4Eaze11DataStorage", "auxConfigNames"]
+- ["C4Eaze11DataStorage", "boardAlignPitch"]
+- ["C4Eaze11DataStorage", "boardAlignRoll"]
+- ["C4Eaze11DataStorage", "boardAlignYaw"]
+- ["C4Eaze11DataStorage", "boardIdentifier"]
+- ["C4Eaze11DataStorage", "boardName"]
+- ["C4Eaze11DataStorage", "boardVersion"]
+- !private ["C4Eaze11DataStorage", "boards"]
+- ["C4Eaze11DataStorage", "buildInfo"]
+- ["C4Eaze11DataStorage", "channels"]
+- ["C4Eaze11DataStorage", "cliBaudRate"]
+- ["C4Eaze11DataStorage", "currentOffset"]
+- ["C4Eaze11DataStorage", "currentScale"]
+- ["C4Eaze11DataStorage", "cycleTime"]
+- ["C4Eaze11DataStorage", "deinit"]
+- ["C4Eaze11DataStorage", "disarmKillsSwitch"]
+- ["C4Eaze11DataStorage", "dynamicThrottleBreakpoint"]
+- ["C4Eaze11DataStorage", "dynamicThrottlePID"]
+- ["C4Eaze11DataStorage", "failsafeThrottle"]
+- ["C4Eaze11DataStorage", "flightControllerIdentifier"]
+- ["C4Eaze11DataStorage", "flightControllerName"]
+- !private ["C4Eaze11DataStorage", "flightControllerVariants"]
+- ["C4Eaze11DataStorage", "flightControllerVersion"]
+- ["C4Eaze11DataStorage", "gpsBaudrate"]
+- ["C4Eaze11DataStorage", "gpsPasstroughBaudrate"]
+- ["C4Eaze11DataStorage", "gpsType"]
+- ["C4Eaze11DataStorage", "gpsUbxSbas"]
+- ["C4Eaze11DataStorage", "gyroscope"]
+- ["C4Eaze11DataStorage", "i2cError"]
+- ["C4Eaze11DataStorage", "init"]
+- ["C4Eaze11DataStorage", "loopTime"]
+- ["C4Eaze11DataStorage", "mAhDrawn"]
+- ["C4Eaze11DataStorage", "magDeclination"]
+- ["C4Eaze11DataStorage", "magnetometer"]
+- ["C4Eaze11DataStorage", "maxThrottle"]
+- ["C4Eaze11DataStorage", "midRc"]
+- ["C4Eaze11DataStorage", "minCommand"]
+- ["C4Eaze11DataStorage", "minThrottle"]
+- ["C4Eaze11DataStorage", "mixerConfiguration"]
+- ["C4Eaze11DataStorage", "mode"]
+- ["C4Eaze11DataStorage", "modeRanges"]
+- ["C4Eaze11DataStorage", "mspBaudRate"]
+- ["C4Eaze11DataStorage", "mspVersion"]
+- ["C4Eaze11DataStorage", "multiwiiCurrentOutput"]
+- ["C4Eaze11DataStorage", "pitchRate"]
+- ["C4Eaze11DataStorage", "placeHolder2"]
+- ["C4Eaze11DataStorage", "profile"]
+- ["C4Eaze11DataStorage", "rcExpo"]
+- ["C4Eaze11DataStorage", "rcRate"]
+- ["C4Eaze11DataStorage", "rollPitchRate"]
+- ["C4Eaze11DataStorage", "rollRate"]
+- ["C4Eaze11DataStorage", "rssi"]
+- ["C4Eaze11DataStorage", "rssiChannel"]
+- ["C4Eaze11DataStorage", "rxMaxuSec"]
+- ["C4Eaze11DataStorage", "rxMinuSec"]
+- ["C4Eaze11DataStorage", "satBind"]
+- ["C4Eaze11DataStorage", "serialGPSBaudRate"]
+- ["C4Eaze11DataStorage", "serialPorts"]
+- ["C4Eaze11DataStorage", "serialRXType"]
+- ["C4Eaze11DataStorage", "stickCenter"]
+- ["C4Eaze11DataStorage", "stickMax"]
+- ["C4Eaze11DataStorage", "stickMin"]
+- ["C4Eaze11DataStorage", "throttleExpo"]
+- ["C4Eaze11DataStorage", "throttleMid"]
+- ["C4Eaze11DataStorage", "vBatMaxCellVoltage"]
+- ["C4Eaze11DataStorage", "vBatMinCellVoltage"]
+- ["C4Eaze11DataStorage", "vBatScale"]
+- ["C4Eaze11DataStorage", "vBatWarningCellVoltage"]
+- ["C4Eaze11DataStorage", "voltage"]
+- ["C4Eaze11DataStorage", "yawExpo"]
+- ["C4Eaze11DataStorage", "yawRate"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "bitCheck"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
+- !private ["Ps25ExpressibleByArrayLiteral", "find"]
+- ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "sort"]
+- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "bitCheck"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "bitCheck"]
+- ["Ps8Hashable", "init"]
+- !private ["Si", "bitCheck"]
+- !private ["Ps7Integer", "bitCheck"]
+- !private ["Ps17IntegerArithmetic", "bitCheck"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "bitCheck"]
+- ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "count"]
+- !private ["Ps17MutableCollection", "find"]
+- ["Ps17MutableCollection", "init"]
+- !private ["Ps17MutableCollection", "sort"]
+- !private ["Ps17MutableCollection", "subscript"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "count"]
+- !private ["Ps22RandomAccessCollection", "find"]
+- ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps22RandomAccessCollection", "sort"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
+- !private ["Ps26RangeReplaceableCollection", "find"]
+- ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps26RangeReplaceableCollection", "sort"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "count"]
+- !private ["Ps8Sequence", "find"]
+- ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "sort"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Ps13SignedInteger", "bitCheck"]
+- !private ["Ps12SignedNumber", "bitCheck"]
+- !private ["Ps10Strideable", "bitCheck"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- ["C4Eaze7Version", "deinit"]
+- ["C4Eaze7Version", "init"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "count"]
+- !private ["Ps14_ArrayProtocol", "find"]
+- ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps14_ArrayProtocol", "sort"]
+- !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "count"]
+- !private ["Ps23_BidirectionalIndexable", "find"]
+- ["Ps23_BidirectionalIndexable", "init"]
+- !private ["Ps23_BidirectionalIndexable", "sort"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps24_DestructorSafeContainer", "find"]
+- ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "sort"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "bitCheck"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "bitCheck"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps14_Incrementable", "bitCheck"]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "count"]
+- !private ["Ps10_Indexable", "find"]
+- ["Ps10_Indexable", "init"]
+- !private ["Ps10_Indexable", "sort"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "count"]
+- !private ["Ps14_IndexableBase", "find"]
+- ["Ps14_IndexableBase", "init"]
+- !private ["Ps14_IndexableBase", "sort"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps8_Integer", "bitCheck"]
+- !private ["Ps18_IntegerArithmetic", "bitCheck"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "count"]
+- !private ["Ps17_MutableIndexable", "find"]
+- ["Ps17_MutableIndexable", "init"]
+- !private ["Ps17_MutableIndexable", "sort"]
+- !private ["Ps17_MutableIndexable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "bitCheck"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "find"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "sort"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "count"]
+- !private ["Ps22_RandomAccessIndexable", "find"]
+- ["Ps22_RandomAccessIndexable", "init"]
+- !private ["Ps22_RandomAccessIndexable", "sort"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "count"]
+- !private ["Ps26_RangeReplaceableIndexable", "find"]
+- ["Ps26_RangeReplaceableIndexable", "init"]
+- !private ["Ps26_RangeReplaceableIndexable", "sort"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
+- !private ["Ps14_SignedInteger", "bitCheck"]
+- !private ["Ps11_Strideable", "bitCheck"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- "Ps23BidirectionalCollection"
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- "Ps7CVarArg"
+- "Ps10Collection"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "C4Eaze11DataStorage"
+- "Ps9Equatable"
+- "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "Ps17MutableCollection"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "Ps22RandomAccessCollection"
+- "Ps26RangeReplaceableCollection"
+- "Ps8Sequence"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "C4Eaze7Version"
+- "Ps14_ArrayProtocol"
+- "Ps23_BidirectionalIndexable"
+- "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- "Ps10_Indexable"
+- "Ps14_IndexableBase"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- "Ps17_MutableIndexable"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps22_RandomAccessIndexable"
+- "Ps26_RangeReplaceableIndexable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Supporting_Files/Eaze-Bridging-Header.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/ProgressView/Components/MRProgressOverlayView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreBluetooth.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Modules/PeerKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MultipeerConnectivity.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-umbrella.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Modules/module.modulemap"
+interface-hash: "904eb39fe17b270c20b0f09f1a95fd3a"

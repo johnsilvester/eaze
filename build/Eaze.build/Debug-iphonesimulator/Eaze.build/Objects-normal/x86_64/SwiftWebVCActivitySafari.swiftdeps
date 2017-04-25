@@ -1,0 +1,256 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SwiftWebVCActivitySafari"
+provides-nominal:
+- "C4Eaze24SwiftWebVCActivitySafari"
+provides-member:
+- ["C4Eaze24SwiftWebVCActivitySafari", ""]
+provides-dynamic-lookup:
+- "activityTitle"
+- "canPerform"
+- "perform"
+depends-top-level:
+- "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "NSLocalizedString"
+- "String"
+- !private "StringLiteralType"
+- "SwiftWebVCActivity"
+- "SwiftWebVCActivitySafari"
+- !private "UIApplication"
+- !private "URL"
+depends-member:
+- !private ["Ps9AnyObject", "NSLocalizedString"]
+- !private ["Ps9AnyObject", "UIApplication"]
+- !private ["Ps9AnyObject", "URLToOpen"]
+- !private ["Ps9AnyObject", "activityDidFinish"]
+- !private ["Ps9AnyObject", "canOpenURL"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "openURL"]
+- !private ["Ps9AnyObject", "shared"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "NSLocalizedString"]
+- !private ["Ps7CVarArg", "UIApplication"]
+- !private ["Ps7CVarArg", "URLToOpen"]
+- !private ["Ps7CVarArg", "activityDidFinish"]
+- !private ["Ps7CVarArg", "canOpenURL"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "openURL"]
+- !private ["Ps7CVarArg", "shared"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "NSLocalizedString"]
+- !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
+- !private ["Ps28CustomDebugStringConvertible", "URLToOpen"]
+- !private ["Ps28CustomDebugStringConvertible", "activityDidFinish"]
+- !private ["Ps28CustomDebugStringConvertible", "canOpenURL"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "openURL"]
+- !private ["Ps28CustomDebugStringConvertible", "shared"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "NSLocalizedString"]
+- !private ["Ps23CustomStringConvertible", "UIApplication"]
+- !private ["Ps23CustomStringConvertible", "URLToOpen"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "activityDidFinish"]
+- !private ["Ps23CustomStringConvertible", "canOpenURL"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "openURL"]
+- !private ["Ps23CustomStringConvertible", "shared"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "NSLocalizedString"]
+- !private ["Ps9Equatable", "UIApplication"]
+- !private ["Ps9Equatable", "URLToOpen"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "activityDidFinish"]
+- !private ["Ps9Equatable", "canOpenURL"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "openURL"]
+- !private ["Ps9Equatable", "shared"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "NSLocalizedString"]
+- !private ["Ps8Hashable", "UIApplication"]
+- !private ["Ps8Hashable", "URLToOpen"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "activityDidFinish"]
+- !private ["Ps8Hashable", "canOpenURL"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "openURL"]
+- !private ["Ps8Hashable", "shared"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "NSLocalizedString"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIApplication"]
+- !private ["CSo8NSObject", "URL"]
+- !private ["CSo8NSObject", "URLToOpen"]
+- !private ["CSo8NSObject", "activityDidFinish"]
+- ["CSo8NSObject", "activityTitle"]
+- !private ["CSo8NSObject", "canOpenURL"]
+- ["CSo8NSObject", "canPerform"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "openURL"]
+- ["CSo8NSObject", "perform"]
+- !private ["CSo8NSObject", "shared"]
+- !private ["PSo16NSObjectProtocol", "NSLocalizedString"]
+- !private ["PSo16NSObjectProtocol", "UIApplication"]
+- !private ["PSo16NSObjectProtocol", "URLToOpen"]
+- !private ["PSo16NSObjectProtocol", "activityDidFinish"]
+- !private ["PSo16NSObjectProtocol", "canOpenURL"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "openURL"]
+- !private ["PSo16NSObjectProtocol", "shared"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["SS", "init"]
+- ["C4Eaze18SwiftWebVCActivity", "Bool"]
+- !private ["C4Eaze18SwiftWebVCActivity", "NSLocalizedString"]
+- ["C4Eaze18SwiftWebVCActivity", "String"]
+- !private ["C4Eaze18SwiftWebVCActivity", "UIApplication"]
+- !private ["C4Eaze18SwiftWebVCActivity", "URL"]
+- !private ["C4Eaze18SwiftWebVCActivity", "URLToOpen"]
+- !private ["C4Eaze18SwiftWebVCActivity", "activityDidFinish"]
+- ["C4Eaze18SwiftWebVCActivity", "activityTitle"]
+- ["C4Eaze18SwiftWebVCActivity", "canPerform"]
+- ["C4Eaze18SwiftWebVCActivity", "init"]
+- ["C4Eaze18SwiftWebVCActivity", "perform"]
+- ["C4Eaze18SwiftWebVCActivity", ""]
+- ["C4Eaze24SwiftWebVCActivitySafari", "Bool"]
+- !private ["C4Eaze24SwiftWebVCActivitySafari", "NSLocalizedString"]
+- ["C4Eaze24SwiftWebVCActivitySafari", "String"]
+- !private ["C4Eaze24SwiftWebVCActivitySafari", "UIApplication"]
+- !private ["C4Eaze24SwiftWebVCActivitySafari", "URL"]
+- !private ["C4Eaze24SwiftWebVCActivitySafari", "URLToOpen"]
+- !private ["C4Eaze24SwiftWebVCActivitySafari", "activityDidFinish"]
+- ["C4Eaze24SwiftWebVCActivitySafari", "activityTitle"]
+- ["C4Eaze24SwiftWebVCActivitySafari", "canPerform"]
+- ["C4Eaze24SwiftWebVCActivitySafari", "deinit"]
+- ["C4Eaze24SwiftWebVCActivitySafari", "init"]
+- ["C4Eaze24SwiftWebVCActivitySafari", "perform"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- ["CSo10UIActivity", "Bool"]
+- !private ["CSo10UIActivity", "NSLocalizedString"]
+- ["CSo10UIActivity", "String"]
+- !private ["CSo10UIActivity", "UIApplication"]
+- !private ["CSo10UIActivity", "URL"]
+- !private ["CSo10UIActivity", "URLToOpen"]
+- !private ["CSo10UIActivity", "activityDidFinish"]
+- ["CSo10UIActivity", "activityTitle"]
+- ["CSo10UIActivity", "canPerform"]
+- ["CSo10UIActivity", "init"]
+- ["CSo10UIActivity", "perform"]
+- !private ["CSo13UIApplication", "canOpenURL"]
+- !private ["CSo13UIApplication", "openURL"]
+- !private ["CSo13UIApplication", "shared"]
+- !private ["CSo11UIResponder", "canOpenURL"]
+- !private ["CSo11UIResponder", "openURL"]
+- !private ["CSo11UIResponder", "shared"]
+- !private ["PSo30UIResponderStandardEditActions", "canOpenURL"]
+- !private ["PSo30UIResponderStandardEditActions", "openURL"]
+- !private ["PSo30UIResponderStandardEditActions", "shared"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "NSLocalizedString"]
+- !private ["Ps9_Hashable", "UIApplication"]
+- !private ["Ps9_Hashable", "URLToOpen"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "activityDidFinish"]
+- !private ["Ps9_Hashable", "canOpenURL"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "openURL"]
+- !private ["Ps9_Hashable", "shared"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "SS"
+- "C4Eaze18SwiftWebVCActivity"
+- "C4Eaze24SwiftWebVCActivitySafari"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- "CSo10UIActivity"
+- !private "CSo13UIApplication"
+- !private "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Supporting_Files/Eaze-Bridging-Header.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/ProgressView/Components/MRProgressOverlayView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreBluetooth.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Modules/PeerKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MultipeerConnectivity.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Headers/PeerKit-umbrella.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Modules/module.modulemap"
+interface-hash: "592f3bd56c8f7be276e7672368c6b44d"

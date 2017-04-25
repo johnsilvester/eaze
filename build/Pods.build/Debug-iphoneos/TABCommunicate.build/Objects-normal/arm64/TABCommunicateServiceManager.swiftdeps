@@ -1,0 +1,726 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TABCommunicateServiceManagerDelegate"
+- "TABCommunicateServiceManager"
+provides-nominal:
+- "P14TABCommunicate36TABCommunicateServiceManagerDelegate"
+- "C14TABCommunicate28TABCommunicateServiceManager"
+provides-member:
+- ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", ""]
+- ["C14TABCommunicate28TABCommunicateServiceManager", ""]
+provides-dynamic-lookup:
+- "advertiser"
+- "browser"
+- "session"
+depends-top-level:
+- !private "*"
+- !private "+="
+- !private "<"
+- "AnyObject"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "DISPATCH_TIME_NOW"
+- !private "Double"
+- "Int"
+- !private "Int64"
+- "MCNearbyServiceAdvertiser"
+- "MCNearbyServiceAdvertiserDelegate"
+- "MCNearbyServiceBrowser"
+- "MCNearbyServiceBrowserDelegate"
+- "MCPeerID"
+- "MCSession"
+- "MCSessionDelegate"
+- "MCSessionState"
+- "NSData"
+- !private "NSEC_PER_SEC"
+- "NSError"
+- "NSInputStream"
+- "NSObject"
+- "NSProgress"
+- "NSURL"
+- "String"
+- !private "StringLiteralType"
+- "TABCommunicatable"
+- "TABCommunicateConfiguration"
+- "TABCommunicateResult"
+- "TABCommunicateServiceManager"
+- "TABCommunicateServiceManagerDelegate"
+- !private "UIDevice"
+- "Void"
+- !private "configuration"
+- !private "dispatch_after"
+- !private "dispatch_get_main_queue"
+- !private "dispatch_time"
+- !private "print"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "DISPATCH_TIME_NOW"]
+- !private ["Ps9AnyObject", "Double"]
+- !private ["Ps9AnyObject", "Int64"]
+- !private ["Ps9AnyObject", "MCNearbyServiceAdvertiser"]
+- !private ["Ps9AnyObject", "MCNearbyServiceBrowser"]
+- !private ["Ps9AnyObject", "MCPeerID"]
+- !private ["Ps9AnyObject", "MCSession"]
+- !private ["Ps9AnyObject", "NSEC_PER_SEC"]
+- !private ["Ps9AnyObject", "UIDevice"]
+- ["Ps9AnyObject", "advertiser"]
+- ["Ps9AnyObject", "browser"]
+- !private ["Ps9AnyObject", "configuration"]
+- !private ["Ps9AnyObject", "connectedPeers"]
+- !private ["Ps9AnyObject", "containsString"]
+- !private ["Ps9AnyObject", "currentDevice"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "dispatch_after"]
+- !private ["Ps9AnyObject", "dispatch_get_main_queue"]
+- !private ["Ps9AnyObject", "dispatch_time"]
+- !private ["Ps9AnyObject", "displayName"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "invitePeer"]
+- !private ["Ps9AnyObject", "myPeerId"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "retryCount"]
+- !private ["Ps9AnyObject", "serviceAdvertiser"]
+- !private ["Ps9AnyObject", "serviceBrowser"]
+- ["Ps9AnyObject", "session"]
+- !private ["Ps9AnyObject", "startAdvertisingPeer"]
+- !private ["Ps9AnyObject", "startBrowsingForPeers"]
+- !private ["Ps9AnyObject", "stopAdvertisingPeer"]
+- !private ["Ps9AnyObject", "stopBrowsingForPeers"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "count"]
+- !private ["Ps23BidirectionalCollection", "count"]
+- !private ["Ps19BinaryFloatingPoint", "init"]
+- !private ["Ps17BitwiseOperations", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "DISPATCH_TIME_NOW"]
+- !private ["Ps7CVarArg", "Double"]
+- !private ["Ps7CVarArg", "Int64"]
+- !private ["Ps7CVarArg", "MCNearbyServiceAdvertiser"]
+- !private ["Ps7CVarArg", "MCNearbyServiceBrowser"]
+- !private ["Ps7CVarArg", "MCPeerID"]
+- !private ["Ps7CVarArg", "MCSession"]
+- !private ["Ps7CVarArg", "NSEC_PER_SEC"]
+- !private ["Ps7CVarArg", "UIDevice"]
+- ["Ps7CVarArg", "advertiser"]
+- ["Ps7CVarArg", "browser"]
+- !private ["Ps7CVarArg", "configuration"]
+- !private ["Ps7CVarArg", "connectedPeers"]
+- !private ["Ps7CVarArg", "containsString"]
+- !private ["Ps7CVarArg", "count"]
+- !private ["Ps7CVarArg", "currentDevice"]
+- !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "dispatch_after"]
+- !private ["Ps7CVarArg", "dispatch_get_main_queue"]
+- !private ["Ps7CVarArg", "dispatch_time"]
+- !private ["Ps7CVarArg", "displayName"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "invitePeer"]
+- !private ["Ps7CVarArg", "myPeerId"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "retryCount"]
+- !private ["Ps7CVarArg", "serviceAdvertiser"]
+- !private ["Ps7CVarArg", "serviceBrowser"]
+- ["Ps7CVarArg", "session"]
+- !private ["Ps7CVarArg", "startAdvertisingPeer"]
+- !private ["Ps7CVarArg", "startBrowsingForPeers"]
+- !private ["Ps7CVarArg", "stopAdvertisingPeer"]
+- !private ["Ps7CVarArg", "stopBrowsingForPeers"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "count"]
+- !private ["Ps10Comparable", "containsString"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "DISPATCH_TIME_NOW"]
+- !private ["Ps28CustomDebugStringConvertible", "Double"]
+- !private ["Ps28CustomDebugStringConvertible", "Int64"]
+- !private ["Ps28CustomDebugStringConvertible", "MCNearbyServiceAdvertiser"]
+- !private ["Ps28CustomDebugStringConvertible", "MCNearbyServiceBrowser"]
+- !private ["Ps28CustomDebugStringConvertible", "MCPeerID"]
+- !private ["Ps28CustomDebugStringConvertible", "MCSession"]
+- !private ["Ps28CustomDebugStringConvertible", "NSEC_PER_SEC"]
+- !private ["Ps28CustomDebugStringConvertible", "UIDevice"]
+- ["Ps28CustomDebugStringConvertible", "advertiser"]
+- ["Ps28CustomDebugStringConvertible", "browser"]
+- !private ["Ps28CustomDebugStringConvertible", "configuration"]
+- !private ["Ps28CustomDebugStringConvertible", "connectedPeers"]
+- !private ["Ps28CustomDebugStringConvertible", "containsString"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "currentDevice"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "dispatch_after"]
+- !private ["Ps28CustomDebugStringConvertible", "dispatch_get_main_queue"]
+- !private ["Ps28CustomDebugStringConvertible", "dispatch_time"]
+- !private ["Ps28CustomDebugStringConvertible", "displayName"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "invitePeer"]
+- !private ["Ps28CustomDebugStringConvertible", "myPeerId"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "retryCount"]
+- !private ["Ps28CustomDebugStringConvertible", "serviceAdvertiser"]
+- !private ["Ps28CustomDebugStringConvertible", "serviceBrowser"]
+- ["Ps28CustomDebugStringConvertible", "session"]
+- !private ["Ps28CustomDebugStringConvertible", "startAdvertisingPeer"]
+- !private ["Ps28CustomDebugStringConvertible", "startBrowsingForPeers"]
+- !private ["Ps28CustomDebugStringConvertible", "stopAdvertisingPeer"]
+- !private ["Ps28CustomDebugStringConvertible", "stopBrowsingForPeers"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "containsString"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "containsString"]
+- !private ["Ps17CustomReflectable", "count"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "DISPATCH_TIME_NOW"]
+- !private ["Ps23CustomStringConvertible", "Double"]
+- !private ["Ps23CustomStringConvertible", "Int64"]
+- !private ["Ps23CustomStringConvertible", "MCNearbyServiceAdvertiser"]
+- !private ["Ps23CustomStringConvertible", "MCNearbyServiceBrowser"]
+- !private ["Ps23CustomStringConvertible", "MCPeerID"]
+- !private ["Ps23CustomStringConvertible", "MCSession"]
+- !private ["Ps23CustomStringConvertible", "NSEC_PER_SEC"]
+- !private ["Ps23CustomStringConvertible", "UIDevice"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "advertiser"]
+- ["Ps23CustomStringConvertible", "browser"]
+- !private ["Ps23CustomStringConvertible", "configuration"]
+- !private ["Ps23CustomStringConvertible", "connectedPeers"]
+- !private ["Ps23CustomStringConvertible", "containsString"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "currentDevice"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "dispatch_after"]
+- !private ["Ps23CustomStringConvertible", "dispatch_get_main_queue"]
+- !private ["Ps23CustomStringConvertible", "dispatch_time"]
+- !private ["Ps23CustomStringConvertible", "displayName"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "invitePeer"]
+- !private ["Ps23CustomStringConvertible", "myPeerId"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "retryCount"]
+- !private ["Ps23CustomStringConvertible", "serviceAdvertiser"]
+- !private ["Ps23CustomStringConvertible", "serviceBrowser"]
+- ["Ps23CustomStringConvertible", "session"]
+- !private ["Ps23CustomStringConvertible", "startAdvertisingPeer"]
+- !private ["Ps23CustomStringConvertible", "startBrowsingForPeers"]
+- !private ["Ps23CustomStringConvertible", "stopAdvertisingPeer"]
+- !private ["Ps23CustomStringConvertible", "stopBrowsingForPeers"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "init"]
+- !private ["Ps9Equatable", "DISPATCH_TIME_NOW"]
+- !private ["Ps9Equatable", "Double"]
+- !private ["Ps9Equatable", "Int64"]
+- !private ["Ps9Equatable", "MCNearbyServiceAdvertiser"]
+- !private ["Ps9Equatable", "MCNearbyServiceBrowser"]
+- !private ["Ps9Equatable", "MCPeerID"]
+- !private ["Ps9Equatable", "MCSession"]
+- !private ["Ps9Equatable", "NSEC_PER_SEC"]
+- !private ["Ps9Equatable", "Required"]
+- !private ["Ps9Equatable", "UIDevice"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "advertiser"]
+- ["Ps9Equatable", "browser"]
+- !private ["Ps9Equatable", "configuration"]
+- !private ["Ps9Equatable", "connectedPeers"]
+- !private ["Ps9Equatable", "containsString"]
+- !private ["Ps9Equatable", "currentDevice"]
+- !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "dispatch_after"]
+- !private ["Ps9Equatable", "dispatch_get_main_queue"]
+- !private ["Ps9Equatable", "dispatch_time"]
+- !private ["Ps9Equatable", "displayName"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "invitePeer"]
+- !private ["Ps9Equatable", "myPeerId"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "retryCount"]
+- !private ["Ps9Equatable", "serviceAdvertiser"]
+- !private ["Ps9Equatable", "serviceBrowser"]
+- ["Ps9Equatable", "session"]
+- !private ["Ps9Equatable", "startAdvertisingPeer"]
+- !private ["Ps9Equatable", "startBrowsingForPeers"]
+- !private ["Ps9Equatable", "stopAdvertisingPeer"]
+- !private ["Ps9Equatable", "stopBrowsingForPeers"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "containsString"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "containsString"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "containsString"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps13FloatingPoint", "init"]
+- !private ["Ps8Hashable", "DISPATCH_TIME_NOW"]
+- !private ["Ps8Hashable", "Double"]
+- !private ["Ps8Hashable", "Int64"]
+- !private ["Ps8Hashable", "MCNearbyServiceAdvertiser"]
+- !private ["Ps8Hashable", "MCNearbyServiceBrowser"]
+- !private ["Ps8Hashable", "MCPeerID"]
+- !private ["Ps8Hashable", "MCSession"]
+- !private ["Ps8Hashable", "NSEC_PER_SEC"]
+- !private ["Ps8Hashable", "Required"]
+- !private ["Ps8Hashable", "UIDevice"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "advertiser"]
+- ["Ps8Hashable", "browser"]
+- !private ["Ps8Hashable", "configuration"]
+- !private ["Ps8Hashable", "connectedPeers"]
+- !private ["Ps8Hashable", "containsString"]
+- !private ["Ps8Hashable", "currentDevice"]
+- !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "dispatch_after"]
+- !private ["Ps8Hashable", "dispatch_get_main_queue"]
+- !private ["Ps8Hashable", "dispatch_time"]
+- !private ["Ps8Hashable", "displayName"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "invitePeer"]
+- !private ["Ps8Hashable", "myPeerId"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "retryCount"]
+- !private ["Ps8Hashable", "serviceAdvertiser"]
+- !private ["Ps8Hashable", "serviceBrowser"]
+- ["Ps8Hashable", "session"]
+- !private ["Ps8Hashable", "startAdvertisingPeer"]
+- !private ["Ps8Hashable", "startBrowsingForPeers"]
+- !private ["Ps8Hashable", "stopAdvertisingPeer"]
+- !private ["Ps8Hashable", "stopBrowsingForPeers"]
+- ["Ps8Hashable", ""]
+- !private ["Vs5Int64", "init"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "init"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "containsString"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["OSC22MCEncryptionPreference", "Required"]
+- !private ["CSo25MCNearbyServiceAdvertiser", "delegate"]
+- !private ["CSo25MCNearbyServiceAdvertiser", "init"]
+- !private ["CSo25MCNearbyServiceAdvertiser", "startAdvertisingPeer"]
+- !private ["CSo25MCNearbyServiceAdvertiser", "stopAdvertisingPeer"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "DISPATCH_TIME_NOW"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "Double"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "Int64"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "MCNearbyServiceAdvertiser"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "MCNearbyServiceBrowser"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "MCPeerID"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "MCSession"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "NSEC_PER_SEC"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "UIDevice"]
+- ["PSo33MCNearbyServiceAdvertiserDelegate", "advertiser"]
+- ["PSo33MCNearbyServiceAdvertiserDelegate", "browser"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "configuration"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "delegate"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "dispatch_after"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "dispatch_get_main_queue"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "dispatch_time"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "myPeerId"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "print"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "retryCount"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "serviceAdvertiser"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "serviceBrowser"]
+- ["PSo33MCNearbyServiceAdvertiserDelegate", "session"]
+- !private ["CSo22MCNearbyServiceBrowser", "delegate"]
+- !private ["CSo22MCNearbyServiceBrowser", "init"]
+- !private ["CSo22MCNearbyServiceBrowser", "invitePeer"]
+- !private ["CSo22MCNearbyServiceBrowser", "startBrowsingForPeers"]
+- !private ["CSo22MCNearbyServiceBrowser", "stopBrowsingForPeers"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "DISPATCH_TIME_NOW"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "Double"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "Int64"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "MCNearbyServiceAdvertiser"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "MCNearbyServiceBrowser"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "MCPeerID"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "MCSession"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "NSEC_PER_SEC"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "UIDevice"]
+- ["PSo30MCNearbyServiceBrowserDelegate", "advertiser"]
+- ["PSo30MCNearbyServiceBrowserDelegate", "browser"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "configuration"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "delegate"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "dispatch_after"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "dispatch_get_main_queue"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "dispatch_time"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "myPeerId"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "print"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "retryCount"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "serviceAdvertiser"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "serviceBrowser"]
+- ["PSo30MCNearbyServiceBrowserDelegate", "session"]
+- ["PSo30MCNearbyServiceBrowserDelegate", ""]
+- !private ["CSo8MCPeerID", "displayName"]
+- ["CSo8MCPeerID", "init"]
+- !private ["CSo9MCSession", "connectedPeers"]
+- !private ["CSo9MCSession", "delegate"]
+- !private ["CSo9MCSession", "init"]
+- !private ["PSo17MCSessionDelegate", "DISPATCH_TIME_NOW"]
+- !private ["PSo17MCSessionDelegate", "Double"]
+- !private ["PSo17MCSessionDelegate", "Int64"]
+- !private ["PSo17MCSessionDelegate", "MCNearbyServiceAdvertiser"]
+- !private ["PSo17MCSessionDelegate", "MCNearbyServiceBrowser"]
+- !private ["PSo17MCSessionDelegate", "MCPeerID"]
+- !private ["PSo17MCSessionDelegate", "MCSession"]
+- !private ["PSo17MCSessionDelegate", "NSEC_PER_SEC"]
+- !private ["PSo17MCSessionDelegate", "UIDevice"]
+- ["PSo17MCSessionDelegate", "advertiser"]
+- ["PSo17MCSessionDelegate", "browser"]
+- !private ["PSo17MCSessionDelegate", "configuration"]
+- !private ["PSo17MCSessionDelegate", "delegate"]
+- !private ["PSo17MCSessionDelegate", "dispatch_after"]
+- !private ["PSo17MCSessionDelegate", "dispatch_get_main_queue"]
+- !private ["PSo17MCSessionDelegate", "dispatch_time"]
+- !private ["PSo17MCSessionDelegate", "myPeerId"]
+- !private ["PSo17MCSessionDelegate", "print"]
+- !private ["PSo17MCSessionDelegate", "retryCount"]
+- !private ["PSo17MCSessionDelegate", "serviceAdvertiser"]
+- !private ["PSo17MCSessionDelegate", "serviceBrowser"]
+- ["PSo17MCSessionDelegate", "session"]
+- !private ["Ps10MirrorPath", "containsString"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "count"]
+- !private ["PSo8NSCoding", "containsString"]
+- !private ["PSo8NSCoding", "displayName"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "containsString"]
+- !private ["PSo9NSCopying", "displayName"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "containsString"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "DISPATCH_TIME_NOW"]
+- !private ["CSo8NSObject", "Double"]
+- ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "Int64"]
+- ["CSo8NSObject", "MCNearbyServiceAdvertiser"]
+- ["CSo8NSObject", "MCNearbyServiceBrowser"]
+- ["CSo8NSObject", "MCPeerID"]
+- ["CSo8NSObject", "MCSession"]
+- ["CSo8NSObject", "MCSessionState"]
+- ["CSo8NSObject", "NSData"]
+- !private ["CSo8NSObject", "NSEC_PER_SEC"]
+- ["CSo8NSObject", "NSError"]
+- ["CSo8NSObject", "NSInputStream"]
+- ["CSo8NSObject", "NSProgress"]
+- ["CSo8NSObject", "NSURL"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "TABCommunicatable"]
+- ["CSo8NSObject", "TABCommunicateConfiguration"]
+- ["CSo8NSObject", "TABCommunicateResult"]
+- ["CSo8NSObject", "TABCommunicateServiceManagerDelegate"]
+- !private ["CSo8NSObject", "UIDevice"]
+- ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "advertiser"]
+- ["CSo8NSObject", "browser"]
+- ["CSo8NSObject", "configuration"]
+- !private ["CSo8NSObject", "connectedPeers"]
+- !private ["CSo8NSObject", "containsString"]
+- !private ["CSo8NSObject", "currentDevice"]
+- ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "dispatch_after"]
+- !private ["CSo8NSObject", "dispatch_get_main_queue"]
+- !private ["CSo8NSObject", "dispatch_time"]
+- !private ["CSo8NSObject", "displayName"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "invitePeer"]
+- ["CSo8NSObject", "myPeerId"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "retryCount"]
+- ["CSo8NSObject", "sendCommunicatableObject"]
+- ["CSo8NSObject", "serviceAdvertiser"]
+- ["CSo8NSObject", "serviceBrowser"]
+- ["CSo8NSObject", "session"]
+- ["CSo8NSObject", "session.storage"]
+- !private ["CSo8NSObject", "startAdvertisingPeer"]
+- !private ["CSo8NSObject", "startBrowsingForPeers"]
+- !private ["CSo8NSObject", "stopAdvertisingPeer"]
+- !private ["CSo8NSObject", "stopBrowsingForPeers"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "DISPATCH_TIME_NOW"]
+- !private ["PSo16NSObjectProtocol", "Double"]
+- !private ["PSo16NSObjectProtocol", "Int64"]
+- !private ["PSo16NSObjectProtocol", "MCNearbyServiceAdvertiser"]
+- !private ["PSo16NSObjectProtocol", "MCNearbyServiceBrowser"]
+- !private ["PSo16NSObjectProtocol", "MCPeerID"]
+- !private ["PSo16NSObjectProtocol", "MCSession"]
+- !private ["PSo16NSObjectProtocol", "NSEC_PER_SEC"]
+- !private ["PSo16NSObjectProtocol", "UIDevice"]
+- ["PSo16NSObjectProtocol", "advertiser"]
+- ["PSo16NSObjectProtocol", "browser"]
+- !private ["PSo16NSObjectProtocol", "configuration"]
+- !private ["PSo16NSObjectProtocol", "connectedPeers"]
+- !private ["PSo16NSObjectProtocol", "containsString"]
+- !private ["PSo16NSObjectProtocol", "currentDevice"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "dispatch_after"]
+- !private ["PSo16NSObjectProtocol", "dispatch_get_main_queue"]
+- !private ["PSo16NSObjectProtocol", "dispatch_time"]
+- !private ["PSo16NSObjectProtocol", "displayName"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "invitePeer"]
+- !private ["PSo16NSObjectProtocol", "myPeerId"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "retryCount"]
+- !private ["PSo16NSObjectProtocol", "serviceAdvertiser"]
+- !private ["PSo16NSObjectProtocol", "serviceBrowser"]
+- ["PSo16NSObjectProtocol", "session"]
+- !private ["PSo16NSObjectProtocol", "startAdvertisingPeer"]
+- !private ["PSo16NSObjectProtocol", "startBrowsingForPeers"]
+- !private ["PSo16NSObjectProtocol", "stopAdvertisingPeer"]
+- !private ["PSo16NSObjectProtocol", "stopBrowsingForPeers"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "containsString"]
+- !private ["PSo14NSSecureCoding", "displayName"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "containsString"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps22RandomAccessCollection", "count"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
+- !private ["Ps16RawRepresentable", "Required"]
+- !private ["Ps8Sequence", "count"]
+- !private ["Ps13SignedInteger", "init"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Vs12StaticString", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["SS", "containsString"]
+- !private ["SS", "init"]
+- !private ["P14TABCommunicate17TABCommunicatable", "dataRepresentation"]
+- !private ["V14TABCommunicate27TABCommunicateConfiguration", "numberOfRetryAttempts"]
+- !private ["V14TABCommunicate27TABCommunicateConfiguration", "retryDelay"]
+- !private ["V14TABCommunicate27TABCommunicateConfiguration", "serviceName"]
+- !private ["O14TABCommunicate20TABCommunicateResult", "Failure"]
+- !private ["O14TABCommunicate20TABCommunicateResult", "Success"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "AnyObject"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "Bool"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "DISPATCH_TIME_NOW"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "Double"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "Int"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "Int64"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "MCNearbyServiceAdvertiser"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "MCNearbyServiceBrowser"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "MCPeerID"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "MCSession"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "MCSessionState"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "NSData"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "NSEC_PER_SEC"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "NSError"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "NSInputStream"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "NSProgress"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "NSURL"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "String"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "TABCommunicatable"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "TABCommunicateConfiguration"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "TABCommunicateResult"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "TABCommunicateServiceManagerDelegate"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "UIDevice"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "Void"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "advertiser"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "browser"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "configuration"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "deinit"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "delegate"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "dispatch_after"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "dispatch_get_main_queue"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "dispatch_time"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "init"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "myPeerId"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "print"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "retryCount"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "sendCommunicatableObject"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "serviceAdvertiser"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "serviceBrowser"]
+- ["C14TABCommunicate28TABCommunicateServiceManager", "session"]
+- !private ["C14TABCommunicate28TABCommunicateServiceManager", "session.storage"]
+- ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", "Int"]
+- ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", "NSData"]
+- ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", "communicatableDataRecieved"]
+- ["P14TABCommunicate36TABCommunicateServiceManagerDelegate", "newNumberOfPeers"]
+- !private ["Ps16TextOutputStream", "containsString"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "containsString"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["CSo8UIDevice", "currentDevice"]
+- !private ["Ps14_ArrayProtocol", "count"]
+- !private ["Ps23_BidirectionalIndexable", "count"]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "containsString"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "containsString"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "containsString"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "containsString"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "containsString"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "containsString"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "DISPATCH_TIME_NOW"]
+- !private ["Ps9_Hashable", "Double"]
+- !private ["Ps9_Hashable", "Int64"]
+- !private ["Ps9_Hashable", "MCNearbyServiceAdvertiser"]
+- !private ["Ps9_Hashable", "MCNearbyServiceBrowser"]
+- !private ["Ps9_Hashable", "MCPeerID"]
+- !private ["Ps9_Hashable", "MCSession"]
+- !private ["Ps9_Hashable", "NSEC_PER_SEC"]
+- !private ["Ps9_Hashable", "Required"]
+- !private ["Ps9_Hashable", "UIDevice"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "advertiser"]
+- ["Ps9_Hashable", "browser"]
+- !private ["Ps9_Hashable", "configuration"]
+- !private ["Ps9_Hashable", "connectedPeers"]
+- !private ["Ps9_Hashable", "containsString"]
+- !private ["Ps9_Hashable", "currentDevice"]
+- !private ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "dispatch_after"]
+- !private ["Ps9_Hashable", "dispatch_get_main_queue"]
+- !private ["Ps9_Hashable", "dispatch_time"]
+- !private ["Ps9_Hashable", "displayName"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "invitePeer"]
+- !private ["Ps9_Hashable", "myPeerId"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "retryCount"]
+- !private ["Ps9_Hashable", "serviceAdvertiser"]
+- !private ["Ps9_Hashable", "serviceBrowser"]
+- ["Ps9_Hashable", "session"]
+- !private ["Ps9_Hashable", "startAdvertisingPeer"]
+- !private ["Ps9_Hashable", "startBrowsingForPeers"]
+- !private ["Ps9_Hashable", "stopAdvertisingPeer"]
+- !private ["Ps9_Hashable", "stopBrowsingForPeers"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps10_Indexable", "count"]
+- !private ["Ps14_IndexableBase", "count"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["Ps17_MutableIndexable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "containsString"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps22_RandomAccessIndexable", "count"]
+- !private ["Ps26_RangeReplaceableIndexable", "count"]
+- !private ["Ps14_SignedInteger", "init"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps19BinaryFloatingPoint"
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Ps13FloatingPoint"
+- "Ps8Hashable"
+- !private "Vs5Int64"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25LosslessStringConvertible"
+- !private "OSC22MCEncryptionPreference"
+- !private "CSo25MCNearbyServiceAdvertiser"
+- "PSo33MCNearbyServiceAdvertiserDelegate"
+- !private "CSo22MCNearbyServiceBrowser"
+- "PSo30MCNearbyServiceBrowserDelegate"
+- "CSo8MCPeerID"
+- !private "CSo9MCSession"
+- "PSo17MCSessionDelegate"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps16RawRepresentable"
+- !private "Ps8Sequence"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Vs12StaticString"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "P14TABCommunicate17TABCommunicatable"
+- !private "V14TABCommunicate27TABCommunicateConfiguration"
+- !private "O14TABCommunicate20TABCommunicateResult"
+- "C14TABCommunicate28TABCommunicateServiceManager"
+- "P14TABCommunicate36TABCommunicateServiceManagerDelegate"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "CSo8UIDevice"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps17_MutableIndexable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Pods/Target Support Files/TABCommunicate/TABCommunicate-umbrella.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Pods.build/Debug-iphoneos/TABCommunicate.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MultipeerConnectivity.apinotesc"
+interface-hash: "8b00dbefe29973f1358a1635a158c04f"
