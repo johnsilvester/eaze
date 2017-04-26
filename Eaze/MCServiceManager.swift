@@ -142,17 +142,12 @@ extension MCServiceManager : MCSessionDelegate {
         self.delegate?.connectedDevicesChanged(manager: self, connectedDevices:
             session.connectedPeers.map{$0.displayName})
         
-        self.delegate?.isConnected(manager: self, val: state.rawValue)
         
-    
-       
-        //check if peers are greater than 0
-        
-//        if session.connectedPeers.count > 0 {
-//            self.delegate?.isConnected(manager: self, val: 2)
-//        }else{
-//            self.delegate?.isConnected(manager: self, val: 0)
-//        }
+        if session.connectedPeers.count > 0 {
+            self.delegate?.isConnected(manager: self, val: 2)
+        }else{
+            self.delegate?.isConnected(manager: self, val: 0)
+        }
         
     }
     

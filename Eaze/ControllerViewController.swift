@@ -27,6 +27,8 @@ class ControllerViewController: UIViewController,CLLocationManagerDelegate {
     
     var currentLocation = (CLLocationCoordinate2D.init(latitude: 0, longitude: 0))
     
+    var otherPhonesLocation = (CLLocationCoordinate2D.init(latitude: 0, longitude: 0))
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +75,7 @@ class ControllerViewController: UIViewController,CLLocationManagerDelegate {
 
     @IBAction func getCurrentLocation(_ sender: Any) {
         
-        let currentLocationString = "CL,(\(currentLocation.latitude),\(currentLocation.longitude))"
+        let currentLocationString = "CL,\(currentLocation.latitude),\(currentLocation.longitude)"
         
         print(currentLocationString)
         
@@ -121,8 +123,18 @@ extension ControllerViewController : MCServiceManagerDelegate {
                 let stringValues = command.components(separatedBy: ",")
                 
                 
+                self.otherPhonesLocation = CLLocationCoordinate2DMake(CLLocationDegrees(stringValues[1].floatValue), CLLocationDegrees(stringValues[2].floatValue)) //cl coordinates
                 
-                print(stringValues[1])
+                
+                
+                if self.otherPhonesLocation.longitude != 0{ //there ARE location coordinates
+                    //add into map
+                    let annotation = MKPointAnnotation()
+                    annotation.coordinate = self.otherPhonesLocation
+                    self.mapView.addAnnotation(annotation)
+                }
+       
+                
             
             case _ where command.hasPrefix("FM"):
               break
