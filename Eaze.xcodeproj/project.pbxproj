@@ -10,6 +10,7 @@
 		521077E91EAA665900176130 /* MCTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521077E81EAA665900176130 /* MCTestViewController.swift */; };
 		521077EF1EAA682600176130 /* ColorServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521077EE1EAA682600176130 /* ColorServiceManager.swift */; };
 		52208E591EAFB29500B3E9CE /* ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52208E581EAFB29500B3E9CE /* ControllerViewController.swift */; };
+		52208E5B1EAFB35F00B3E9CE /* MCServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52208E5A1EAFB35F00B3E9CE /* MCServiceManager.swift */; };
 		52F838991E9FD68800F2DE77 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F838981E9FD68800F2DE77 /* ConnectionManager.swift */; };
 		A21183CEEA430A90AE0E2ED4 /* Pods_Eaze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317C2466AB74852CB9372668 /* Pods_Eaze.framework */; };
 		FA0045E41DEDD1B900AD93BB /* SwiftWebVC.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA0045BB1DEDD1B900AD93BB /* SwiftWebVC.strings */; };
@@ -106,8 +107,9 @@
 		317C2466AB74852CB9372668 /* Pods_Eaze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eaze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		521077E81EAA665900176130 /* MCTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTestViewController.swift; sourceTree = "<group>"; };
 		521077EE1EAA682600176130 /* ColorServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorServiceManager.swift; sourceTree = "<group>"; };
-		52208E581EAFB29500B3E9CE /* ControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerViewController.swift; sourceTree = "<group>"; };
-		52F838981E9FD68800F2DE77 /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		52208E581EAFB29500B3E9CE /* ControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControllerViewController.swift; path = ../ControllerViewController.swift; sourceTree = "<group>"; };
+		52208E5A1EAFB35F00B3E9CE /* MCServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MCServiceManager.swift; path = ../MCServiceManager.swift; sourceTree = "<group>"; };
+		52F838981E9FD68800F2DE77 /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectionManager.swift; path = ../Data/ConnectionManager.swift; sourceTree = "<group>"; };
 		E14C05A4962DC2AFA39E168D /* Pods-Eaze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze/Pods-Eaze.release.xcconfig"; sourceTree = "<group>"; };
 		FA0045BC1DEDD1B900AD93BB /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = SwiftWebVC.strings; sourceTree = "<group>"; };
 		FA0045BF1DEDD1B900AD93BB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = SwiftWebVC.strings; sourceTree = "<group>"; };
@@ -227,6 +229,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52208E5C1EAFC23C00B3E9CE /* Depricated */ = {
+			isa = PBXGroup;
+			children = (
+				521077E81EAA665900176130 /* MCTestViewController.swift */,
+				521077EE1EAA682600176130 /* ColorServiceManager.swift */,
+			);
+			name = Depricated;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		7ABC4509F489B92F60C63C17 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,9 +392,6 @@
 			isa = PBXGroup;
 			children = (
 				FA2FDA811D114BAB0003327A /* AppDelegate.swift */,
-				521077E81EAA665900176130 /* MCTestViewController.swift */,
-				52208E581EAFB29500B3E9CE /* ControllerViewController.swift */,
-				521077EE1EAA682600176130 /* ColorServiceManager.swift */,
 				FA2FDA7D1D114BAB0003327A /* Data */,
 				FA2FDA7A1D114BAB0003327A /* Serial */,
 				FA2FDA711D114BAB0003327A /* Extra */,
@@ -448,6 +457,7 @@
 				FA2FDA2B1D114BAB0003327A /* Tuning Snapshots */,
 				FA2FDA201D114BAB0003327A /* Configuration */,
 				FA2FDA1C1D114BAB0003327A /* CLI */,
+				52208E5C1EAFC23C00B3E9CE /* Depricated */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -599,6 +609,7 @@
 		FA2FDA711D114BAB0003327A /* Extra */ = {
 			isa = PBXGroup;
 			children = (
+				52F838981E9FD68800F2DE77 /* ConnectionManager.swift */,
 				FA2FDA721D114BAB0003327A /* AppLog.swift */,
 				FA2FDA791D114BAB0003327A /* Version.swift */,
 				FA2FDA731D114BAB0003327A /* BluetoothDevice.swift */,
@@ -624,10 +635,11 @@
 		FA2FDA7D1D114BAB0003327A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				52208E581EAFB29500B3E9CE /* ControllerViewController.swift */,
+				52208E5A1EAFB35F00B3E9CE /* MCServiceManager.swift */,
 				FA2FDA801D114BAB0003327A /* Globals.swift */,
 				FA2FDA7F1D114BAB0003327A /* DataStorage.swift */,
 				FA2FDA7E1D114BAB0003327A /* Constants.swift */,
-				52F838981E9FD68800F2DE77 /* ConnectionManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -844,6 +856,7 @@
 				FA2FDA891D114BAB0003327A /* GlassLabel.swift in Sources */,
 				FA2FDACC1D114BAB0003327A /* MSPInterpreter.swift in Sources */,
 				FA2FDA8C1D114BAB0003327A /* SelectionPopover.swift in Sources */,
+				52208E5B1EAFB35F00B3E9CE /* MCServiceManager.swift in Sources */,
 				FA2FDAB41D114BAB0003327A /* MRMethodCopier.m in Sources */,
 				FA2FDA9D1D114BAB0003327A /* ReceiverConfigViewController.swift in Sources */,
 				FA2FDAB01D114BAB0003327A /* MRProgressOverlayView.m in Sources */,

@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.51 clang-802.0.41)"
 options: "aae5e69bfc2fe606ad1629c90eff4050"
-build_time: [546453398, 67431000]
+build_time: [546549391, 257962000]
 inputs:
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/WebView/UIActivities/Chrome/SwiftWebVCActivityChrome.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/GUI/Tabs/TuningViewController.swift": [545365319, 0]
@@ -31,7 +31,7 @@ inputs:
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/GUI/Components/MessageView.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/GUI/Tabs/HomeViewController.swift": [546105783, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Extra/Version.swift": [545365319, 0]
-  "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/MCTestViewController.swift": [546453397, 0]
+  "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/MCTestViewController.swift": [546457199, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/GUI/Components/DecimalPadPopover.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/GUI/Components/AdjustableTextField.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/WebView/SwiftModalWebVC.swift": [545365319, 0]
@@ -40,11 +40,12 @@ inputs:
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/GUI/Components/GlassLabel.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Serial/MSPInterpreter.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/GUI/Components/SelectionPopover.swift": [545365319, 0]
+  "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/MCServiceManager.swift": [546547771, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/GUI/Tabs/Configuration/ReceiverConfigViewController.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/GUI/Components/ModeRangeTableViewCell.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Serial/BluetoothSerial.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/GUI/Tabs/Configuration/MotorConfigViewController.swift": [545365319, 0]
-  "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/ControllerViewController.swift": [9223372036854775807, 0]
+  "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/ControllerViewController.swift": [546549383, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Extra/ModeRange.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Extra/SerialPortConfig.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/AppDelegate.swift": [546105336, 0]

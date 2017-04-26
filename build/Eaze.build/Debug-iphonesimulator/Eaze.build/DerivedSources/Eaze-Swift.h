@@ -138,6 +138,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 @import CoreBluetooth;
 @import MultipeerConnectivity;
+@import CoreLocation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -429,13 +430,34 @@ SWIFT_CLASS("_TtC4Eaze21ConnectViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class MKMapView;
+@class CLLocationManager;
+@class MCServiceManager;
+@class CLLocation;
 
 SWIFT_CLASS("_TtC4Eaze24ControllerViewController")
-@interface ControllerViewController : UIViewController
+@interface ControllerViewController : UIViewController <CLLocationManagerDelegate>
+@property (nonatomic, strong) IBOutlet MKMapView * _Null_unspecified mapView;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified statusLabel;
+@property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
+@property (nonatomic, readonly, strong) MCServiceManager * _Nonnull peerService;
+@property (nonatomic) CLLocationCoordinate2D currentLocation;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)setupCoreLocation;
+- (void)loadMap;
+- (IBAction)getCurrentLocation:(id _Nonnull)sender;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
+- (IBAction)browse:(id _Nonnull)sender;
+- (IBAction)advertise:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface ControllerViewController (SWIFT_EXTENSION(Eaze))
+- (void)connectedDevicesChangedWithManager:(MCServiceManager * _Nonnull)manager connectedDevices:(NSArray<NSString *> * _Nonnull)connectedDevices;
+- (void)commandChangedWithManager:(MCServiceManager * _Nonnull)manager command:(NSString * _Nonnull)command;
+- (void)isConnectedWithManager:(MCServiceManager * _Nonnull)manager val:(NSInteger)val;
 @end
 
 
@@ -577,9 +599,42 @@ SWIFT_CLASS("_TtC4Eaze18HomeViewController")
 @end
 
 
+SWIFT_CLASS("_TtC4Eaze16MCServiceManager")
+@interface MCServiceManager : NSObject
+@property (nonatomic, strong) MCSession * _Nonnull session;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)browse;
+- (void)advertise;
+- (void)endAdvertise;
+- (void)sendWithCommand:(NSString * _Nonnull)command;
+@end
+
+
+@interface MCServiceManager (SWIFT_EXTENSION(Eaze)) <MCNearbyServiceAdvertiserDelegate>
+- (void)advertiser:(MCNearbyServiceAdvertiser * _Nonnull)advertiser didNotStartAdvertisingPeer:(NSError * _Nonnull)error;
+- (void)advertiser:(MCNearbyServiceAdvertiser * _Nonnull)advertiser didReceiveInvitationFromPeer:(MCPeerID * _Nonnull)peerID withContext:(NSData * _Nullable)context invitationHandler:(void (^ _Nonnull)(BOOL, MCSession * _Nullable))invitationHandler;
+@end
+
+
+@interface MCServiceManager (SWIFT_EXTENSION(Eaze)) <MCNearbyServiceBrowserDelegate>
+- (void)browser:(MCNearbyServiceBrowser * _Nonnull)browser didNotStartBrowsingForPeers:(NSError * _Nonnull)error;
+- (void)browser:(MCNearbyServiceBrowser * _Nonnull)browser foundPeer:(MCPeerID * _Nonnull)peerID withDiscoveryInfo:(NSDictionary<NSString *, NSString *> * _Nullable)info;
+- (void)browser:(MCNearbyServiceBrowser * _Nonnull)browser lostPeer:(MCPeerID * _Nonnull)peerID;
+@end
+
+
+@interface MCServiceManager (SWIFT_EXTENSION(Eaze)) <MCSessionDelegate>
+- (void)session:(MCSession * _Nonnull)session peer:(MCPeerID * _Nonnull)peerID didChangeState:(MCSessionState)state;
+- (void)session:(MCSession * _Nonnull)session didReceiveData:(NSData * _Nonnull)data fromPeer:(MCPeerID * _Nonnull)peerID;
+- (void)session:(MCSession * _Nonnull)session didReceiveStream:(NSInputStream * _Nonnull)stream withName:(NSString * _Nonnull)streamName fromPeer:(MCPeerID * _Nonnull)peerID;
+- (void)session:(MCSession * _Nonnull)session didStartReceivingResourceWithName:(NSString * _Nonnull)resourceName fromPeer:(MCPeerID * _Nonnull)peerID withProgress:(NSProgress * _Nonnull)progress;
+- (void)session:(MCSession * _Nonnull)session didFinishReceivingResourceWithName:(NSString * _Nonnull)resourceName fromPeer:(MCPeerID * _Nonnull)peerID atURL:(NSURL * _Nonnull)localURL withError:(NSError * _Nullable)error;
+@end
+
+
 SWIFT_CLASS("_TtC4Eaze20MCTestViewController")
 @interface MCTestViewController : UIViewController
-@property (nonatomic, readonly, strong) ColorServiceManager * _Nonnull colorService;
+@property (nonatomic, readonly, strong) MCServiceManager * _Nonnull colorService;
 - (void)viewDidLoad;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified connectedLabel;
 - (IBAction)yellowTap:(id _Nonnull)sender;
@@ -591,9 +646,9 @@ SWIFT_CLASS("_TtC4Eaze20MCTestViewController")
 
 
 @interface MCTestViewController (SWIFT_EXTENSION(Eaze))
-- (void)connectedDevicesChangedWithManager:(ColorServiceManager * _Nonnull)manager connectedDevices:(NSArray<NSString *> * _Nonnull)connectedDevices;
-- (void)colorChangedWithManager:(ColorServiceManager * _Nonnull)manager colorString:(NSString * _Nonnull)colorString;
-- (void)isConnectedWithManager:(ColorServiceManager * _Nonnull)manager val:(NSInteger)val;
+- (void)connectedDevicesChangedWithManager:(MCServiceManager * _Nonnull)manager connectedDevices:(NSArray<NSString *> * _Nonnull)connectedDevices;
+- (void)commandChangedWithManager:(MCServiceManager * _Nonnull)manager command:(NSString * _Nonnull)command;
+- (void)isConnectedWithManager:(MCServiceManager * _Nonnull)manager val:(NSInteger)val;
 @end
 
 @class NSTimer;

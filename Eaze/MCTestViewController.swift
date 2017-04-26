@@ -9,7 +9,9 @@
 import UIKit
 
 class MCTestViewController: UIViewController {
-    let colorService = ColorServiceManager()
+    
+    let colorService = MCServiceManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         colorService.delegate = self
@@ -20,12 +22,12 @@ class MCTestViewController: UIViewController {
 
     @IBAction func yellowTap(_ sender: Any) {
         self.change(color: .yellow)
-        colorService.send(colorName: "yellow")
+        colorService.send(command: "yellow")
     }
   
     @IBAction func redTap(_ sender: Any) {
         self.change(color: .red)
-        colorService.send(colorName: "red")
+        colorService.send(command: "red")
     }
     
     func change(color : UIColor) {
@@ -36,43 +38,46 @@ class MCTestViewController: UIViewController {
     
     
 }
-extension MCTestViewController : ColorServiceManagerDelegate {
+extension MCTestViewController : MCServiceManagerDelegate {
     
-    func connectedDevicesChanged(manager: ColorServiceManager, connectedDevices: [String]) {
+    func connectedDevicesChanged(manager: MCServiceManager, connectedDevices: [String]) {
         OperationQueue.main.addOperation {
             //self.connectionsLabel.text = "Connections: \(connectedDevices)"
         }
     }
     
-    func colorChanged(manager: ColorServiceManager, colorString: String) {
+    func commandChanged(manager: MCServiceManager, command: String) {
         OperationQueue.main.addOperation {
-            switch colorString {
-            case "red":
+            switch command {
+            case "CL":
                 self.change(color: .red)
-            case "yellow":
+            case "FM":
                 self.change(color: .yellow)
             default:
-                NSLog("%@", "Unknown color value received: \(colorString)")
+                NSLog("%@", "Unknown color value received: \(command)")
             }
         }
     }
     
-    func isConnected(manager: ColorServiceManager, val: Int) {
+    func isConnected(manager: MCServiceManager, val: Int) {
         
-        if val==1 {
+        
+        switch val {
+        case 1:
             self.connectedLabel.text = "Connecting"
             self.connectedLabel.textColor = UIColor.green
-        }
-        else if val == 2{
+        case 2:
             self.connectedLabel.text = "Connected"
             self.connectedLabel.textColor = UIColor.blue
-
-        }
-        
-        else{
+        case 0:
             self.connectedLabel.text = "Not Connected"
             self.connectedLabel.textColor = UIColor.red
+        
+        default:
+            self.connectedLabel.text = "Not Connected \(val)"
         }
+
+        
     }
     
 }

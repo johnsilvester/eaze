@@ -23,6 +23,7 @@ depends-top-level:
 - "Data"
 - "Error"
 - "InputStream"
+- "Int"
 - "MCNearbyServiceAdvertiser"
 - "MCNearbyServiceAdvertiserDelegate"
 - "MCNearbyServiceBrowser"
@@ -133,8 +134,8 @@ depends-member:
 - !private ["C4Eaze19ColorServiceManager", "serviceBrowser"]
 - ["C4Eaze19ColorServiceManager", "session"]
 - !private ["C4Eaze19ColorServiceManager", "session.storage"]
-- ["P4Eaze27ColorServiceManagerDelegate", "Bool"]
 - ["P4Eaze27ColorServiceManagerDelegate", "ColorServiceManager"]
+- ["P4Eaze27ColorServiceManagerDelegate", "Int"]
 - ["P4Eaze27ColorServiceManagerDelegate", "String"]
 - ["P4Eaze27ColorServiceManagerDelegate", "colorChanged"]
 - ["P4Eaze27ColorServiceManagerDelegate", "connectedDevicesChanged"]
@@ -232,6 +233,7 @@ depends-member:
 - !private ["Ps9Equatable", "invitePeer"]
 - !private ["Ps9Equatable", "myPeerId"]
 - ["Ps9Equatable", "name"]
+- !private ["Ps9Equatable", "rawValue"]
 - !private ["Ps9Equatable", "reliable"]
 - !private ["Ps9Equatable", "required"]
 - !private ["Ps9Equatable", "send"]
@@ -273,6 +275,7 @@ depends-member:
 - !private ["Ps8Hashable", "invitePeer"]
 - !private ["Ps8Hashable", "myPeerId"]
 - ["Ps8Hashable", "name"]
+- !private ["Ps8Hashable", "rawValue"]
 - !private ["Ps8Hashable", "reliable"]
 - !private ["Ps8Hashable", "required"]
 - !private ["Ps8Hashable", "send"]
@@ -353,6 +356,7 @@ depends-member:
 - ["PSo17MCSessionDelegate", "session"]
 - ["PSo17MCSessionDelegate", ""]
 - !private ["OSC21MCSessionSendDataMode", "reliable"]
+- !private ["OSC14MCSessionState", "rawValue"]
 - !private ["Ps10MirrorPath", "data"]
 - ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "count"]
@@ -440,6 +444,7 @@ depends-member:
 - !private ["Ps22RandomAccessCollection", "map"]
 - !private ["Ps26RangeReplaceableCollection", "count"]
 - !private ["Ps26RangeReplaceableCollection", "map"]
+- !private ["Ps16RawRepresentable", "rawValue"]
 - !private ["Ps16RawRepresentable", "reliable"]
 - !private ["Ps16RawRepresentable", "required"]
 - !private ["Ps16RawRepresentable", "utf8"]
@@ -492,6 +497,7 @@ depends-member:
 - !private ["Ps9_Hashable", "invitePeer"]
 - !private ["Ps9_Hashable", "myPeerId"]
 - ["Ps9_Hashable", "name"]
+- !private ["Ps9_Hashable", "rawValue"]
 - !private ["Ps9_Hashable", "reliable"]
 - !private ["Ps9_Hashable", "required"]
 - !private ["Ps9_Hashable", "send"]
@@ -551,6 +557,7 @@ depends-nominal:
 - !private "CSo9MCSession"
 - "PSo17MCSessionDelegate"
 - !private "OSC21MCSessionSendDataMode"
+- !private "OSC14MCSessionState"
 - "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
 - "PSo8NSCoding"
@@ -612,4 +619,8 @@ depends-external:
 - "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
 - "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-umbrella.h"
 - "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Modules/module.modulemap"
-interface-hash: "e2ea1e93e759574215c7331361dd72d7"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+interface-hash: "d8b5909a8160e84904c37f0918ac8b9f"
