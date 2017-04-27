@@ -1,0 +1,626 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ColorServiceManagerDelegate"
+- "ColorServiceManager"
+provides-nominal:
+- "P4Eaze27ColorServiceManagerDelegate"
+- "C4Eaze19ColorServiceManager"
+provides-member:
+- ["P4Eaze27ColorServiceManagerDelegate", ""]
+- ["C4Eaze19ColorServiceManager", ""]
+provides-dynamic-lookup:
+- "advertiser"
+- "browser"
+- "send"
+- "session"
+depends-top-level:
+- !private ">"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "ColorServiceManager"
+- "ColorServiceManagerDelegate"
+- "Data"
+- "Error"
+- "InputStream"
+- "Int"
+- "MCNearbyServiceAdvertiser"
+- "MCNearbyServiceAdvertiserDelegate"
+- "MCNearbyServiceBrowser"
+- "MCNearbyServiceBrowserDelegate"
+- "MCPeerID"
+- "MCSession"
+- "MCSessionDelegate"
+- "MCSessionState"
+- !private "NSLog"
+- "NSObject"
+- "Progress"
+- "String"
+- "StringLiteralType"
+- "UIDevice"
+- "URL"
+- "Void"
+depends-member:
+- !private ["Ps9AnyObject", "ColorServiceType"]
+- !private ["Ps9AnyObject", "MCNearbyServiceAdvertiser"]
+- !private ["Ps9AnyObject", "MCNearbyServiceBrowser"]
+- ["Ps9AnyObject", "MCPeerID"]
+- !private ["Ps9AnyObject", "MCSession"]
+- !private ["Ps9AnyObject", "NSLog"]
+- !private ["Ps9AnyObject", "String"]
+- ["Ps9AnyObject", "UIDevice"]
+- ["Ps9AnyObject", "advertiser"]
+- ["Ps9AnyObject", "browser"]
+- !private ["Ps9AnyObject", "connectedPeers"]
+- ["Ps9AnyObject", "current"]
+- !private ["Ps9AnyObject", "data"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "displayName"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "invitePeer"]
+- !private ["Ps9AnyObject", "myPeerId"]
+- ["Ps9AnyObject", "name"]
+- !private ["Ps9AnyObject", "send"]
+- !private ["Ps9AnyObject", "serviceAdvertiser"]
+- !private ["Ps9AnyObject", "serviceBrowser"]
+- ["Ps9AnyObject", "session"]
+- !private ["Ps9AnyObject", "startAdvertisingPeer"]
+- !private ["Ps9AnyObject", "startBrowsingForPeers"]
+- !private ["Ps9AnyObject", "stopAdvertisingPeer"]
+- !private ["Ps9AnyObject", "stopBrowsingForPeers"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "count"]
+- !private ["Sa", "map"]
+- !private ["Ps23BidirectionalCollection", "count"]
+- !private ["Ps23BidirectionalCollection", "map"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "ColorServiceType"]
+- !private ["Ps7CVarArg", "MCNearbyServiceAdvertiser"]
+- !private ["Ps7CVarArg", "MCNearbyServiceBrowser"]
+- ["Ps7CVarArg", "MCPeerID"]
+- !private ["Ps7CVarArg", "MCSession"]
+- !private ["Ps7CVarArg", "NSLog"]
+- !private ["Ps7CVarArg", "String"]
+- ["Ps7CVarArg", "UIDevice"]
+- ["Ps7CVarArg", "advertiser"]
+- ["Ps7CVarArg", "browser"]
+- !private ["Ps7CVarArg", "connectedPeers"]
+- !private ["Ps7CVarArg", "count"]
+- ["Ps7CVarArg", "current"]
+- !private ["Ps7CVarArg", "data"]
+- !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "displayName"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "invitePeer"]
+- !private ["Ps7CVarArg", "map"]
+- !private ["Ps7CVarArg", "myPeerId"]
+- ["Ps7CVarArg", "name"]
+- !private ["Ps7CVarArg", "send"]
+- !private ["Ps7CVarArg", "serviceAdvertiser"]
+- !private ["Ps7CVarArg", "serviceBrowser"]
+- ["Ps7CVarArg", "session"]
+- !private ["Ps7CVarArg", "startAdvertisingPeer"]
+- !private ["Ps7CVarArg", "startBrowsingForPeers"]
+- !private ["Ps7CVarArg", "stopAdvertisingPeer"]
+- !private ["Ps7CVarArg", "stopBrowsingForPeers"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "count"]
+- !private ["Ps10Collection", "map"]
+- ["C4Eaze19ColorServiceManager", "Bool"]
+- ["C4Eaze19ColorServiceManager", "ColorServiceManagerDelegate"]
+- !private ["C4Eaze19ColorServiceManager", "ColorServiceType"]
+- ["C4Eaze19ColorServiceManager", "Data"]
+- ["C4Eaze19ColorServiceManager", "Error"]
+- ["C4Eaze19ColorServiceManager", "InputStream"]
+- ["C4Eaze19ColorServiceManager", "MCNearbyServiceAdvertiser"]
+- ["C4Eaze19ColorServiceManager", "MCNearbyServiceBrowser"]
+- ["C4Eaze19ColorServiceManager", "MCPeerID"]
+- ["C4Eaze19ColorServiceManager", "MCSession"]
+- ["C4Eaze19ColorServiceManager", "MCSessionState"]
+- !private ["C4Eaze19ColorServiceManager", "NSLog"]
+- ["C4Eaze19ColorServiceManager", "Progress"]
+- ["C4Eaze19ColorServiceManager", "String"]
+- ["C4Eaze19ColorServiceManager", "UIDevice"]
+- ["C4Eaze19ColorServiceManager", "URL"]
+- ["C4Eaze19ColorServiceManager", "Void"]
+- ["C4Eaze19ColorServiceManager", "advertiser"]
+- ["C4Eaze19ColorServiceManager", "browser"]
+- ["C4Eaze19ColorServiceManager", "deinit"]
+- ["C4Eaze19ColorServiceManager", "delegate"]
+- ["C4Eaze19ColorServiceManager", "init"]
+- !private ["C4Eaze19ColorServiceManager", "myPeerId"]
+- ["C4Eaze19ColorServiceManager", "send"]
+- !private ["C4Eaze19ColorServiceManager", "serviceAdvertiser"]
+- !private ["C4Eaze19ColorServiceManager", "serviceBrowser"]
+- ["C4Eaze19ColorServiceManager", "session"]
+- !private ["C4Eaze19ColorServiceManager", "session.storage"]
+- ["P4Eaze27ColorServiceManagerDelegate", "ColorServiceManager"]
+- ["P4Eaze27ColorServiceManagerDelegate", "Int"]
+- ["P4Eaze27ColorServiceManagerDelegate", "String"]
+- ["P4Eaze27ColorServiceManagerDelegate", "colorChanged"]
+- ["P4Eaze27ColorServiceManagerDelegate", "connectedDevicesChanged"]
+- ["P4Eaze27ColorServiceManagerDelegate", "isConnected"]
+- !private ["Ps10Comparable", "data"]
+- ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "ColorServiceType"]
+- !private ["Ps28CustomDebugStringConvertible", "MCNearbyServiceAdvertiser"]
+- !private ["Ps28CustomDebugStringConvertible", "MCNearbyServiceBrowser"]
+- ["Ps28CustomDebugStringConvertible", "MCPeerID"]
+- !private ["Ps28CustomDebugStringConvertible", "MCSession"]
+- !private ["Ps28CustomDebugStringConvertible", "NSLog"]
+- !private ["Ps28CustomDebugStringConvertible", "String"]
+- ["Ps28CustomDebugStringConvertible", "UIDevice"]
+- ["Ps28CustomDebugStringConvertible", "advertiser"]
+- ["Ps28CustomDebugStringConvertible", "browser"]
+- !private ["Ps28CustomDebugStringConvertible", "connectedPeers"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- ["Ps28CustomDebugStringConvertible", "current"]
+- !private ["Ps28CustomDebugStringConvertible", "data"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "displayName"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "invitePeer"]
+- !private ["Ps28CustomDebugStringConvertible", "map"]
+- !private ["Ps28CustomDebugStringConvertible", "myPeerId"]
+- ["Ps28CustomDebugStringConvertible", "name"]
+- !private ["Ps28CustomDebugStringConvertible", "send"]
+- !private ["Ps28CustomDebugStringConvertible", "serviceAdvertiser"]
+- !private ["Ps28CustomDebugStringConvertible", "serviceBrowser"]
+- ["Ps28CustomDebugStringConvertible", "session"]
+- !private ["Ps28CustomDebugStringConvertible", "startAdvertisingPeer"]
+- !private ["Ps28CustomDebugStringConvertible", "startBrowsingForPeers"]
+- !private ["Ps28CustomDebugStringConvertible", "stopAdvertisingPeer"]
+- !private ["Ps28CustomDebugStringConvertible", "stopBrowsingForPeers"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "data"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "count"]
+- !private ["Ps17CustomReflectable", "data"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "map"]
+- !private ["Ps23CustomStringConvertible", "ColorServiceType"]
+- !private ["Ps23CustomStringConvertible", "MCNearbyServiceAdvertiser"]
+- !private ["Ps23CustomStringConvertible", "MCNearbyServiceBrowser"]
+- ["Ps23CustomStringConvertible", "MCPeerID"]
+- !private ["Ps23CustomStringConvertible", "MCSession"]
+- !private ["Ps23CustomStringConvertible", "NSLog"]
+- !private ["Ps23CustomStringConvertible", "String"]
+- ["Ps23CustomStringConvertible", "UIDevice"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "advertiser"]
+- ["Ps23CustomStringConvertible", "browser"]
+- !private ["Ps23CustomStringConvertible", "connectedPeers"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- ["Ps23CustomStringConvertible", "current"]
+- !private ["Ps23CustomStringConvertible", "data"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "displayName"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "invitePeer"]
+- !private ["Ps23CustomStringConvertible", "map"]
+- !private ["Ps23CustomStringConvertible", "myPeerId"]
+- ["Ps23CustomStringConvertible", "name"]
+- !private ["Ps23CustomStringConvertible", "send"]
+- !private ["Ps23CustomStringConvertible", "serviceAdvertiser"]
+- !private ["Ps23CustomStringConvertible", "serviceBrowser"]
+- ["Ps23CustomStringConvertible", "session"]
+- !private ["Ps23CustomStringConvertible", "startAdvertisingPeer"]
+- !private ["Ps23CustomStringConvertible", "startBrowsingForPeers"]
+- !private ["Ps23CustomStringConvertible", "stopAdvertisingPeer"]
+- !private ["Ps23CustomStringConvertible", "stopBrowsingForPeers"]
+- !private ["Ps23CustomStringConvertible", "utf8"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["VE10FoundationSS8Encoding", "utf8"]
+- !private ["Ps9Equatable", "ColorServiceType"]
+- !private ["Ps9Equatable", "MCNearbyServiceAdvertiser"]
+- !private ["Ps9Equatable", "MCNearbyServiceBrowser"]
+- ["Ps9Equatable", "MCPeerID"]
+- !private ["Ps9Equatable", "MCSession"]
+- !private ["Ps9Equatable", "NSLog"]
+- !private ["Ps9Equatable", "String"]
+- ["Ps9Equatable", "UIDevice"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "advertiser"]
+- ["Ps9Equatable", "browser"]
+- !private ["Ps9Equatable", "connectedPeers"]
+- ["Ps9Equatable", "current"]
+- !private ["Ps9Equatable", "data"]
+- !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "displayName"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "invitePeer"]
+- !private ["Ps9Equatable", "myPeerId"]
+- ["Ps9Equatable", "name"]
+- !private ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "reliable"]
+- !private ["Ps9Equatable", "required"]
+- !private ["Ps9Equatable", "send"]
+- !private ["Ps9Equatable", "serviceAdvertiser"]
+- !private ["Ps9Equatable", "serviceBrowser"]
+- ["Ps9Equatable", "session"]
+- !private ["Ps9Equatable", "startAdvertisingPeer"]
+- !private ["Ps9Equatable", "startBrowsingForPeers"]
+- !private ["Ps9Equatable", "stopAdvertisingPeer"]
+- !private ["Ps9Equatable", "stopBrowsingForPeers"]
+- !private ["Ps9Equatable", "utf8"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
+- !private ["Ps25ExpressibleByArrayLiteral", "map"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "data"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "data"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "data"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "ColorServiceType"]
+- !private ["Ps8Hashable", "MCNearbyServiceAdvertiser"]
+- !private ["Ps8Hashable", "MCNearbyServiceBrowser"]
+- ["Ps8Hashable", "MCPeerID"]
+- !private ["Ps8Hashable", "MCSession"]
+- !private ["Ps8Hashable", "NSLog"]
+- !private ["Ps8Hashable", "String"]
+- ["Ps8Hashable", "UIDevice"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "advertiser"]
+- ["Ps8Hashable", "browser"]
+- !private ["Ps8Hashable", "connectedPeers"]
+- ["Ps8Hashable", "current"]
+- !private ["Ps8Hashable", "data"]
+- !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "displayName"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "invitePeer"]
+- !private ["Ps8Hashable", "myPeerId"]
+- ["Ps8Hashable", "name"]
+- !private ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "reliable"]
+- !private ["Ps8Hashable", "required"]
+- !private ["Ps8Hashable", "send"]
+- !private ["Ps8Hashable", "serviceAdvertiser"]
+- !private ["Ps8Hashable", "serviceBrowser"]
+- ["Ps8Hashable", "session"]
+- !private ["Ps8Hashable", "startAdvertisingPeer"]
+- !private ["Ps8Hashable", "startBrowsingForPeers"]
+- !private ["Ps8Hashable", "stopAdvertisingPeer"]
+- !private ["Ps8Hashable", "stopBrowsingForPeers"]
+- !private ["Ps8Hashable", "utf8"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "data"]
+- ["Ps25LosslessStringConvertible", "init"]
+- !private ["OSC22MCEncryptionPreference", "required"]
+- !private ["CSo25MCNearbyServiceAdvertiser", "delegate"]
+- !private ["CSo25MCNearbyServiceAdvertiser", "init"]
+- !private ["CSo25MCNearbyServiceAdvertiser", "startAdvertisingPeer"]
+- !private ["CSo25MCNearbyServiceAdvertiser", "stopAdvertisingPeer"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "ColorServiceType"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "MCNearbyServiceAdvertiser"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "MCNearbyServiceBrowser"]
+- ["PSo33MCNearbyServiceAdvertiserDelegate", "MCPeerID"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "MCSession"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "NSLog"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "String"]
+- ["PSo33MCNearbyServiceAdvertiserDelegate", "UIDevice"]
+- ["PSo33MCNearbyServiceAdvertiserDelegate", "advertiser"]
+- ["PSo33MCNearbyServiceAdvertiserDelegate", "browser"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "delegate"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "myPeerId"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "serviceAdvertiser"]
+- !private ["PSo33MCNearbyServiceAdvertiserDelegate", "serviceBrowser"]
+- ["PSo33MCNearbyServiceAdvertiserDelegate", "session"]
+- ["PSo33MCNearbyServiceAdvertiserDelegate", ""]
+- !private ["CSo22MCNearbyServiceBrowser", "delegate"]
+- !private ["CSo22MCNearbyServiceBrowser", "init"]
+- !private ["CSo22MCNearbyServiceBrowser", "invitePeer"]
+- !private ["CSo22MCNearbyServiceBrowser", "startBrowsingForPeers"]
+- !private ["CSo22MCNearbyServiceBrowser", "stopBrowsingForPeers"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "ColorServiceType"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "MCNearbyServiceAdvertiser"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "MCNearbyServiceBrowser"]
+- ["PSo30MCNearbyServiceBrowserDelegate", "MCPeerID"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "MCSession"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "NSLog"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "String"]
+- ["PSo30MCNearbyServiceBrowserDelegate", "UIDevice"]
+- ["PSo30MCNearbyServiceBrowserDelegate", "advertiser"]
+- ["PSo30MCNearbyServiceBrowserDelegate", "browser"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "delegate"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "myPeerId"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "serviceAdvertiser"]
+- !private ["PSo30MCNearbyServiceBrowserDelegate", "serviceBrowser"]
+- ["PSo30MCNearbyServiceBrowserDelegate", "session"]
+- ["PSo30MCNearbyServiceBrowserDelegate", ""]
+- !private ["CSo8MCPeerID", "displayName"]
+- ["CSo8MCPeerID", "init"]
+- !private ["CSo9MCSession", "connectedPeers"]
+- !private ["CSo9MCSession", "delegate"]
+- !private ["CSo9MCSession", "init"]
+- !private ["CSo9MCSession", "send"]
+- !private ["PSo17MCSessionDelegate", "ColorServiceType"]
+- !private ["PSo17MCSessionDelegate", "MCNearbyServiceAdvertiser"]
+- !private ["PSo17MCSessionDelegate", "MCNearbyServiceBrowser"]
+- ["PSo17MCSessionDelegate", "MCPeerID"]
+- !private ["PSo17MCSessionDelegate", "MCSession"]
+- !private ["PSo17MCSessionDelegate", "NSLog"]
+- !private ["PSo17MCSessionDelegate", "String"]
+- ["PSo17MCSessionDelegate", "UIDevice"]
+- ["PSo17MCSessionDelegate", "advertiser"]
+- ["PSo17MCSessionDelegate", "browser"]
+- !private ["PSo17MCSessionDelegate", "delegate"]
+- !private ["PSo17MCSessionDelegate", "myPeerId"]
+- !private ["PSo17MCSessionDelegate", "serviceAdvertiser"]
+- !private ["PSo17MCSessionDelegate", "serviceBrowser"]
+- ["PSo17MCSessionDelegate", "session"]
+- ["PSo17MCSessionDelegate", ""]
+- !private ["OSC21MCSessionSendDataMode", "reliable"]
+- !private ["OSC14MCSessionState", "rawValue"]
+- !private ["Ps10MirrorPath", "data"]
+- ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "count"]
+- !private ["Ps17MutableCollection", "map"]
+- !private ["PSo8NSCoding", "data"]
+- !private ["PSo8NSCoding", "displayName"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "data"]
+- !private ["PSo9NSCopying", "displayName"]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "data"]
+- ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "ColorServiceManagerDelegate"]
+- ["CSo8NSObject", "ColorServiceType"]
+- ["CSo8NSObject", "Data"]
+- ["CSo8NSObject", "Error"]
+- ["CSo8NSObject", "InputStream"]
+- ["CSo8NSObject", "MCNearbyServiceAdvertiser"]
+- ["CSo8NSObject", "MCNearbyServiceBrowser"]
+- ["CSo8NSObject", "MCPeerID"]
+- ["CSo8NSObject", "MCSession"]
+- ["CSo8NSObject", "MCSessionState"]
+- !private ["CSo8NSObject", "NSLog"]
+- ["CSo8NSObject", "Progress"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIDevice"]
+- ["CSo8NSObject", "URL"]
+- ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "advertiser"]
+- ["CSo8NSObject", "browser"]
+- !private ["CSo8NSObject", "connectedPeers"]
+- ["CSo8NSObject", "current"]
+- !private ["CSo8NSObject", "data"]
+- ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "displayName"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "invitePeer"]
+- ["CSo8NSObject", "myPeerId"]
+- ["CSo8NSObject", "name"]
+- ["CSo8NSObject", "send"]
+- ["CSo8NSObject", "serviceAdvertiser"]
+- ["CSo8NSObject", "serviceBrowser"]
+- ["CSo8NSObject", "session"]
+- ["CSo8NSObject", "session.storage"]
+- !private ["CSo8NSObject", "startAdvertisingPeer"]
+- !private ["CSo8NSObject", "startBrowsingForPeers"]
+- !private ["CSo8NSObject", "stopAdvertisingPeer"]
+- !private ["CSo8NSObject", "stopBrowsingForPeers"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "ColorServiceType"]
+- !private ["PSo16NSObjectProtocol", "MCNearbyServiceAdvertiser"]
+- !private ["PSo16NSObjectProtocol", "MCNearbyServiceBrowser"]
+- ["PSo16NSObjectProtocol", "MCPeerID"]
+- !private ["PSo16NSObjectProtocol", "MCSession"]
+- !private ["PSo16NSObjectProtocol", "NSLog"]
+- !private ["PSo16NSObjectProtocol", "String"]
+- ["PSo16NSObjectProtocol", "UIDevice"]
+- ["PSo16NSObjectProtocol", "advertiser"]
+- ["PSo16NSObjectProtocol", "browser"]
+- !private ["PSo16NSObjectProtocol", "connectedPeers"]
+- ["PSo16NSObjectProtocol", "current"]
+- !private ["PSo16NSObjectProtocol", "data"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "displayName"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "invitePeer"]
+- !private ["PSo16NSObjectProtocol", "myPeerId"]
+- ["PSo16NSObjectProtocol", "name"]
+- !private ["PSo16NSObjectProtocol", "send"]
+- !private ["PSo16NSObjectProtocol", "serviceAdvertiser"]
+- !private ["PSo16NSObjectProtocol", "serviceBrowser"]
+- ["PSo16NSObjectProtocol", "session"]
+- !private ["PSo16NSObjectProtocol", "startAdvertisingPeer"]
+- !private ["PSo16NSObjectProtocol", "startBrowsingForPeers"]
+- !private ["PSo16NSObjectProtocol", "stopAdvertisingPeer"]
+- !private ["PSo16NSObjectProtocol", "stopBrowsingForPeers"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "data"]
+- !private ["PSo14NSSecureCoding", "displayName"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "data"]
+- ["CSo8NSString", "init"]
+- !private ["Ps22RandomAccessCollection", "count"]
+- !private ["Ps22RandomAccessCollection", "map"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
+- !private ["Ps26RangeReplaceableCollection", "map"]
+- !private ["Ps16RawRepresentable", "rawValue"]
+- !private ["Ps16RawRepresentable", "reliable"]
+- !private ["Ps16RawRepresentable", "required"]
+- !private ["Ps16RawRepresentable", "utf8"]
+- !private ["Ps8Sequence", "count"]
+- !private ["Ps8Sequence", "map"]
+- !private ["SS", "data"]
+- ["SS", "init"]
+- !private ["Ps16TextOutputStream", "data"]
+- ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "data"]
+- ["Ps20TextOutputStreamable", "init"]
+- ["CSo8UIDevice", "current"]
+- ["CSo8UIDevice", "name"]
+- !private ["Ps14_ArrayProtocol", "count"]
+- !private ["Ps14_ArrayProtocol", "map"]
+- !private ["Ps23_BidirectionalIndexable", "count"]
+- !private ["Ps23_BidirectionalIndexable", "map"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps24_DestructorSafeContainer", "map"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "data"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "data"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "data"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "data"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "data"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "data"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "ColorServiceType"]
+- !private ["Ps9_Hashable", "MCNearbyServiceAdvertiser"]
+- !private ["Ps9_Hashable", "MCNearbyServiceBrowser"]
+- ["Ps9_Hashable", "MCPeerID"]
+- !private ["Ps9_Hashable", "MCSession"]
+- !private ["Ps9_Hashable", "NSLog"]
+- !private ["Ps9_Hashable", "String"]
+- ["Ps9_Hashable", "UIDevice"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "advertiser"]
+- ["Ps9_Hashable", "browser"]
+- !private ["Ps9_Hashable", "connectedPeers"]
+- ["Ps9_Hashable", "current"]
+- !private ["Ps9_Hashable", "data"]
+- !private ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "displayName"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "invitePeer"]
+- !private ["Ps9_Hashable", "myPeerId"]
+- ["Ps9_Hashable", "name"]
+- !private ["Ps9_Hashable", "rawValue"]
+- !private ["Ps9_Hashable", "reliable"]
+- !private ["Ps9_Hashable", "required"]
+- !private ["Ps9_Hashable", "send"]
+- !private ["Ps9_Hashable", "serviceAdvertiser"]
+- !private ["Ps9_Hashable", "serviceBrowser"]
+- ["Ps9_Hashable", "session"]
+- !private ["Ps9_Hashable", "startAdvertisingPeer"]
+- !private ["Ps9_Hashable", "startBrowsingForPeers"]
+- !private ["Ps9_Hashable", "stopAdvertisingPeer"]
+- !private ["Ps9_Hashable", "stopBrowsingForPeers"]
+- !private ["Ps9_Hashable", "utf8"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps10_Indexable", "count"]
+- !private ["Ps10_Indexable", "map"]
+- !private ["Ps14_IndexableBase", "count"]
+- !private ["Ps14_IndexableBase", "map"]
+- !private ["Ps17_MutableIndexable", "count"]
+- !private ["Ps17_MutableIndexable", "map"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "data"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "map"]
+- !private ["Ps22_RandomAccessIndexable", "count"]
+- !private ["Ps22_RandomAccessIndexable", "map"]
+- !private ["Ps26_RangeReplaceableIndexable", "count"]
+- !private ["Ps26_RangeReplaceableIndexable", "map"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Sb"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- "C4Eaze19ColorServiceManager"
+- "P4Eaze27ColorServiceManagerDelegate"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "VE10FoundationSS8Encoding"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "Ps25LosslessStringConvertible"
+- !private "OSC22MCEncryptionPreference"
+- !private "CSo25MCNearbyServiceAdvertiser"
+- "PSo33MCNearbyServiceAdvertiserDelegate"
+- !private "CSo22MCNearbyServiceBrowser"
+- "PSo30MCNearbyServiceBrowserDelegate"
+- "CSo8MCPeerID"
+- !private "CSo9MCSession"
+- "PSo17MCSessionDelegate"
+- !private "OSC21MCSessionSendDataMode"
+- !private "OSC14MCSessionState"
+- "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps16RawRepresentable"
+- !private "Ps8Sequence"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "CSo8UIDevice"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
+- "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreBluetooth.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MapKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MultipeerConnectivity.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Modules/PeerKit.swiftmodule/arm.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-umbrella.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Supporting_Files/Eaze-Bridging-Header.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/ProgressView/Components/MRProgressOverlayView.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Modules/module.modulemap"
+interface-hash: "d8b5909a8160e84904c37f0918ac8b9f"

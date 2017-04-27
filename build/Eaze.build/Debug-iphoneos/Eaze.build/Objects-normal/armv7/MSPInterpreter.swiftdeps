@@ -1,0 +1,1307 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MSPUpdateSubscriber"
+- "MSP_API_VERSION"
+- "MSP_FC_VARIANT"
+- "MSP_FC_VERSION"
+- "MSP_BOARD_INFO"
+- "MSP_BUILD_INFO"
+- "MSP_MODE_RANGE"
+- "MSP_SET_MODE_RANGE"
+- "MSP_FEATURE"
+- "MSP_SET_FEATURE"
+- "MSP_BOARD_ALIGNMENT"
+- "MSP_SET_BOARD_ALIGNMENT"
+- "MSP_MIXER"
+- "MSP_SET_MIXER"
+- "MSP_RX_CONFIG"
+- "MSP_SET_RX_CONFIG"
+- "MSP_CF_SERIAL_CONFIG"
+- "MSP_SET_CF_SERIAL_CONFIG"
+- "MSP_PID_CONTROLLER"
+- "MSP_SET_PID_CONTROLLER"
+- "MSP_ARMING_CONFIG"
+- "MSP_SET_ARMING_CONFIG"
+- "MSP_RX_MAP"
+- "MSP_SET_RX_MAP"
+- "MSP_BF_CONFIG"
+- "MSP_SET_BF_CONFIG"
+- "MSP_SET_REBOOT"
+- "MSP_LOOP_TIME"
+- "MSP_SET_LOOP_TIME"
+- "MSP_STATUS"
+- "MSP_RAW_IMU"
+- "MSP_RC"
+- "MSP_ATTITUDE"
+- "MSP_ANALOG"
+- "MSP_RC_TUNING"
+- "MSP_PID"
+- "MSP_MISC"
+- "MSP_BOXNAMES"
+- "MSP_PIDNAMES"
+- "MSP_BOXIDS"
+- "MSP_SET_PID"
+- "MSP_SET_RC_TUNING"
+- "MSP_ACC_CALIBRATION"
+- "MSP_MAG_CALIBRATION"
+- "MSP_SET_MISC"
+- "MSP_RESET_CONF"
+- "MSP_SELECT_SETTING"
+- "MSP_SET_ACC_TRIM"
+- "MSP_ACC_TRIM"
+- "MSP_EEPROM_WRITE"
+- "MSPInterpreter"
+provides-nominal:
+- "P4Eaze19MSPUpdateSubscriber"
+- "C4Eaze14MSPInterpreter"
+provides-member:
+- ["P4Eaze19MSPUpdateSubscriber", ""]
+- ["C4Eaze14MSPInterpreter", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "&"
+- !private "&&"
+- !private "*"
+- !private "+"
+- !private "++"
+- !private "+="
+- !private "-"
+- !private "..."
+- !private "..<"
+- !private "/"
+- !private "<"
+- !private "<<"
+- !private "=="
+- !private "==="
+- !private ">"
+- !private ">="
+- !private ">>"
+- !private "??"
+- "AnyObject"
+- !private "Array"
+- "AssignmentPrecedence"
+- !private "Baudrate"
+- "BluetoothSerialDelegate"
+- !private "Bool"
+- "CastingPrecedence"
+- "Data"
+- !private "Double"
+- "Int"
+- !private "Int16"
+- "MSPInterpreter"
+- "MSPUpdateSubscriber"
+- "MSP_ACC_CALIBRATION"
+- "MSP_ACC_TRIM"
+- "MSP_ANALOG"
+- "MSP_API_VERSION"
+- "MSP_ARMING_CONFIG"
+- "MSP_ATTITUDE"
+- "MSP_BF_CONFIG"
+- "MSP_BOARD_ALIGNMENT"
+- "MSP_BOARD_INFO"
+- "MSP_BOXIDS"
+- "MSP_BOXNAMES"
+- "MSP_BUILD_INFO"
+- "MSP_CF_SERIAL_CONFIG"
+- "MSP_EEPROM_WRITE"
+- "MSP_FC_VARIANT"
+- "MSP_FC_VERSION"
+- "MSP_FEATURE"
+- "MSP_LOOP_TIME"
+- "MSP_MAG_CALIBRATION"
+- "MSP_MISC"
+- "MSP_MIXER"
+- "MSP_MODE_RANGE"
+- "MSP_PID"
+- "MSP_PIDNAMES"
+- "MSP_PID_CONTROLLER"
+- "MSP_RAW_IMU"
+- "MSP_RC"
+- "MSP_RC_TUNING"
+- "MSP_RESET_CONF"
+- "MSP_RX_CONFIG"
+- "MSP_RX_MAP"
+- "MSP_SELECT_SETTING"
+- "MSP_SET_ACC_TRIM"
+- "MSP_SET_ARMING_CONFIG"
+- "MSP_SET_BF_CONFIG"
+- "MSP_SET_BOARD_ALIGNMENT"
+- "MSP_SET_CF_SERIAL_CONFIG"
+- "MSP_SET_FEATURE"
+- "MSP_SET_LOOP_TIME"
+- "MSP_SET_MISC"
+- "MSP_SET_MIXER"
+- "MSP_SET_MODE_RANGE"
+- "MSP_SET_PID"
+- "MSP_SET_PID_CONTROLLER"
+- "MSP_SET_RC_TUNING"
+- "MSP_SET_REBOOT"
+- "MSP_SET_RX_CONFIG"
+- "MSP_SET_RX_MAP"
+- "MSP_STATUS"
+- !private "MemoryLayout"
+- !private "MessageView"
+- !private "ModeRange"
+- !private "NSData"
+- "NSObjectProtocol"
+- !private "NSString"
+- !private "SerialPortConfig"
+- !private "SerialPortFunction"
+- !private "String"
+- !private "StringLiteralType"
+- "TernaryPrecedence"
+- !private "UInt16"
+- !private "UInt32"
+- "UInt8"
+- !private "UnicodeScalarType"
+- !private "Version"
+- "Void"
+- "WeakSet"
+- !private "^"
+- !private "^="
+- !private "bluetoothSerial"
+- !private "cliActive"
+- !private "dataStorage"
+- !private "delay"
+- !private "getInt16"
+- !private "getInt8"
+- !private "getUInt16"
+- !private "getUInt32"
+- !private "log"
+- !private "round"
+- !private "|="
+- !private "~="
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps16AbsoluteValuable", "roundWithDecimals"]
+- !private ["Ps9AnyObject", "BFFeatures"]
+- !private ["Ps9AnyObject", "BLACKBOX_baudrate"]
+- !private ["Ps9AnyObject", "Baudrate"]
+- !private ["Ps9AnyObject", "Double"]
+- !private ["Ps9AnyObject", "Encoding"]
+- !private ["Ps9AnyObject", "GPS_baudrate"]
+- ["Ps9AnyObject", "Int"]
+- !private ["Ps9AnyObject", "Int16"]
+- !private ["Ps9AnyObject", "MSP_ACC_CALIBRATION"]
+- !private ["Ps9AnyObject", "MSP_ACC_TRIM"]
+- !private ["Ps9AnyObject", "MSP_ANALOG"]
+- !private ["Ps9AnyObject", "MSP_API_VERSION"]
+- !private ["Ps9AnyObject", "MSP_ARMING_CONFIG"]
+- !private ["Ps9AnyObject", "MSP_ATTITUDE"]
+- !private ["Ps9AnyObject", "MSP_BF_CONFIG"]
+- !private ["Ps9AnyObject", "MSP_BOARD_ALIGNMENT"]
+- !private ["Ps9AnyObject", "MSP_BOARD_INFO"]
+- !private ["Ps9AnyObject", "MSP_BOXIDS"]
+- !private ["Ps9AnyObject", "MSP_BOXNAMES"]
+- !private ["Ps9AnyObject", "MSP_BUILD_INFO"]
+- !private ["Ps9AnyObject", "MSP_CF_SERIAL_CONFIG"]
+- !private ["Ps9AnyObject", "MSP_EEPROM_WRITE"]
+- !private ["Ps9AnyObject", "MSP_FC_VARIANT"]
+- !private ["Ps9AnyObject", "MSP_FC_VERSION"]
+- !private ["Ps9AnyObject", "MSP_FEATURE"]
+- !private ["Ps9AnyObject", "MSP_LOOP_TIME"]
+- !private ["Ps9AnyObject", "MSP_MAG_CALIBRATION"]
+- !private ["Ps9AnyObject", "MSP_MISC"]
+- !private ["Ps9AnyObject", "MSP_MIXER"]
+- !private ["Ps9AnyObject", "MSP_MODE_RANGE"]
+- !private ["Ps9AnyObject", "MSP_PID"]
+- !private ["Ps9AnyObject", "MSP_PIDNAMES"]
+- !private ["Ps9AnyObject", "MSP_PID_CONTROLLER"]
+- !private ["Ps9AnyObject", "MSP_RAW_IMU"]
+- !private ["Ps9AnyObject", "MSP_RC"]
+- !private ["Ps9AnyObject", "MSP_RC_TUNING"]
+- !private ["Ps9AnyObject", "MSP_RESET_CONF"]
+- !private ["Ps9AnyObject", "MSP_RX_CONFIG"]
+- !private ["Ps9AnyObject", "MSP_RX_MAP"]
+- !private ["Ps9AnyObject", "MSP_SELECT_SETTING"]
+- !private ["Ps9AnyObject", "MSP_SET_ACC_TRIM"]
+- !private ["Ps9AnyObject", "MSP_SET_ARMING_CONFIG"]
+- !private ["Ps9AnyObject", "MSP_SET_BF_CONFIG"]
+- !private ["Ps9AnyObject", "MSP_SET_BOARD_ALIGNMENT"]
+- !private ["Ps9AnyObject", "MSP_SET_CF_SERIAL_CONFIG"]
+- !private ["Ps9AnyObject", "MSP_SET_FEATURE"]
+- !private ["Ps9AnyObject", "MSP_SET_LOOP_TIME"]
+- !private ["Ps9AnyObject", "MSP_SET_MISC"]
+- !private ["Ps9AnyObject", "MSP_SET_MIXER"]
+- !private ["Ps9AnyObject", "MSP_SET_MODE_RANGE"]
+- !private ["Ps9AnyObject", "MSP_SET_PID"]
+- !private ["Ps9AnyObject", "MSP_SET_PID_CONTROLLER"]
+- !private ["Ps9AnyObject", "MSP_SET_RC_TUNING"]
+- !private ["Ps9AnyObject", "MSP_SET_REBOOT"]
+- !private ["Ps9AnyObject", "MSP_SET_RX_CONFIG"]
+- !private ["Ps9AnyObject", "MSP_SET_RX_MAP"]
+- !private ["Ps9AnyObject", "MSP_STATUS"]
+- !private ["Ps9AnyObject", "MSP_baudrate"]
+- !private ["Ps9AnyObject", "MemoryLayout"]
+- !private ["Ps9AnyObject", "MessageView"]
+- !private ["Ps9AnyObject", "ModeRange"]
+- !private ["Ps9AnyObject", "NSString"]
+- !private ["Ps9AnyObject", "PIDController"]
+- !private ["Ps9AnyObject", "PIDNames"]
+- !private ["Ps9AnyObject", "PIDs"]
+- !private ["Ps9AnyObject", "RC_MAP"]
+- !private ["Ps9AnyObject", "SerialPortConfig"]
+- !private ["Ps9AnyObject", "SerialPortFunction"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "TELEMETRY_baudrate"]
+- !private ["Ps9AnyObject", "UInt16"]
+- !private ["Ps9AnyObject", "UInt32"]
+- !private ["Ps9AnyObject", "UInt8"]
+- !private ["Ps9AnyObject", "Version"]
+- ["Ps9AnyObject", "WeakSet"]
+- !private ["Ps9AnyObject", "accTrimPitch"]
+- !private ["Ps9AnyObject", "accTrimRoll"]
+- !private ["Ps9AnyObject", "accelerometer"]
+- !private ["Ps9AnyObject", "activeChannels"]
+- !private ["Ps9AnyObject", "activeSensors"]
+- !private ["Ps9AnyObject", "addObject"]
+- !private ["Ps9AnyObject", "amperage"]
+- !private ["Ps9AnyObject", "apiVersion"]
+- !private ["Ps9AnyObject", "attitude"]
+- !private ["Ps9AnyObject", "autoDisarmDelay"]
+- !private ["Ps9AnyObject", "auxChannelIndex"]
+- !private ["Ps9AnyObject", "auxConfigIDs"]
+- !private ["Ps9AnyObject", "auxConfigNames"]
+- !private ["Ps9AnyObject", "bluetoothSerial"]
+- !private ["Ps9AnyObject", "boardAlignPitch"]
+- !private ["Ps9AnyObject", "boardAlignRoll"]
+- !private ["Ps9AnyObject", "boardAlignYaw"]
+- !private ["Ps9AnyObject", "boardIdentifier"]
+- !private ["Ps9AnyObject", "boardVersion"]
+- !private ["Ps9AnyObject", "buildInfo"]
+- !private ["Ps9AnyObject", "callbacks"]
+- !private ["Ps9AnyObject", "channels"]
+- !private ["Ps9AnyObject", "cliActive"]
+- !private ["Ps9AnyObject", "containsObject"]
+- !private ["Ps9AnyObject", "crunch"]
+- !private ["Ps9AnyObject", "crunchAndSendMSP"]
+- !private ["Ps9AnyObject", "currentOffset"]
+- !private ["Ps9AnyObject", "currentScale"]
+- !private ["Ps9AnyObject", "cycleTime"]
+- !private ["Ps9AnyObject", "dataStorage"]
+- !private ["Ps9AnyObject", "delay"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "disarmKillsSwitch"]
+- !private ["Ps9AnyObject", "dynamicThrottleBreakpoint"]
+- !private ["Ps9AnyObject", "dynamicThrottlePID"]
+- !private ["Ps9AnyObject", "failsafeThrottle"]
+- !private ["Ps9AnyObject", "flightControllerIdentifier"]
+- !private ["Ps9AnyObject", "flightControllerVersion"]
+- !private ["Ps9AnyObject", "functions"]
+- !private ["Ps9AnyObject", "getBytes"]
+- !private ["Ps9AnyObject", "getInt16"]
+- !private ["Ps9AnyObject", "getInt8"]
+- !private ["Ps9AnyObject", "getUInt16"]
+- !private ["Ps9AnyObject", "getUInt32"]
+- !private ["Ps9AnyObject", "gpsBaudrate"]
+- !private ["Ps9AnyObject", "gpsType"]
+- !private ["Ps9AnyObject", "gpsUbxSbas"]
+- !private ["Ps9AnyObject", "gyroscope"]
+- !private ["Ps9AnyObject", "i2cError"]
+- !private ["Ps9AnyObject", "identifier"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "interpretMSP"]
+- !private ["Ps9AnyObject", "log"]
+- !private ["Ps9AnyObject", "loopTime"]
+- !private ["Ps9AnyObject", "mAhDrawn"]
+- !private ["Ps9AnyObject", "magDeclination"]
+- !private ["Ps9AnyObject", "magnetometer"]
+- !private ["Ps9AnyObject", "maxThrottle"]
+- !private ["Ps9AnyObject", "messageChecksum"]
+- !private ["Ps9AnyObject", "messageCode"]
+- !private ["Ps9AnyObject", "messageData"]
+- !private ["Ps9AnyObject", "messageDirection"]
+- !private ["Ps9AnyObject", "messageLengthExpected"]
+- !private ["Ps9AnyObject", "messageLengthReceived"]
+- !private ["Ps9AnyObject", "midRc"]
+- !private ["Ps9AnyObject", "minCommand"]
+- !private ["Ps9AnyObject", "minThrottle"]
+- !private ["Ps9AnyObject", "mixerConfiguration"]
+- !private ["Ps9AnyObject", "mode"]
+- !private ["Ps9AnyObject", "modeRanges"]
+- ["Ps9AnyObject", "mspUpdated"]
+- !private ["Ps9AnyObject", "mspVersion"]
+- !private ["Ps9AnyObject", "multiwiiCurrentOutput"]
+- !private ["Ps9AnyObject", "pitchRate"]
+- !private ["Ps9AnyObject", "placeHolder2"]
+- !private ["Ps9AnyObject", "processData"]
+- !private ["Ps9AnyObject", "profile"]
+- !private ["Ps9AnyObject", "range"]
+- !private ["Ps9AnyObject", "rcExpo"]
+- !private ["Ps9AnyObject", "rcRate"]
+- !private ["Ps9AnyObject", "removeObject"]
+- !private ["Ps9AnyObject", "reset"]
+- !private ["Ps9AnyObject", "rollPitchRate"]
+- !private ["Ps9AnyObject", "rollRate"]
+- !private ["Ps9AnyObject", "round"]
+- !private ["Ps9AnyObject", "rssi"]
+- !private ["Ps9AnyObject", "rssiChannel"]
+- !private ["Ps9AnyObject", "rxMaxuSec"]
+- !private ["Ps9AnyObject", "rxMinuSec"]
+- !private ["Ps9AnyObject", "satBind"]
+- !private ["Ps9AnyObject", "sendBytesToDevice"]
+- !private ["Ps9AnyObject", "sendMSP"]
+- ["Ps9AnyObject", "serialPortReceivedData"]
+- !private ["Ps9AnyObject", "serialPorts"]
+- !private ["Ps9AnyObject", "serialRXType"]
+- !private ["Ps9AnyObject", "show"]
+- !private ["Ps9AnyObject", "state"]
+- !private ["Ps9AnyObject", "stickCenter"]
+- !private ["Ps9AnyObject", "stickMax"]
+- !private ["Ps9AnyObject", "stickMin"]
+- !private ["Ps9AnyObject", "subscribers"]
+- !private ["Ps9AnyObject", "throttleExpo"]
+- !private ["Ps9AnyObject", "throttleMid"]
+- !private ["Ps9AnyObject", "vBatMaxCellVoltage"]
+- !private ["Ps9AnyObject", "vBatMinCellVoltage"]
+- !private ["Ps9AnyObject", "vBatScale"]
+- !private ["Ps9AnyObject", "vBatWarningCellVoltage"]
+- !private ["Ps9AnyObject", "voltage"]
+- !private ["Ps9AnyObject", "yawExpo"]
+- !private ["Ps9AnyObject", "yawRate"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "endIndex"]
+- !private ["Sa", "enumerated"]
+- !private ["Sa", "init"]
+- !private ["Sa", "isEmpty"]
+- !private ["Sa", "remove"]
+- !private ["Sa", "subscript"]
+- !private ["O4Eaze8Baudrate", "deinit"]
+- !private ["O4Eaze8Baudrate", "init"]
+- !private ["O4Eaze8Baudrate", "rawValue"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "count"]
+- !private ["Ps23BidirectionalCollection", "endIndex"]
+- !private ["Ps23BidirectionalCollection", "enumerated"]
+- !private ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps23BidirectionalCollection", "isEmpty"]
+- !private ["Ps23BidirectionalCollection", "remove"]
+- !private ["Ps23BidirectionalCollection", "reversed"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
+- !private ["Ps19BinaryFloatingPoint", "init"]
+- !private ["Ps19BinaryFloatingPoint", "roundWithDecimals"]
+- !private ["Ps17BitwiseOperations", "highByte"]
+- !private ["Ps17BitwiseOperations", "init"]
+- !private ["Ps17BitwiseOperations", "lowByte"]
+- !private ["Ps17BitwiseOperations", "specificByte"]
+- !private ["C4Eaze15BluetoothSerial", "delegate"]
+- !private ["C4Eaze15BluetoothSerial", "sendBytesToDevice"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "Baudrate"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "Double"]
+- ["P4Eaze23BluetoothSerialDelegate", "Int"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "Int16"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_ACC_CALIBRATION"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_ACC_TRIM"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_ANALOG"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_API_VERSION"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_ARMING_CONFIG"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_ATTITUDE"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_BF_CONFIG"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_BOARD_ALIGNMENT"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_BOARD_INFO"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_BOXIDS"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_BOXNAMES"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_BUILD_INFO"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_CF_SERIAL_CONFIG"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_EEPROM_WRITE"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_FC_VARIANT"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_FC_VERSION"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_FEATURE"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_LOOP_TIME"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_MAG_CALIBRATION"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_MISC"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_MIXER"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_MODE_RANGE"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_PID"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_PIDNAMES"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_PID_CONTROLLER"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_RAW_IMU"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_RC"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_RC_TUNING"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_RESET_CONF"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_RX_CONFIG"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_RX_MAP"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SELECT_SETTING"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_ACC_TRIM"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_ARMING_CONFIG"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_BF_CONFIG"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_BOARD_ALIGNMENT"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_CF_SERIAL_CONFIG"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_FEATURE"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_LOOP_TIME"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_MISC"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_MIXER"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_MODE_RANGE"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_PID"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_PID_CONTROLLER"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_RC_TUNING"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_REBOOT"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_RX_CONFIG"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_RX_MAP"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_STATUS"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MemoryLayout"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MessageView"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "ModeRange"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "NSString"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "SerialPortConfig"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "SerialPortFunction"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "String"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "UInt16"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "UInt32"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "UInt8"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "Version"]
+- ["P4Eaze23BluetoothSerialDelegate", "WeakSet"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "bluetoothSerial"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "callbacks"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "cliActive"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "crunch"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "crunchAndSendMSP"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "dataStorage"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "delay"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "getInt16"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "getInt8"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "getUInt16"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "getUInt32"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "interpretMSP"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "log"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "messageChecksum"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "messageCode"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "messageData"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "messageDirection"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "messageLengthExpected"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "messageLengthReceived"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "processData"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "reset"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "round"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "sendMSP"]
+- ["P4Eaze23BluetoothSerialDelegate", "serialPortReceivedData"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "state"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "subscribers"]
+- ["P4Eaze23BluetoothSerialDelegate", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSo15CALayerDelegate", "show"]
+- !private ["PSo24CBCentralManagerDelegate", "delegate"]
+- !private ["PSo24CBCentralManagerDelegate", "sendBytesToDevice"]
+- !private ["PSo20CBPeripheralDelegate", "delegate"]
+- !private ["PSo20CBPeripheralDelegate", "sendBytesToDevice"]
+- !private ["Ps7CVarArg", "Encoding"]
+- !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "count"]
+- !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "endIndex"]
+- !private ["Ps7CVarArg", "enumerated"]
+- !private ["Ps7CVarArg", "getBytes"]
+- !private ["Ps7CVarArg", "highByte"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isEmpty"]
+- !private ["Ps7CVarArg", "lowByte"]
+- !private ["Ps7CVarArg", "remove"]
+- !private ["Ps7CVarArg", "roundWithDecimals"]
+- !private ["Ps7CVarArg", "sendBytesToDevice"]
+- !private ["Ps7CVarArg", "show"]
+- !private ["Ps7CVarArg", "specificByte"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "count"]
+- !private ["Ps10Collection", "endIndex"]
+- !private ["Ps10Collection", "enumerated"]
+- ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "isEmpty"]
+- !private ["Ps10Collection", "remove"]
+- !private ["Ps10Collection", "reversed"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "Encoding"]
+- !private ["Ps10Comparable", "highByte"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "lowByte"]
+- !private ["Ps10Comparable", "roundWithDecimals"]
+- !private ["Ps10Comparable", "specificByte"]
+- !private ["P4Eaze8Copyable", "BLACKBOX_baudrate"]
+- !private ["P4Eaze8Copyable", "GPS_baudrate"]
+- !private ["P4Eaze8Copyable", "MSP_baudrate"]
+- !private ["P4Eaze8Copyable", "TELEMETRY_baudrate"]
+- !private ["P4Eaze8Copyable", "auxChannelIndex"]
+- !private ["P4Eaze8Copyable", "functions"]
+- !private ["P4Eaze8Copyable", "identifier"]
+- !private ["P4Eaze8Copyable", "init"]
+- !private ["P4Eaze8Copyable", "range"]
+- !private ["Vs14CountableRange", "reversed"]
+- !private ["Ps28CustomDebugStringConvertible", "Encoding"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "endIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "enumerated"]
+- !private ["Ps28CustomDebugStringConvertible", "getBytes"]
+- !private ["Ps28CustomDebugStringConvertible", "highByte"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isEmpty"]
+- !private ["Ps28CustomDebugStringConvertible", "lowByte"]
+- !private ["Ps28CustomDebugStringConvertible", "remove"]
+- !private ["Ps28CustomDebugStringConvertible", "reversed"]
+- !private ["Ps28CustomDebugStringConvertible", "roundWithDecimals"]
+- !private ["Ps28CustomDebugStringConvertible", "sendBytesToDevice"]
+- !private ["Ps28CustomDebugStringConvertible", "show"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Encoding"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "highByte"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "lowByte"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "roundWithDecimals"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "specificByte"]
+- !private ["Ps17CustomReflectable", "Encoding"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "count"]
+- !private ["Ps17CustomReflectable", "endIndex"]
+- !private ["Ps17CustomReflectable", "enumerated"]
+- !private ["Ps17CustomReflectable", "highByte"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "isEmpty"]
+- !private ["Ps17CustomReflectable", "lowByte"]
+- !private ["Ps17CustomReflectable", "remove"]
+- !private ["Ps17CustomReflectable", "reversed"]
+- !private ["Ps17CustomReflectable", "roundWithDecimals"]
+- !private ["Ps17CustomReflectable", "specificByte"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "Encoding"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "endIndex"]
+- !private ["Ps23CustomStringConvertible", "enumerated"]
+- !private ["Ps23CustomStringConvertible", "getBytes"]
+- !private ["Ps23CustomStringConvertible", "highByte"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isEmpty"]
+- !private ["Ps23CustomStringConvertible", "lowByte"]
+- !private ["Ps23CustomStringConvertible", "rawValue"]
+- !private ["Ps23CustomStringConvertible", "remove"]
+- !private ["Ps23CustomStringConvertible", "reversed"]
+- !private ["Ps23CustomStringConvertible", "roundWithDecimals"]
+- !private ["Ps23CustomStringConvertible", "sendBytesToDevice"]
+- !private ["Ps23CustomStringConvertible", "show"]
+- !private ["Ps23CustomStringConvertible", "specificByte"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "utf8"]
+- !private ["V10Foundation4Data", "count"]
+- !private ["C4Eaze11DataStorage", "BFFeatures"]
+- !private ["C4Eaze11DataStorage", "PIDController"]
+- !private ["C4Eaze11DataStorage", "PIDNames"]
+- !private ["C4Eaze11DataStorage", "PIDs"]
+- !private ["C4Eaze11DataStorage", "RC_MAP"]
+- !private ["C4Eaze11DataStorage", "accTrimPitch"]
+- !private ["C4Eaze11DataStorage", "accTrimRoll"]
+- !private ["C4Eaze11DataStorage", "accelerometer"]
+- !private ["C4Eaze11DataStorage", "activeChannels"]
+- !private ["C4Eaze11DataStorage", "activeSensors"]
+- !private ["C4Eaze11DataStorage", "amperage"]
+- !private ["C4Eaze11DataStorage", "apiVersion"]
+- !private ["C4Eaze11DataStorage", "attitude"]
+- !private ["C4Eaze11DataStorage", "autoDisarmDelay"]
+- !private ["C4Eaze11DataStorage", "auxConfigIDs"]
+- !private ["C4Eaze11DataStorage", "auxConfigNames"]
+- !private ["C4Eaze11DataStorage", "boardAlignPitch"]
+- !private ["C4Eaze11DataStorage", "boardAlignRoll"]
+- !private ["C4Eaze11DataStorage", "boardAlignYaw"]
+- !private ["C4Eaze11DataStorage", "boardIdentifier"]
+- !private ["C4Eaze11DataStorage", "boardVersion"]
+- !private ["C4Eaze11DataStorage", "buildInfo"]
+- !private ["C4Eaze11DataStorage", "channels"]
+- !private ["C4Eaze11DataStorage", "currentOffset"]
+- !private ["C4Eaze11DataStorage", "currentScale"]
+- !private ["C4Eaze11DataStorage", "cycleTime"]
+- !private ["C4Eaze11DataStorage", "disarmKillsSwitch"]
+- !private ["C4Eaze11DataStorage", "dynamicThrottleBreakpoint"]
+- !private ["C4Eaze11DataStorage", "dynamicThrottlePID"]
+- !private ["C4Eaze11DataStorage", "failsafeThrottle"]
+- !private ["C4Eaze11DataStorage", "flightControllerIdentifier"]
+- !private ["C4Eaze11DataStorage", "flightControllerVersion"]
+- !private ["C4Eaze11DataStorage", "gpsBaudrate"]
+- !private ["C4Eaze11DataStorage", "gpsType"]
+- !private ["C4Eaze11DataStorage", "gpsUbxSbas"]
+- !private ["C4Eaze11DataStorage", "gyroscope"]
+- !private ["C4Eaze11DataStorage", "i2cError"]
+- !private ["C4Eaze11DataStorage", "loopTime"]
+- !private ["C4Eaze11DataStorage", "mAhDrawn"]
+- !private ["C4Eaze11DataStorage", "magDeclination"]
+- !private ["C4Eaze11DataStorage", "magnetometer"]
+- !private ["C4Eaze11DataStorage", "maxThrottle"]
+- !private ["C4Eaze11DataStorage", "midRc"]
+- !private ["C4Eaze11DataStorage", "minCommand"]
+- !private ["C4Eaze11DataStorage", "minThrottle"]
+- !private ["C4Eaze11DataStorage", "mixerConfiguration"]
+- !private ["C4Eaze11DataStorage", "mode"]
+- !private ["C4Eaze11DataStorage", "modeRanges"]
+- !private ["C4Eaze11DataStorage", "mspVersion"]
+- !private ["C4Eaze11DataStorage", "multiwiiCurrentOutput"]
+- !private ["C4Eaze11DataStorage", "pitchRate"]
+- !private ["C4Eaze11DataStorage", "placeHolder2"]
+- !private ["C4Eaze11DataStorage", "profile"]
+- !private ["C4Eaze11DataStorage", "rcExpo"]
+- !private ["C4Eaze11DataStorage", "rcRate"]
+- !private ["C4Eaze11DataStorage", "rollPitchRate"]
+- !private ["C4Eaze11DataStorage", "rollRate"]
+- !private ["C4Eaze11DataStorage", "rssi"]
+- !private ["C4Eaze11DataStorage", "rssiChannel"]
+- !private ["C4Eaze11DataStorage", "rxMaxuSec"]
+- !private ["C4Eaze11DataStorage", "rxMinuSec"]
+- !private ["C4Eaze11DataStorage", "satBind"]
+- !private ["C4Eaze11DataStorage", "serialPorts"]
+- !private ["C4Eaze11DataStorage", "serialRXType"]
+- !private ["C4Eaze11DataStorage", "stickCenter"]
+- !private ["C4Eaze11DataStorage", "stickMax"]
+- !private ["C4Eaze11DataStorage", "stickMin"]
+- !private ["C4Eaze11DataStorage", "throttleExpo"]
+- !private ["C4Eaze11DataStorage", "throttleMid"]
+- !private ["C4Eaze11DataStorage", "vBatMaxCellVoltage"]
+- !private ["C4Eaze11DataStorage", "vBatMinCellVoltage"]
+- !private ["C4Eaze11DataStorage", "vBatScale"]
+- !private ["C4Eaze11DataStorage", "vBatWarningCellVoltage"]
+- !private ["C4Eaze11DataStorage", "voltage"]
+- !private ["C4Eaze11DataStorage", "yawExpo"]
+- !private ["C4Eaze11DataStorage", "yawRate"]
+- ["Vs10Dictionary", "init"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Sd", "init"]
+- !private ["Sd", "roundWithDecimals"]
+- !private ["VE10FoundationSS8Encoding", "rawValue"]
+- !private ["VE10FoundationSS8Encoding", "utf8"]
+- !private ["Ps9Equatable", "Encoding"]
+- !private ["Ps9Equatable", "Error"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "all"]
+- !private ["Ps9Equatable", "count"]
+- !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "getBytes"]
+- !private ["Ps9Equatable", "highByte"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "lowByte"]
+- !private ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "reversed"]
+- !private ["Ps9Equatable", "roundWithDecimals"]
+- !private ["Ps9Equatable", "sendBytesToDevice"]
+- !private ["Ps9Equatable", "show"]
+- !private ["Ps9Equatable", "specificByte"]
+- !private ["Ps9Equatable", "utf8"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
+- !private ["Ps25ExpressibleByArrayLiteral", "endIndex"]
+- !private ["Ps25ExpressibleByArrayLiteral", "enumerated"]
+- !private ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "isEmpty"]
+- !private ["Ps25ExpressibleByArrayLiteral", "remove"]
+- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps30ExpressibleByDictionaryLiteral", "init"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "Encoding"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps25ExpressibleByFloatLiteral", "roundWithDecimals"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "highByte"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "lowByte"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "roundWithDecimals"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "specificByte"]
+- !private ["Ps23ExpressibleByNilLiteral", "highByte"]
+- !private ["Ps23ExpressibleByNilLiteral", "lowByte"]
+- !private ["Ps26ExpressibleByStringLiteral", "Encoding"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "Encoding"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps13FloatingPoint", "init"]
+- !private ["Ps13FloatingPoint", "roundWithDecimals"]
+- !private ["Ps8Hashable", "Encoding"]
+- !private ["Ps8Hashable", "Error"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "all"]
+- !private ["Ps8Hashable", "count"]
+- !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "getBytes"]
+- !private ["Ps8Hashable", "highByte"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "lowByte"]
+- !private ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "roundWithDecimals"]
+- !private ["Ps8Hashable", "sendBytesToDevice"]
+- !private ["Ps8Hashable", "show"]
+- !private ["Ps8Hashable", "specificByte"]
+- !private ["Ps8Hashable", "utf8"]
+- !private ["Si", "highByte"]
+- !private ["Si", "init"]
+- !private ["Si", "lowByte"]
+- !private ["Si", "specificByte"]
+- !private ["Vs5Int16", "highByte"]
+- !private ["Vs5Int16", "init"]
+- !private ["Vs5Int16", "lowByte"]
+- !private ["Vs5Int16", "specificByte"]
+- !private ["Ps7Integer", "highByte"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps7Integer", "lowByte"]
+- !private ["Ps7Integer", "specificByte"]
+- !private ["Ps17IntegerArithmetic", "highByte"]
+- !private ["Ps17IntegerArithmetic", "init"]
+- !private ["Ps17IntegerArithmetic", "lowByte"]
+- !private ["Ps17IntegerArithmetic", "specificByte"]
+- !private ["OC4Eaze6AppLog5Level", "Error"]
+- !private ["Ps25LosslessStringConvertible", "Encoding"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps25LosslessStringConvertible", "roundWithDecimals"]
+- !private ["C4Eaze14MSPInterpreter", "AnyObject"]
+- !private ["C4Eaze14MSPInterpreter", "Baudrate"]
+- !private ["C4Eaze14MSPInterpreter", "Bool"]
+- ["C4Eaze14MSPInterpreter", "Data"]
+- !private ["C4Eaze14MSPInterpreter", "Double"]
+- ["C4Eaze14MSPInterpreter", "Int"]
+- !private ["C4Eaze14MSPInterpreter", "Int16"]
+- ["C4Eaze14MSPInterpreter", "MSPUpdateSubscriber"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_ACC_CALIBRATION"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_ACC_TRIM"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_ANALOG"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_API_VERSION"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_ARMING_CONFIG"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_ATTITUDE"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_BF_CONFIG"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_BOARD_ALIGNMENT"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_BOARD_INFO"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_BOXIDS"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_BOXNAMES"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_BUILD_INFO"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_CF_SERIAL_CONFIG"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_EEPROM_WRITE"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_FC_VARIANT"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_FC_VERSION"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_FEATURE"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_LOOP_TIME"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_MAG_CALIBRATION"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_MISC"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_MIXER"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_MODE_RANGE"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_PID"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_PIDNAMES"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_PID_CONTROLLER"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_RAW_IMU"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_RC"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_RC_TUNING"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_RESET_CONF"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_RX_CONFIG"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_RX_MAP"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SELECT_SETTING"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_ACC_TRIM"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_ARMING_CONFIG"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_BF_CONFIG"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_BOARD_ALIGNMENT"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_CF_SERIAL_CONFIG"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_FEATURE"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_LOOP_TIME"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_MISC"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_MIXER"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_MODE_RANGE"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_PID"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_PID_CONTROLLER"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_RC_TUNING"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_REBOOT"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_RX_CONFIG"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_RX_MAP"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_STATUS"]
+- !private ["C4Eaze14MSPInterpreter", "MemoryLayout"]
+- !private ["C4Eaze14MSPInterpreter", "MessageView"]
+- !private ["C4Eaze14MSPInterpreter", "ModeRange"]
+- !private ["C4Eaze14MSPInterpreter", "NSData"]
+- !private ["C4Eaze14MSPInterpreter", "NSString"]
+- !private ["C4Eaze14MSPInterpreter", "SerialPortConfig"]
+- !private ["C4Eaze14MSPInterpreter", "SerialPortFunction"]
+- !private ["C4Eaze14MSPInterpreter", "String"]
+- !private ["C4Eaze14MSPInterpreter", "UInt16"]
+- !private ["C4Eaze14MSPInterpreter", "UInt32"]
+- ["C4Eaze14MSPInterpreter", "UInt8"]
+- !private ["C4Eaze14MSPInterpreter", "Version"]
+- ["C4Eaze14MSPInterpreter", "Void"]
+- ["C4Eaze14MSPInterpreter", "WeakSet"]
+- ["C4Eaze14MSPInterpreter", "addSubscriber"]
+- !private ["C4Eaze14MSPInterpreter", "bluetoothSerial"]
+- ["C4Eaze14MSPInterpreter", "callbacks"]
+- !private ["C4Eaze14MSPInterpreter", "cliActive"]
+- ["C4Eaze14MSPInterpreter", "crunch"]
+- ["C4Eaze14MSPInterpreter", "crunchAndSendMSP"]
+- !private ["C4Eaze14MSPInterpreter", "dataStorage"]
+- ["C4Eaze14MSPInterpreter", "deinit"]
+- !private ["C4Eaze14MSPInterpreter", "delay"]
+- ["C4Eaze14MSPInterpreter", "didDisconnect"]
+- !private ["C4Eaze14MSPInterpreter", "getInt16"]
+- !private ["C4Eaze14MSPInterpreter", "getInt8"]
+- !private ["C4Eaze14MSPInterpreter", "getUInt16"]
+- !private ["C4Eaze14MSPInterpreter", "getUInt32"]
+- ["C4Eaze14MSPInterpreter", "init"]
+- ["C4Eaze14MSPInterpreter", "interpretMSP"]
+- !private ["C4Eaze14MSPInterpreter", "log"]
+- ["C4Eaze14MSPInterpreter", "messageChecksum"]
+- ["C4Eaze14MSPInterpreter", "messageCode"]
+- ["C4Eaze14MSPInterpreter", "messageData"]
+- ["C4Eaze14MSPInterpreter", "messageDirection"]
+- ["C4Eaze14MSPInterpreter", "messageLengthExpected"]
+- ["C4Eaze14MSPInterpreter", "messageLengthReceived"]
+- ["C4Eaze14MSPInterpreter", "processData"]
+- ["C4Eaze14MSPInterpreter", "removeSubscriber"]
+- ["C4Eaze14MSPInterpreter", "reset"]
+- !private ["C4Eaze14MSPInterpreter", "round"]
+- ["C4Eaze14MSPInterpreter", "sendMSP"]
+- ["C4Eaze14MSPInterpreter", "sendModeRanges"]
+- ["C4Eaze14MSPInterpreter", "serialPortReceivedData"]
+- ["C4Eaze14MSPInterpreter", "state"]
+- ["C4Eaze14MSPInterpreter", "subscribers"]
+- ["P4Eaze19MSPUpdateSubscriber", "Int"]
+- ["P4Eaze19MSPUpdateSubscriber", "mspUpdated"]
+- !private ["Os12MemoryLayout", "size"]
+- !private ["C4Eaze11MessageView", "show"]
+- !private ["Ps10MirrorPath", "Encoding"]
+- !private ["Ps10MirrorPath", "highByte"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps10MirrorPath", "lowByte"]
+- !private ["Ps10MirrorPath", "specificByte"]
+- !private ["C4Eaze9ModeRange", "auxChannelIndex"]
+- !private ["C4Eaze9ModeRange", "deinit"]
+- !private ["C4Eaze9ModeRange", "identifier"]
+- !private ["C4Eaze9ModeRange", "init"]
+- !private ["C4Eaze9ModeRange", "range"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "count"]
+- !private ["Ps17MutableCollection", "endIndex"]
+- !private ["Ps17MutableCollection", "enumerated"]
+- !private ["Ps17MutableCollection", "init"]
+- !private ["Ps17MutableCollection", "isEmpty"]
+- !private ["Ps17MutableCollection", "remove"]
+- !private ["Ps17MutableCollection", "subscript"]
+- !private ["PSo8NSCoding", "Encoding"]
+- !private ["PSo8NSCoding", "getBytes"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "show"]
+- !private ["PSo9NSCopying", "Encoding"]
+- !private ["PSo9NSCopying", "getBytes"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["CSo6NSData", "getBytes"]
+- !private ["PSo16NSMutableCopying", "Encoding"]
+- !private ["PSo16NSMutableCopying", "getBytes"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "Encoding"]
+- !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "getBytes"]
+- !private ["CSo8NSObject", "sendBytesToDevice"]
+- !private ["CSo8NSObject", "show"]
+- !private ["PSo16NSObjectProtocol", "Encoding"]
+- ["PSo16NSObjectProtocol", "Int"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "getBytes"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "mspUpdated"]
+- !private ["PSo16NSObjectProtocol", "sendBytesToDevice"]
+- !private ["PSo16NSObjectProtocol", "show"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "Encoding"]
+- !private ["PSo14NSSecureCoding", "getBytes"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "Encoding"]
+- !private ["CSo8NSString", "init"]
+- !private ["Sq", "highByte"]
+- !private ["Sq", "lowByte"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "count"]
+- !private ["Ps22RandomAccessCollection", "endIndex"]
+- !private ["Ps22RandomAccessCollection", "enumerated"]
+- !private ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps22RandomAccessCollection", "isEmpty"]
+- !private ["Ps22RandomAccessCollection", "remove"]
+- !private ["Ps22RandomAccessCollection", "reversed"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Vs5Range", "reversed"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
+- !private ["Ps26RangeReplaceableCollection", "endIndex"]
+- !private ["Ps26RangeReplaceableCollection", "enumerated"]
+- !private ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps26RangeReplaceableCollection", "isEmpty"]
+- !private ["Ps26RangeReplaceableCollection", "remove"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
+- !private ["Ps16RawRepresentable", "Error"]
+- !private ["Ps16RawRepresentable", "all"]
+- !private ["Ps16RawRepresentable", "init"]
+- !private ["Ps16RawRepresentable", "rawValue"]
+- !private ["Ps16RawRepresentable", "utf8"]
+- !private ["P10Foundation20ReferenceConvertible", "count"]
+- !private ["Ps8Sequence", "addObject"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "containsObject"]
+- !private ["Ps8Sequence", "count"]
+- !private ["Ps8Sequence", "endIndex"]
+- !private ["Ps8Sequence", "enumerated"]
+- ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "isEmpty"]
+- !private ["Ps8Sequence", "remove"]
+- !private ["Ps8Sequence", "removeObject"]
+- !private ["Ps8Sequence", "reversed"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["C4Eaze16SerialPortConfig", "BLACKBOX_baudrate"]
+- !private ["C4Eaze16SerialPortConfig", "GPS_baudrate"]
+- !private ["C4Eaze16SerialPortConfig", "MSP_baudrate"]
+- !private ["C4Eaze16SerialPortConfig", "TELEMETRY_baudrate"]
+- !private ["C4Eaze16SerialPortConfig", "deinit"]
+- !private ["C4Eaze16SerialPortConfig", "functions"]
+- !private ["C4Eaze16SerialPortConfig", "identifier"]
+- !private ["C4Eaze16SerialPortConfig", "init"]
+- !private ["O4Eaze18SerialPortFunction", "all"]
+- !private ["O4Eaze18SerialPortFunction", "deinit"]
+- !private ["O4Eaze18SerialPortFunction", "rawValue"]
+- !private ["Ps13SignedInteger", "highByte"]
+- !private ["Ps13SignedInteger", "init"]
+- !private ["Ps13SignedInteger", "lowByte"]
+- !private ["Ps13SignedInteger", "specificByte"]
+- !private ["Ps12SignedNumber", "highByte"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps12SignedNumber", "lowByte"]
+- !private ["Ps12SignedNumber", "roundWithDecimals"]
+- !private ["Ps12SignedNumber", "specificByte"]
+- !private ["Ps10Strideable", "highByte"]
+- !private ["Ps10Strideable", "init"]
+- !private ["Ps10Strideable", "lowByte"]
+- !private ["Ps10Strideable", "roundWithDecimals"]
+- !private ["Ps10Strideable", "specificByte"]
+- !private ["SS", "Encoding"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "Encoding"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "Encoding"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "show"]
+- !private ["PSo12UIAppearance", "show"]
+- !private ["PSo21UIAppearanceContainer", "show"]
+- !private ["PSo17UICoordinateSpace", "show"]
+- !private ["PSo13UIDynamicItem", "show"]
+- !private ["PSo18UIFocusEnvironment", "show"]
+- !private ["PSo11UIFocusItem", "show"]
+- !private ["CSo11UIResponder", "show"]
+- !private ["PSo30UIResponderStandardEditActions", "show"]
+- !private ["PSo18UITraitEnvironment", "show"]
+- !private ["CSo6UIView", "show"]
+- !private ["Vs6UInt16", "init"]
+- !private ["Vs6UInt32", "init"]
+- !private ["Vs6UInt32", "specificByte"]
+- !private ["Vs5UInt8", "init"]
+- !private ["Ps15UnsignedInteger", "init"]
+- !private ["Ps15UnsignedInteger", "specificByte"]
+- !private ["C4Eaze7Version", "deinit"]
+- !private ["C4Eaze7Version", "init"]
+- !private ["C4Eaze7WeakSet", "addObject"]
+- !private ["C4Eaze7WeakSet", "containsObject"]
+- !private ["C4Eaze7WeakSet", "deinit"]
+- !private ["C4Eaze7WeakSet", "init"]
+- !private ["C4Eaze7WeakSet", "removeObject"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "count"]
+- !private ["Ps14_ArrayProtocol", "endIndex"]
+- !private ["Ps14_ArrayProtocol", "enumerated"]
+- !private ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps14_ArrayProtocol", "isEmpty"]
+- !private ["Ps14_ArrayProtocol", "remove"]
+- !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "count"]
+- !private ["Ps23_BidirectionalIndexable", "endIndex"]
+- !private ["Ps23_BidirectionalIndexable", "enumerated"]
+- !private ["Ps23_BidirectionalIndexable", "init"]
+- !private ["Ps23_BidirectionalIndexable", "isEmpty"]
+- !private ["Ps23_BidirectionalIndexable", "remove"]
+- !private ["Ps23_BidirectionalIndexable", "reversed"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps15_CVarArgAligned", "roundWithDecimals"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "roundWithDecimals"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "show"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps24_DestructorSafeContainer", "endIndex"]
+- !private ["Ps24_DestructorSafeContainer", "enumerated"]
+- !private ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "isEmpty"]
+- !private ["Ps24_DestructorSafeContainer", "remove"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "init"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "specificByte"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "Encoding"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "roundWithDecimals"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "highByte"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "lowByte"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "roundWithDecimals"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "specificByte"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "Encoding"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "Encoding"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "Encoding"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "Encoding"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "Encoding"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "getBytes"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Encoding"]
+- !private ["Ps9_Hashable", "Error"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "all"]
+- !private ["Ps9_Hashable", "count"]
+- !private ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "getBytes"]
+- !private ["Ps9_Hashable", "highByte"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "lowByte"]
+- !private ["Ps9_Hashable", "rawValue"]
+- !private ["Ps9_Hashable", "roundWithDecimals"]
+- !private ["Ps9_Hashable", "sendBytesToDevice"]
+- !private ["Ps9_Hashable", "show"]
+- !private ["Ps9_Hashable", "specificByte"]
+- !private ["Ps9_Hashable", "utf8"]
+- !private ["Ps14_Incrementable", "highByte"]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps14_Incrementable", "lowByte"]
+- !private ["Ps14_Incrementable", "specificByte"]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "count"]
+- !private ["Ps10_Indexable", "endIndex"]
+- !private ["Ps10_Indexable", "enumerated"]
+- ["Ps10_Indexable", "init"]
+- !private ["Ps10_Indexable", "isEmpty"]
+- !private ["Ps10_Indexable", "remove"]
+- !private ["Ps10_Indexable", "reversed"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "count"]
+- !private ["Ps14_IndexableBase", "endIndex"]
+- !private ["Ps14_IndexableBase", "enumerated"]
+- ["Ps14_IndexableBase", "init"]
+- !private ["Ps14_IndexableBase", "isEmpty"]
+- !private ["Ps14_IndexableBase", "remove"]
+- !private ["Ps14_IndexableBase", "reversed"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps8_Integer", "highByte"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps8_Integer", "lowByte"]
+- !private ["Ps8_Integer", "specificByte"]
+- !private ["Ps18_IntegerArithmetic", "highByte"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["Ps18_IntegerArithmetic", "lowByte"]
+- !private ["Ps18_IntegerArithmetic", "specificByte"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "count"]
+- !private ["Ps17_MutableIndexable", "endIndex"]
+- !private ["Ps17_MutableIndexable", "enumerated"]
+- !private ["Ps17_MutableIndexable", "init"]
+- !private ["Ps17_MutableIndexable", "isEmpty"]
+- !private ["Ps17_MutableIndexable", "remove"]
+- !private ["Ps17_MutableIndexable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "Encoding"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "endIndex"]
+- !private ["Ps21_ObjectiveCBridgeable", "enumerated"]
+- !private ["Ps21_ObjectiveCBridgeable", "highByte"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "isEmpty"]
+- !private ["Ps21_ObjectiveCBridgeable", "lowByte"]
+- !private ["Ps21_ObjectiveCBridgeable", "remove"]
+- !private ["Ps21_ObjectiveCBridgeable", "roundWithDecimals"]
+- !private ["Ps21_ObjectiveCBridgeable", "specificByte"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "count"]
+- !private ["Ps22_RandomAccessIndexable", "endIndex"]
+- !private ["Ps22_RandomAccessIndexable", "enumerated"]
+- !private ["Ps22_RandomAccessIndexable", "init"]
+- !private ["Ps22_RandomAccessIndexable", "isEmpty"]
+- !private ["Ps22_RandomAccessIndexable", "remove"]
+- !private ["Ps22_RandomAccessIndexable", "reversed"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "count"]
+- !private ["Ps26_RangeReplaceableIndexable", "endIndex"]
+- !private ["Ps26_RangeReplaceableIndexable", "enumerated"]
+- !private ["Ps26_RangeReplaceableIndexable", "init"]
+- !private ["Ps26_RangeReplaceableIndexable", "isEmpty"]
+- !private ["Ps26_RangeReplaceableIndexable", "remove"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
+- !private ["Ps14_SignedInteger", "highByte"]
+- !private ["Ps14_SignedInteger", "init"]
+- !private ["Ps14_SignedInteger", "lowByte"]
+- !private ["Ps14_SignedInteger", "specificByte"]
+- !private ["Ps11_Strideable", "highByte"]
+- !private ["Ps11_Strideable", "init"]
+- !private ["Ps11_Strideable", "lowByte"]
+- !private ["Ps11_Strideable", "roundWithDecimals"]
+- !private ["Ps11_Strideable", "specificByte"]
+- !private ["Ps14_StringElement", "init"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "O4Eaze8Baudrate"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps19BinaryFloatingPoint"
+- !private "Ps17BitwiseOperations"
+- !private "C4Eaze15BluetoothSerial"
+- "P4Eaze23BluetoothSerialDelegate"
+- !private "Sb"
+- !private "PSo15CALayerDelegate"
+- !private "PSo24CBCentralManagerDelegate"
+- !private "PSo20CBPeripheralDelegate"
+- "Ps7CVarArg"
+- "Ps10Collection"
+- !private "Ps10Comparable"
+- !private "P4Eaze8Copyable"
+- !private "Vs14CountableRange"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "V10Foundation4Data"
+- !private "C4Eaze11DataStorage"
+- "Vs10Dictionary"
+- !private "Sd"
+- !private "VE10FoundationSS8Encoding"
+- !private "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps30ExpressibleByDictionaryLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Ps13FloatingPoint"
+- !private "Ps8Hashable"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "OC4Eaze6AppLog5Level"
+- !private "Ps25LosslessStringConvertible"
+- "C4Eaze14MSPInterpreter"
+- "P4Eaze19MSPUpdateSubscriber"
+- !private "Os12MemoryLayout"
+- !private "C4Eaze11MessageView"
+- !private "Ps10MirrorPath"
+- !private "C4Eaze9ModeRange"
+- !private "Ps17MutableCollection"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSData"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Vs5Range"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps16RawRepresentable"
+- !private "P10Foundation20ReferenceConvertible"
+- "Ps8Sequence"
+- !private "C4Eaze16SerialPortConfig"
+- !private "O4Eaze18SerialPortFunction"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs5UInt8"
+- !private "Ps15UnsignedInteger"
+- !private "C4Eaze7Version"
+- !private "C4Eaze7WeakSet"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps28_DisallowMixedSignArithmetic"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- !private "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- "Ps10_Indexable"
+- "Ps14_IndexableBase"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps17_MutableIndexable"
+- "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+- !private "Ps14_StringElement"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreBluetooth.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MapKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MultipeerConnectivity.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Modules/PeerKit.swiftmodule/arm.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-umbrella.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Supporting_Files/Eaze-Bridging-Header.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/ProgressView/Components/MRProgressOverlayView.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Modules/module.modulemap"
+interface-hash: "1150706c9ec44af2592944658ce3fb5c"

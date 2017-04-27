@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PeerKit-Swift.h</key>
 		<data>
-		VVRXTz3Vsxp0JmhM20AIKdxSVWU=
+		dnLhAfcCnCgY5LaDvcJiODDR7B0=
 		</data>
 		<key>Headers/PeerKit-umbrella.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		f2SFQPuLpUJhRifi/gGZ7J/o4SQ=
+		15wUFAcRnZeaiyn0LmPhKo0qTdc=
 		</data>
 		<key>Modules/PeerKit.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		s3/+fGOHI76lCermubbl/XwQKMY=
+		5eDH6A3qMETJxUW8qQXc731X2Ig=
 		</data>
 		<key>Modules/PeerKit.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		tjZbaVd9gJnhzhKBZ6+75/+9LKc=
+		kDiIRu4TmD8cBqK9wPtpiS004dY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VVRXTz3Vsxp0JmhM20AIKdxSVWU=
+			dnLhAfcCnCgY5LaDvcJiODDR7B0=
 			</data>
 			<key>hash2</key>
 			<data>
-			lFRSXo0tWQba9XM3ojfTGfIePvEvcQpMtbDO1noRD58=
+			cKomONoTsn+UIFrqocC94Un8B1ad3a599bXPhxqYf8c=
 			</data>
 		</dict>
 		<key>Headers/PeerKit-umbrella.h</key>
@@ -57,22 +57,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s3/+fGOHI76lCermubbl/XwQKMY=
+			5eDH6A3qMETJxUW8qQXc731X2Ig=
 			</data>
 			<key>hash2</key>
 			<data>
-			JeCn2FUcg3ICBFViXSUBGBy0zoK7SypIR1/xTcLosWY=
+			0JtcLTt71Sa27+kzDGt2otnwfOi0AALP4Ka73RgTc3M=
 			</data>
 		</dict>
 		<key>Modules/PeerKit.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tjZbaVd9gJnhzhKBZ6+75/+9LKc=
+			kDiIRu4TmD8cBqK9wPtpiS004dY=
 			</data>
 			<key>hash2</key>
 			<data>
-			tYZZTV+CsCd1boyv/ozR9ZAJ5itKAdBbxcvu0kX40ww=
+			gN3xFVjVbP8zz1jRlui3soDIWNjc4c0OxPoDamowxkI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

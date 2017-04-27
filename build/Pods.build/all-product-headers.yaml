@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers",
+      'name': "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "PeerKit-Swift.h",
-          'external-contents': "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
+          'external-contents': "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
         },
         {
           'type': 'file',
@@ -20,18 +20,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Modules",
+      'name': "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/John/Documents/FlyPhone/Development/eaze/build/Pods.build/Debug-iphoneos/PeerKit.build/module.modulemap"
+          'external-contents': "/Users/John/Documents/FlyPhone/Development/eaze/build/Pods.build/Debug-iphonesimulator/PeerKit.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/Pods_Eaze.framework/Headers",
+      'name': "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/Pods_Eaze.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -41,18 +41,18 @@
         {
           'type': 'file',
           'name': "Pods_Eaze-Swift.h",
-          'external-contents': "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/Pods_Eaze.framework/Headers/Pods_Eaze-Swift.h"
+          'external-contents': "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/Pods_Eaze.framework/Headers/Pods_Eaze-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/Pods_Eaze.framework/Modules",
+      'name': "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/Pods_Eaze.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/John/Documents/FlyPhone/Development/eaze/build/Pods.build/Debug-iphoneos/Pods-Eaze.build/module.modulemap"
+          'external-contents': "/Users/John/Documents/FlyPhone/Development/eaze/build/Pods.build/Debug-iphonesimulator/Pods-Eaze.build/module.modulemap"
         }
       ]
     }

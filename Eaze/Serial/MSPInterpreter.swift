@@ -69,6 +69,7 @@ let MSP_RX_CONFIG            = 44 // replaced BF_CONFIG in api 1.25.0 (only CLFL
 let MSP_SET_RX_CONFIG        = 45 // replaced BF_CONFIG in api 1.25.0 (only CLFL)
 let MSP_CF_SERIAL_CONFIG     = 54 // min 1.6.0 (older versions not supported) not the same for all API versions
 let MSP_SET_CF_SERIAL_CONFIG = 55 // min 1.6.0 (older versions not supported) not the same for all API versions
+
 let MSP_PID_CONTROLLER       = 59 // min 1.5.0
 let MSP_SET_PID_CONTROLLER   = 60 // min 1.5.0
 let MSP_ARMING_CONFIG        = 61 // min 1.8.0
@@ -90,6 +91,7 @@ let MSP_STATUS          = 101
 let MSP_RAW_IMU         = 102
 let MSP_RC              = 105
 let MSP_ATTITUDE        = 108
+let MSP_ALTITUDE        = 58
 let MSP_ANALOG          = 110
 let MSP_RC_TUNING       = 111 // not the same for all API versions
 let MSP_PID             = 112
@@ -97,6 +99,7 @@ let MSP_MISC            = 114
 let MSP_BOXNAMES        = 116
 let MSP_PIDNAMES        = 117
 let MSP_BOXIDS          = 119
+let MSP_SET_RAW_RC      = 200
 let MSP_SET_PID         = 202
 let MSP_SET_RC_TUNING   = 204 // not the same for all API versions
 let MSP_ACC_CALIBRATION = 205
@@ -519,6 +522,7 @@ final class MSPInterpreter: BluetoothSerialDelegate {
             for boxID in data {
                 dataStorage.auxConfigIDs.append(Int(boxID))
             }
+        
             
         case MSP_SET_PID: // 202
             log("MSP_SET_PID received")
@@ -737,6 +741,28 @@ final class MSPInterpreter: BluetoothSerialDelegate {
                 buffer.append(UInt8(dataStorage.vBatMaxCellVoltage * 10))
                 buffer.append(UInt8(dataStorage.vBatWarningCellVoltage * 10))
             }
+        case MSP_SET_RAW_RC: //200
+            //ROLL
+            buffer.append(dataStorage.rcRoll.specificByte(0))
+            buffer.append(dataStorage.rcRoll.specificByte(1))
+            //PITCH
+            buffer.append(dataStorage.rcPitch.specificByte(0))
+            buffer.append(dataStorage.rcPitch.specificByte(1))
+            //YAW
+            buffer.append(dataStorage.rcYaw.specificByte(0))
+            buffer.append(dataStorage.rcYaw.specificByte(1))
+            //THROTTLE
+            buffer.append(dataStorage.rcThrottle.specificByte(0))
+            buffer.append(dataStorage.rcThrottle.specificByte(1))
+            //AUX1
+            buffer.append(dataStorage.rcAuxOne.specificByte(0))
+            buffer.append(dataStorage.rcAuxOne.specificByte(1))
+            //AUX2
+            buffer.append(dataStorage.rcAuxTwo.specificByte(0))
+            buffer.append(dataStorage.rcAuxTwo.specificByte(1))
+            //AUX3
+            buffer.append(dataStorage.rcAuxThree.specificByte(0))
+            buffer.append(dataStorage.rcAuxThree.specificByte(1))
             
         case MSP_SELECT_SETTING: // 210
             buffer.append(UInt8(dataStorage.profile))
@@ -767,7 +793,7 @@ final class MSPInterpreter: BluetoothSerialDelegate {
             buffer.append(UInt8((modeRange.range.start - 900) / 25))
             buffer.append(UInt8((modeRange.range.end - 900) / 25))
             
-            sendMSP(MSP_SET_MODE_RANGE, bytes: buffer, callback: index == dataStorage.modeRanges.count ? endCallback : sendNextModeRange)
+            sendMSP(code: MSP_SET_MODE_RANGE, bytes: buffer, callback: index == dataStorage.modeRanges.count ? endCallback : sendNextModeRange)
         }
         
         if dataStorage.modeRanges.isEmpty {
@@ -777,7 +803,19 @@ final class MSPInterpreter: BluetoothSerialDelegate {
         }
     }
     
-    func sendMSP(_ code: Int, bytes: [UInt8]?, callback: ((Void) -> Void)?) {
+    func sendRawRC(channels: [UInt16]) {
+        
+        var bytes: [UInt8] = []
+        for chan in channels {
+            bytes.append(chan.lowByte)  // lower first, small endian notation
+            bytes.append(chan.highByte) // ..if I'm correct :)
+        }
+        
+        sendMSP(code: MSP_SET_RAW_RC, bytes: bytes)
+    
+    }
+    
+    func sendMSP(code: Int, bytes: [UInt8]?, callback: ((Void) -> Void)?) {
         // only send msp codes if we'll get the reply
         guard bluetoothSerial.delegate as AnyObject? === self && !cliActive else { return }
         
@@ -788,34 +826,39 @@ final class MSPInterpreter: BluetoothSerialDelegate {
         
         // send message with bytes [$, M, <, data length, code, [data], checksum
         // with checksum being the XOR of the data legth, code, and all data bytes
-
+        
+        
+        
         let codeByte = UInt8(code)
         let length = UInt8(bytes == nil ? 0 : bytes!.count)
+        //john intervention
+        
+        
         var checksum = UInt8(codeByte ^ length)
         if length > 0 { for byte in bytes! { checksum ^= byte }}
         var message: [UInt8] = [36, 77, 60, length, codeByte]
         if length > 0 { message += bytes! }
         message.append(checksum)
-        
+        if code == MSP_SET_RAW_RC { print("Sent RC Values")}
         bluetoothSerial.sendBytesToDevice(message)
     }
     
-    func sendMSP(_ code: Int, bytes: [UInt8]?) {
-        sendMSP(code, bytes:  bytes, callback: nil)
+    func sendMSP(code: Int, bytes: [UInt8]?) {
+        sendMSP(code: code, bytes:  bytes, callback: nil)
     }
     
     func sendMSP(_ code: Int) {
-        sendMSP(code, bytes: nil, callback: nil)
+        sendMSP(code:code, bytes: nil, callback: nil)
     }
     
     func sendMSP(_ code: Int, callback: @escaping ((Void) -> Void)) {
-        sendMSP(code, bytes: nil, callback: callback)
+        sendMSP(code:code, bytes: nil, callback: callback)
     }
     
     /// Codes are NOT sent sequentially
     func sendMSP(_ codes: [Int]) {
         for code in codes {
-            sendMSP(code, bytes: nil, callback: nil)
+            sendMSP(code:code, bytes: nil, callback: nil)
         }
     }
     
@@ -834,11 +877,11 @@ final class MSPInterpreter: BluetoothSerialDelegate {
     }
     
     func crunchAndSendMSP(_ code: Int) {
-        sendMSP(code, bytes: crunch(code), callback: nil)
+        sendMSP(code:code, bytes: crunch(code), callback: nil)
     }
     
     func crunchAndSendMSP(_ code: Int, callback: @escaping ((Void) -> Void)) {
-        sendMSP(code, bytes: crunch(code), callback: callback)
+        sendMSP(code: code, bytes: crunch(code), callback: callback)
     }
     
     /// Codes are sent sequentially

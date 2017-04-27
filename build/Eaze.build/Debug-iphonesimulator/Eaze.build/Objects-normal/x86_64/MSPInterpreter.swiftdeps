@@ -33,6 +33,7 @@ provides-top-level:
 - "MSP_RAW_IMU"
 - "MSP_RC"
 - "MSP_ATTITUDE"
+- "MSP_ALTITUDE"
 - "MSP_ANALOG"
 - "MSP_RC_TUNING"
 - "MSP_PID"
@@ -40,6 +41,7 @@ provides-top-level:
 - "MSP_BOXNAMES"
 - "MSP_PIDNAMES"
 - "MSP_BOXIDS"
+- "MSP_SET_RAW_RC"
 - "MSP_SET_PID"
 - "MSP_SET_RC_TUNING"
 - "MSP_ACC_CALIBRATION"
@@ -94,6 +96,7 @@ depends-top-level:
 - "MSPUpdateSubscriber"
 - "MSP_ACC_CALIBRATION"
 - "MSP_ACC_TRIM"
+- "MSP_ALTITUDE"
 - "MSP_ANALOG"
 - "MSP_API_VERSION"
 - "MSP_ARMING_CONFIG"
@@ -136,6 +139,7 @@ depends-top-level:
 - "MSP_SET_MODE_RANGE"
 - "MSP_SET_PID"
 - "MSP_SET_PID_CONTROLLER"
+- "MSP_SET_RAW_RC"
 - "MSP_SET_RC_TUNING"
 - "MSP_SET_REBOOT"
 - "MSP_SET_RX_CONFIG"
@@ -152,7 +156,7 @@ depends-top-level:
 - !private "String"
 - !private "StringLiteralType"
 - "TernaryPrecedence"
-- !private "UInt16"
+- "UInt16"
 - !private "UInt32"
 - "UInt8"
 - !private "UnicodeScalarType"
@@ -170,6 +174,7 @@ depends-top-level:
 - !private "getUInt16"
 - !private "getUInt32"
 - !private "log"
+- !private "print"
 - !private "round"
 - !private "|="
 - !private "~="
@@ -228,6 +233,7 @@ depends-member:
 - !private ["Ps9AnyObject", "MSP_SET_MODE_RANGE"]
 - !private ["Ps9AnyObject", "MSP_SET_PID"]
 - !private ["Ps9AnyObject", "MSP_SET_PID_CONTROLLER"]
+- !private ["Ps9AnyObject", "MSP_SET_RAW_RC"]
 - !private ["Ps9AnyObject", "MSP_SET_RC_TUNING"]
 - !private ["Ps9AnyObject", "MSP_SET_REBOOT"]
 - !private ["Ps9AnyObject", "MSP_SET_RX_CONFIG"]
@@ -326,11 +332,19 @@ depends-member:
 - !private ["Ps9AnyObject", "multiwiiCurrentOutput"]
 - !private ["Ps9AnyObject", "pitchRate"]
 - !private ["Ps9AnyObject", "placeHolder2"]
+- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "processData"]
 - !private ["Ps9AnyObject", "profile"]
 - !private ["Ps9AnyObject", "range"]
+- !private ["Ps9AnyObject", "rcAuxOne"]
+- !private ["Ps9AnyObject", "rcAuxThree"]
+- !private ["Ps9AnyObject", "rcAuxTwo"]
 - !private ["Ps9AnyObject", "rcExpo"]
+- !private ["Ps9AnyObject", "rcPitch"]
 - !private ["Ps9AnyObject", "rcRate"]
+- !private ["Ps9AnyObject", "rcRoll"]
+- !private ["Ps9AnyObject", "rcThrottle"]
+- !private ["Ps9AnyObject", "rcYaw"]
 - !private ["Ps9AnyObject", "removeObject"]
 - !private ["Ps9AnyObject", "reset"]
 - !private ["Ps9AnyObject", "rollPitchRate"]
@@ -438,6 +452,7 @@ depends-member:
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_MODE_RANGE"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_PID"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_PID_CONTROLLER"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_RAW_RC"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_RC_TUNING"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_REBOOT"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_RX_CONFIG"]
@@ -474,6 +489,7 @@ depends-member:
 - !private ["P4Eaze23BluetoothSerialDelegate", "messageDirection"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "messageLengthExpected"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "messageLengthReceived"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "print"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "processData"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "reset"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "round"]
@@ -644,8 +660,15 @@ depends-member:
 - !private ["C4Eaze11DataStorage", "pitchRate"]
 - !private ["C4Eaze11DataStorage", "placeHolder2"]
 - !private ["C4Eaze11DataStorage", "profile"]
+- !private ["C4Eaze11DataStorage", "rcAuxOne"]
+- !private ["C4Eaze11DataStorage", "rcAuxThree"]
+- !private ["C4Eaze11DataStorage", "rcAuxTwo"]
 - !private ["C4Eaze11DataStorage", "rcExpo"]
+- !private ["C4Eaze11DataStorage", "rcPitch"]
 - !private ["C4Eaze11DataStorage", "rcRate"]
+- !private ["C4Eaze11DataStorage", "rcRoll"]
+- !private ["C4Eaze11DataStorage", "rcThrottle"]
+- !private ["C4Eaze11DataStorage", "rcYaw"]
 - !private ["C4Eaze11DataStorage", "rollPitchRate"]
 - !private ["C4Eaze11DataStorage", "rollRate"]
 - !private ["C4Eaze11DataStorage", "rssi"]
@@ -807,6 +830,7 @@ depends-member:
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_MODE_RANGE"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_PID"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_PID_CONTROLLER"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_RAW_RC"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_RC_TUNING"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_REBOOT"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_RX_CONFIG"]
@@ -820,7 +844,7 @@ depends-member:
 - !private ["C4Eaze14MSPInterpreter", "SerialPortConfig"]
 - !private ["C4Eaze14MSPInterpreter", "SerialPortFunction"]
 - !private ["C4Eaze14MSPInterpreter", "String"]
-- !private ["C4Eaze14MSPInterpreter", "UInt16"]
+- ["C4Eaze14MSPInterpreter", "UInt16"]
 - !private ["C4Eaze14MSPInterpreter", "UInt32"]
 - ["C4Eaze14MSPInterpreter", "UInt8"]
 - !private ["C4Eaze14MSPInterpreter", "Version"]
@@ -849,12 +873,14 @@ depends-member:
 - ["C4Eaze14MSPInterpreter", "messageDirection"]
 - ["C4Eaze14MSPInterpreter", "messageLengthExpected"]
 - ["C4Eaze14MSPInterpreter", "messageLengthReceived"]
+- !private ["C4Eaze14MSPInterpreter", "print"]
 - ["C4Eaze14MSPInterpreter", "processData"]
 - ["C4Eaze14MSPInterpreter", "removeSubscriber"]
 - ["C4Eaze14MSPInterpreter", "reset"]
 - !private ["C4Eaze14MSPInterpreter", "round"]
 - ["C4Eaze14MSPInterpreter", "sendMSP"]
 - ["C4Eaze14MSPInterpreter", "sendModeRanges"]
+- ["C4Eaze14MSPInterpreter", "sendRawRC"]
 - ["C4Eaze14MSPInterpreter", "serialPortReceivedData"]
 - ["C4Eaze14MSPInterpreter", "state"]
 - ["C4Eaze14MSPInterpreter", "subscribers"]
@@ -990,11 +1016,15 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "show"]
 - !private ["PSo18UITraitEnvironment", "show"]
 - !private ["CSo6UIView", "show"]
+- !private ["Vs6UInt16", "highByte"]
 - !private ["Vs6UInt16", "init"]
+- !private ["Vs6UInt16", "lowByte"]
 - !private ["Vs6UInt32", "init"]
 - !private ["Vs6UInt32", "specificByte"]
 - !private ["Vs5UInt8", "init"]
+- !private ["Ps15UnsignedInteger", "highByte"]
 - !private ["Ps15UnsignedInteger", "init"]
+- !private ["Ps15UnsignedInteger", "lowByte"]
 - !private ["Ps15UnsignedInteger", "specificByte"]
 - !private ["C4Eaze7Version", "deinit"]
 - !private ["C4Eaze7Version", "init"]
@@ -1033,7 +1063,9 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "isEmpty"]
 - !private ["Ps24_DestructorSafeContainer", "remove"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "highByte"]
 - !private ["Ps28_DisallowMixedSignArithmetic", "init"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "lowByte"]
 - !private ["Ps28_DisallowMixedSignArithmetic", "specificByte"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "Encoding"]
@@ -1150,7 +1182,9 @@ depends-member:
 - !private ["Ps11_Strideable", "lowByte"]
 - !private ["Ps11_Strideable", "roundWithDecimals"]
 - !private ["Ps11_Strideable", "specificByte"]
+- !private ["Ps14_StringElement", "highByte"]
 - !private ["Ps14_StringElement", "init"]
+- !private ["Ps14_StringElement", "lowByte"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
@@ -1275,28 +1309,32 @@ depends-nominal:
 - !private "Ps14_StringElement"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Supporting_Files/Eaze-Bridging-Header.h"
-- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/ProgressView/Components/MRProgressOverlayView.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreBluetooth.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreBluetooth.apinotesc"
-- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Modules/PeerKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MultipeerConnectivity.apinotesc"
-- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Modules/PeerKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Headers/PeerKit-umbrella.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Supporting_Files/Eaze-Bridging-Header.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/ProgressView/Components/MRProgressOverlayView.h"
 - "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Modules/module.modulemap"
-interface-hash: "1150706c9ec44af2592944658ce3fb5c"
+interface-hash: "e5fb2bf889bb9441bd692d7615d4b6e7"

@@ -87,6 +87,9 @@ final class DataStorage {
     // 108 MSP_ATTITUDE
     var attitude = [0.0, 0.0, 0.0] // x -180<>180 y -90<>90 z 0<>360
     
+    //109 MSP_ALTITUDE
+    var altitude = 0.0
+    
     // 110 MSP_ANALOG
     var voltage = 0.0
     var mAhDrawn: Int = 0
@@ -135,6 +138,15 @@ final class DataStorage {
     
     // 119 MSP_BOXIDS
     var auxConfigIDs: [Int] = [] // For definitions, see Modes.md of the cleanflight wiki
+    
+    //200 MSP_SET_RAW_RC
+    var rcThrottle = 0
+    var rcYaw = 0
+    var rcPitch = 0
+    var rcRoll = 0
+    var rcAuxOne = 0
+    var rcAuxTwo = 0
+    var rcAuxThree = 0
     
     // 240 MSP_ACC_TRIM
     var accTrimPitch = 0

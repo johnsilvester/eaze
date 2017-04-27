@@ -1,6 +1,6 @@
-version: "Apple Swift version 3.1 (swiftlang-802.0.51 clang-802.0.41)"
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
 options: "1a0a324ed71b3bb6a615ec6761899e22"
-build_time: [546556179, 256035000]
+build_time: [546629097, 89423000]
 inputs:
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/WebView/UIActivities/Chrome/SwiftWebVCActivityChrome.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/GUI/Tabs/TuningViewController.swift": [545365319, 0]
@@ -45,7 +45,7 @@ inputs:
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/GUI/Components/ModeRangeTableViewCell.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Serial/BluetoothSerial.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/GUI/Tabs/Configuration/MotorConfigViewController.swift": [545365319, 0]
-  "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/ControllerViewController.swift": [546555105, 0]
+  "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/ControllerViewController.swift": [546558135, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Extra/ModeRange.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Extra/SerialPortConfig.swift": [545365319, 0]
   "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/AppDelegate.swift": [546105336, 0]

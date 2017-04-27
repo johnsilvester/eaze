@@ -16,15 +16,19 @@ provides-dynamic-lookup:
 - "loadMap"
 - "locationManager"
 - "mapView"
+- "otherPhonesLocation"
 - "peerService"
 - "setupCoreLocation"
 - "statusLabel"
 - "viewDidLoad"
 depends-top-level:
+- !private "!="
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - "CLLocation"
 - "CLLocationCoordinate2D"
+- !private "CLLocationCoordinate2DMake"
+- !private "CLLocationDegrees"
 - "CLLocationManager"
 - "CLLocationManagerDelegate"
 - "ControllerViewController"
@@ -48,7 +52,10 @@ depends-top-level:
 - !private "print"
 - !private "~="
 depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CLLocationCoordinate2D"]
+- !private ["Ps9AnyObject", "CLLocationCoordinate2DMake"]
+- !private ["Ps9AnyObject", "CLLocationDegrees"]
 - ["Ps9AnyObject", "CLLocationManager"]
 - ["Ps9AnyObject", "MCServiceManager"]
 - !private ["Ps9AnyObject", "MKCoordinateRegion"]
@@ -70,6 +77,7 @@ depends-member:
 - !private ["Ps9AnyObject", "currentLocation"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "desiredAccuracy"]
+- !private ["Ps9AnyObject", "floatValue"]
 - !private ["Ps9AnyObject", "green"]
 - !private ["Ps9AnyObject", "hasPrefix"]
 - ["Ps9AnyObject", "init"]
@@ -85,6 +93,7 @@ depends-member:
 - !private ["Ps9AnyObject", "main"]
 - !private ["Ps9AnyObject", "mapType"]
 - !private ["Ps9AnyObject", "mapView"]
+- !private ["Ps9AnyObject", "otherPhonesLocation"]
 - !private ["Ps9AnyObject", "peerService"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "red"]
@@ -105,6 +114,7 @@ depends-member:
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "subscript"]
 - !private ["Ps23BidirectionalCollection", "subscript"]
+- !private ["Ps19BinaryFloatingPoint", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["PSo15CALayerDelegate", "addAnnotation"]
 - !private ["PSo15CALayerDelegate", "mapType"]
@@ -126,6 +136,8 @@ depends-member:
 - !private ["CSo17CLLocationManager", "requestWhenInUseAuthorization"]
 - !private ["CSo17CLLocationManager", "startUpdatingLocation"]
 - ["PSo25CLLocationManagerDelegate", "CLLocationCoordinate2D"]
+- !private ["PSo25CLLocationManagerDelegate", "CLLocationCoordinate2DMake"]
+- !private ["PSo25CLLocationManagerDelegate", "CLLocationDegrees"]
 - ["PSo25CLLocationManagerDelegate", "CLLocationManager"]
 - ["PSo25CLLocationManagerDelegate", "MCServiceManager"]
 - !private ["PSo25CLLocationManagerDelegate", "MKCoordinateRegion"]
@@ -146,12 +158,15 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "locationManagerDidResumeLocationUpdates"]
 - ["PSo25CLLocationManagerDelegate", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo25CLLocationManagerDelegate", "mapView"]
+- !private ["PSo25CLLocationManagerDelegate", "otherPhonesLocation"]
 - !private ["PSo25CLLocationManagerDelegate", "peerService"]
 - !private ["PSo25CLLocationManagerDelegate", "print"]
 - !private ["PSo25CLLocationManagerDelegate", "setupCoreLocation"]
 - !private ["PSo25CLLocationManagerDelegate", "statusLabel"]
 - ["PSo25CLLocationManagerDelegate", ""]
 - ["Ps7CVarArg", "CLLocationCoordinate2D"]
+- !private ["Ps7CVarArg", "CLLocationCoordinate2DMake"]
+- !private ["Ps7CVarArg", "CLLocationDegrees"]
 - ["Ps7CVarArg", "CLLocationManager"]
 - ["Ps7CVarArg", "MCServiceManager"]
 - !private ["Ps7CVarArg", "MKCoordinateRegion"]
@@ -173,6 +188,7 @@ depends-member:
 - !private ["Ps7CVarArg", "currentLocation"]
 - !private ["Ps7CVarArg", "delegate"]
 - !private ["Ps7CVarArg", "desiredAccuracy"]
+- !private ["Ps7CVarArg", "floatValue"]
 - !private ["Ps7CVarArg", "green"]
 - !private ["Ps7CVarArg", "hasPrefix"]
 - ["Ps7CVarArg", "init"]
@@ -188,6 +204,7 @@ depends-member:
 - !private ["Ps7CVarArg", "main"]
 - !private ["Ps7CVarArg", "mapType"]
 - !private ["Ps7CVarArg", "mapView"]
+- !private ["Ps7CVarArg", "otherPhonesLocation"]
 - !private ["Ps7CVarArg", "peerService"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "red"]
@@ -209,10 +226,13 @@ depends-member:
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Collection", "subscript"]
 - !private ["Ps10Comparable", "components"]
+- !private ["Ps10Comparable", "floatValue"]
 - !private ["Ps10Comparable", "hasPrefix"]
 - !private ["Ps10Comparable", "init"]
 - ["C4Eaze24ControllerViewController", "CLLocation"]
 - ["C4Eaze24ControllerViewController", "CLLocationCoordinate2D"]
+- !private ["C4Eaze24ControllerViewController", "CLLocationCoordinate2DMake"]
+- !private ["C4Eaze24ControllerViewController", "CLLocationDegrees"]
 - ["C4Eaze24ControllerViewController", "CLLocationManager"]
 - ["C4Eaze24ControllerViewController", "Int"]
 - ["C4Eaze24ControllerViewController", "MCServiceManager"]
@@ -242,12 +262,15 @@ depends-member:
 - ["C4Eaze24ControllerViewController", "locationManagerDidResumeLocationUpdates"]
 - ["C4Eaze24ControllerViewController", "locationManagerShouldDisplayHeadingCalibration"]
 - ["C4Eaze24ControllerViewController", "mapView"]
+- ["C4Eaze24ControllerViewController", "otherPhonesLocation"]
 - ["C4Eaze24ControllerViewController", "peerService"]
 - !private ["C4Eaze24ControllerViewController", "print"]
 - ["C4Eaze24ControllerViewController", "setupCoreLocation"]
 - ["C4Eaze24ControllerViewController", "statusLabel"]
 - ["C4Eaze24ControllerViewController", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "CLLocationCoordinate2D"]
+- !private ["Ps28CustomDebugStringConvertible", "CLLocationCoordinate2DMake"]
+- !private ["Ps28CustomDebugStringConvertible", "CLLocationDegrees"]
 - ["Ps28CustomDebugStringConvertible", "CLLocationManager"]
 - ["Ps28CustomDebugStringConvertible", "MCServiceManager"]
 - !private ["Ps28CustomDebugStringConvertible", "MKCoordinateRegion"]
@@ -269,6 +292,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "currentLocation"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "desiredAccuracy"]
+- !private ["Ps28CustomDebugStringConvertible", "floatValue"]
 - !private ["Ps28CustomDebugStringConvertible", "green"]
 - !private ["Ps28CustomDebugStringConvertible", "hasPrefix"]
 - ["Ps28CustomDebugStringConvertible", "init"]
@@ -284,6 +308,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "main"]
 - !private ["Ps28CustomDebugStringConvertible", "mapType"]
 - !private ["Ps28CustomDebugStringConvertible", "mapView"]
+- !private ["Ps28CustomDebugStringConvertible", "otherPhonesLocation"]
 - !private ["Ps28CustomDebugStringConvertible", "peerService"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "red"]
@@ -305,14 +330,18 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "components"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "floatValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "hasPrefix"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "components"]
+- !private ["Ps17CustomReflectable", "floatValue"]
 - !private ["Ps17CustomReflectable", "hasPrefix"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - ["Ps23CustomStringConvertible", "CLLocationCoordinate2D"]
+- !private ["Ps23CustomStringConvertible", "CLLocationCoordinate2DMake"]
+- !private ["Ps23CustomStringConvertible", "CLLocationDegrees"]
 - ["Ps23CustomStringConvertible", "CLLocationManager"]
 - ["Ps23CustomStringConvertible", "MCServiceManager"]
 - !private ["Ps23CustomStringConvertible", "MKCoordinateRegion"]
@@ -335,6 +364,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "currentLocation"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "desiredAccuracy"]
+- !private ["Ps23CustomStringConvertible", "floatValue"]
 - !private ["Ps23CustomStringConvertible", "green"]
 - !private ["Ps23CustomStringConvertible", "hasPrefix"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -350,6 +380,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "main"]
 - !private ["Ps23CustomStringConvertible", "mapType"]
 - !private ["Ps23CustomStringConvertible", "mapView"]
+- !private ["Ps23CustomStringConvertible", "otherPhonesLocation"]
 - !private ["Ps23CustomStringConvertible", "peerService"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "red"]
@@ -369,7 +400,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "userLocation"]
 - !private ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "init"]
 - ["Ps9Equatable", "CLLocationCoordinate2D"]
+- !private ["Ps9Equatable", "CLLocationCoordinate2DMake"]
+- !private ["Ps9Equatable", "CLLocationDegrees"]
 - ["Ps9Equatable", "CLLocationManager"]
 - ["Ps9Equatable", "MCServiceManager"]
 - !private ["Ps9Equatable", "MKCoordinateRegion"]
@@ -392,6 +426,7 @@ depends-member:
 - !private ["Ps9Equatable", "currentLocation"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "desiredAccuracy"]
+- !private ["Ps9Equatable", "floatValue"]
 - !private ["Ps9Equatable", "green"]
 - !private ["Ps9Equatable", "hasPrefix"]
 - !private ["Ps9Equatable", "hybrid"]
@@ -408,6 +443,7 @@ depends-member:
 - !private ["Ps9Equatable", "main"]
 - !private ["Ps9Equatable", "mapType"]
 - !private ["Ps9Equatable", "mapView"]
+- !private ["Ps9Equatable", "otherPhonesLocation"]
 - !private ["Ps9Equatable", "peerService"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "red"]
@@ -429,15 +465,23 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "components"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "floatValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "hasPrefix"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "components"]
+- !private ["Ps26ExpressibleByStringLiteral", "floatValue"]
 - !private ["Ps26ExpressibleByStringLiteral", "hasPrefix"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "components"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "floatValue"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "hasPrefix"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps13FloatingPoint", "init"]
 - ["Ps8Hashable", "CLLocationCoordinate2D"]
+- !private ["Ps8Hashable", "CLLocationCoordinate2DMake"]
+- !private ["Ps8Hashable", "CLLocationDegrees"]
 - ["Ps8Hashable", "CLLocationManager"]
 - ["Ps8Hashable", "MCServiceManager"]
 - !private ["Ps8Hashable", "MKCoordinateRegion"]
@@ -460,6 +504,7 @@ depends-member:
 - !private ["Ps8Hashable", "currentLocation"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "desiredAccuracy"]
+- !private ["Ps8Hashable", "floatValue"]
 - !private ["Ps8Hashable", "green"]
 - !private ["Ps8Hashable", "hasPrefix"]
 - !private ["Ps8Hashable", "hybrid"]
@@ -476,6 +521,7 @@ depends-member:
 - !private ["Ps8Hashable", "main"]
 - !private ["Ps8Hashable", "mapType"]
 - !private ["Ps8Hashable", "mapView"]
+- !private ["Ps8Hashable", "otherPhonesLocation"]
 - !private ["Ps8Hashable", "peerService"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "red"]
@@ -496,6 +542,7 @@ depends-member:
 - ["Ps8Hashable", ""]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "components"]
+- !private ["Ps25LosslessStringConvertible", "floatValue"]
 - !private ["Ps25LosslessStringConvertible", "hasPrefix"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["PSo33MCNearbyServiceAdvertiserDelegate", "advertise"]
@@ -514,6 +561,8 @@ depends-member:
 - ["C4Eaze16MCServiceManager", "init"]
 - !private ["C4Eaze16MCServiceManager", "send"]
 - ["P4Eaze24MCServiceManagerDelegate", "CLLocationCoordinate2D"]
+- !private ["P4Eaze24MCServiceManagerDelegate", "CLLocationCoordinate2DMake"]
+- !private ["P4Eaze24MCServiceManagerDelegate", "CLLocationDegrees"]
 - ["P4Eaze24MCServiceManagerDelegate", "CLLocationManager"]
 - ["P4Eaze24MCServiceManagerDelegate", "MCServiceManager"]
 - !private ["P4Eaze24MCServiceManagerDelegate", "MKCoordinateRegion"]
@@ -534,6 +583,7 @@ depends-member:
 - ["P4Eaze24MCServiceManagerDelegate", "locationManagerDidResumeLocationUpdates"]
 - ["P4Eaze24MCServiceManagerDelegate", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["P4Eaze24MCServiceManagerDelegate", "mapView"]
+- !private ["P4Eaze24MCServiceManagerDelegate", "otherPhonesLocation"]
 - !private ["P4Eaze24MCServiceManagerDelegate", "peerService"]
 - !private ["P4Eaze24MCServiceManagerDelegate", "print"]
 - !private ["P4Eaze24MCServiceManagerDelegate", "setupCoreLocation"]
@@ -565,10 +615,13 @@ depends-member:
 - !private ["CSo7MKShape", "title"]
 - !private ["CSo14MKUserLocation", "coordinate"]
 - !private ["Ps10MirrorPath", "components"]
+- !private ["Ps10MirrorPath", "floatValue"]
 - !private ["Ps10MirrorPath", "hasPrefix"]
 - !private ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "subscript"]
 - ["PSo8NSCoding", "CLLocationCoordinate2D"]
+- !private ["PSo8NSCoding", "CLLocationCoordinate2DMake"]
+- !private ["PSo8NSCoding", "CLLocationDegrees"]
 - ["PSo8NSCoding", "CLLocationManager"]
 - ["PSo8NSCoding", "MCServiceManager"]
 - !private ["PSo8NSCoding", "MKCoordinateRegion"]
@@ -585,6 +638,7 @@ depends-member:
 - ["PSo8NSCoding", "connectedDevicesChanged"]
 - !private ["PSo8NSCoding", "coordinate"]
 - !private ["PSo8NSCoding", "currentLocation"]
+- !private ["PSo8NSCoding", "floatValue"]
 - !private ["PSo8NSCoding", "green"]
 - !private ["PSo8NSCoding", "hasPrefix"]
 - !private ["PSo8NSCoding", "init"]
@@ -597,6 +651,7 @@ depends-member:
 - ["PSo8NSCoding", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo8NSCoding", "mapType"]
 - !private ["PSo8NSCoding", "mapView"]
+- !private ["PSo8NSCoding", "otherPhonesLocation"]
 - !private ["PSo8NSCoding", "peerService"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "red"]
@@ -612,11 +667,14 @@ depends-member:
 - !private ["PSo9NSCopying", "blue"]
 - !private ["PSo9NSCopying", "components"]
 - !private ["PSo9NSCopying", "coordinate"]
+- !private ["PSo9NSCopying", "floatValue"]
 - !private ["PSo9NSCopying", "green"]
 - !private ["PSo9NSCopying", "hasPrefix"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "red"]
 - ["PSo26NSExtensionRequestHandling", "CLLocationCoordinate2D"]
+- !private ["PSo26NSExtensionRequestHandling", "CLLocationCoordinate2DMake"]
+- !private ["PSo26NSExtensionRequestHandling", "CLLocationDegrees"]
 - ["PSo26NSExtensionRequestHandling", "CLLocationManager"]
 - ["PSo26NSExtensionRequestHandling", "MCServiceManager"]
 - !private ["PSo26NSExtensionRequestHandling", "MKCoordinateRegion"]
@@ -638,6 +696,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "locationManagerDidResumeLocationUpdates"]
 - ["PSo26NSExtensionRequestHandling", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo26NSExtensionRequestHandling", "mapView"]
+- !private ["PSo26NSExtensionRequestHandling", "otherPhonesLocation"]
 - !private ["PSo26NSExtensionRequestHandling", "peerService"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "setupCoreLocation"]
@@ -645,10 +704,13 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "components"]
+- !private ["PSo16NSMutableCopying", "floatValue"]
 - !private ["PSo16NSMutableCopying", "hasPrefix"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "CLLocation"]
 - ["CSo8NSObject", "CLLocationCoordinate2D"]
+- !private ["CSo8NSObject", "CLLocationCoordinate2DMake"]
+- !private ["CSo8NSObject", "CLLocationDegrees"]
 - ["CSo8NSObject", "CLLocationManager"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "MCServiceManager"]
@@ -674,6 +736,7 @@ depends-member:
 - ["CSo8NSObject", "currentLocation"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "desiredAccuracy"]
+- !private ["CSo8NSObject", "floatValue"]
 - ["CSo8NSObject", "getCurrentLocation"]
 - !private ["CSo8NSObject", "green"]
 - !private ["CSo8NSObject", "hasPrefix"]
@@ -690,6 +753,7 @@ depends-member:
 - !private ["CSo8NSObject", "main"]
 - !private ["CSo8NSObject", "mapType"]
 - ["CSo8NSObject", "mapView"]
+- ["CSo8NSObject", "otherPhonesLocation"]
 - ["CSo8NSObject", "peerService"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "red"]
@@ -708,6 +772,8 @@ depends-member:
 - !private ["CSo8NSObject", "userLocation"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "CLLocationCoordinate2D"]
+- !private ["PSo16NSObjectProtocol", "CLLocationCoordinate2DMake"]
+- !private ["PSo16NSObjectProtocol", "CLLocationDegrees"]
 - ["PSo16NSObjectProtocol", "CLLocationManager"]
 - ["PSo16NSObjectProtocol", "MCServiceManager"]
 - !private ["PSo16NSObjectProtocol", "MKCoordinateRegion"]
@@ -729,6 +795,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "currentLocation"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "desiredAccuracy"]
+- !private ["PSo16NSObjectProtocol", "floatValue"]
 - !private ["PSo16NSObjectProtocol", "green"]
 - !private ["PSo16NSObjectProtocol", "hasPrefix"]
 - ["PSo16NSObjectProtocol", "init"]
@@ -744,6 +811,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "main"]
 - !private ["PSo16NSObjectProtocol", "mapType"]
 - !private ["PSo16NSObjectProtocol", "mapView"]
+- !private ["PSo16NSObjectProtocol", "otherPhonesLocation"]
 - !private ["PSo16NSObjectProtocol", "peerService"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "red"]
@@ -765,11 +833,13 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "blue"]
 - !private ["PSo14NSSecureCoding", "components"]
 - !private ["PSo14NSSecureCoding", "coordinate"]
+- !private ["PSo14NSSecureCoding", "floatValue"]
 - !private ["PSo14NSSecureCoding", "green"]
 - !private ["PSo14NSSecureCoding", "hasPrefix"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "red"]
 - !private ["CSo8NSString", "components"]
+- !private ["CSo8NSString", "floatValue"]
 - !private ["CSo8NSString", "hasPrefix"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo14OperationQueue", "addOperation"]
@@ -778,13 +848,18 @@ depends-member:
 - !private ["Ps26RangeReplaceableCollection", "subscript"]
 - !private ["Ps16RawRepresentable", "hybrid"]
 - !private ["Ps8Sequence", "subscript"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "init"]
 - !private ["SS", "components"]
+- !private ["SS", "floatValue"]
 - !private ["SS", "hasPrefix"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "components"]
+- !private ["Ps16TextOutputStream", "floatValue"]
 - !private ["Ps16TextOutputStream", "hasPrefix"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "components"]
+- !private ["Ps20TextOutputStreamable", "floatValue"]
 - !private ["Ps20TextOutputStreamable", "hasPrefix"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addAnnotation"]
@@ -802,6 +877,8 @@ depends-member:
 - !private ["PSo12UIAppearance", "textColor"]
 - !private ["PSo12UIAppearance", "userLocation"]
 - ["PSo21UIAppearanceContainer", "CLLocationCoordinate2D"]
+- !private ["PSo21UIAppearanceContainer", "CLLocationCoordinate2DMake"]
+- !private ["PSo21UIAppearanceContainer", "CLLocationDegrees"]
 - ["PSo21UIAppearanceContainer", "CLLocationManager"]
 - ["PSo21UIAppearanceContainer", "MCServiceManager"]
 - !private ["PSo21UIAppearanceContainer", "MKCoordinateRegion"]
@@ -825,6 +902,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo21UIAppearanceContainer", "mapType"]
 - !private ["PSo21UIAppearanceContainer", "mapView"]
+- !private ["PSo21UIAppearanceContainer", "otherPhonesLocation"]
 - !private ["PSo21UIAppearanceContainer", "peerService"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "setRegion"]
@@ -840,6 +918,8 @@ depends-member:
 - !private ["CSo7UIColor", "green"]
 - !private ["CSo7UIColor", "red"]
 - ["PSo18UIContentContainer", "CLLocationCoordinate2D"]
+- !private ["PSo18UIContentContainer", "CLLocationCoordinate2DMake"]
+- !private ["PSo18UIContentContainer", "CLLocationDegrees"]
 - ["PSo18UIContentContainer", "CLLocationManager"]
 - ["PSo18UIContentContainer", "MCServiceManager"]
 - !private ["PSo18UIContentContainer", "MKCoordinateRegion"]
@@ -861,6 +941,7 @@ depends-member:
 - ["PSo18UIContentContainer", "locationManagerDidResumeLocationUpdates"]
 - ["PSo18UIContentContainer", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo18UIContentContainer", "mapView"]
+- !private ["PSo18UIContentContainer", "otherPhonesLocation"]
 - !private ["PSo18UIContentContainer", "peerService"]
 - !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "setupCoreLocation"]
@@ -884,6 +965,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "textColor"]
 - !private ["PSo13UIDynamicItem", "userLocation"]
 - ["PSo18UIFocusEnvironment", "CLLocationCoordinate2D"]
+- !private ["PSo18UIFocusEnvironment", "CLLocationCoordinate2DMake"]
+- !private ["PSo18UIFocusEnvironment", "CLLocationDegrees"]
 - ["PSo18UIFocusEnvironment", "CLLocationManager"]
 - ["PSo18UIFocusEnvironment", "MCServiceManager"]
 - !private ["PSo18UIFocusEnvironment", "MKCoordinateRegion"]
@@ -907,6 +990,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo18UIFocusEnvironment", "mapType"]
 - !private ["PSo18UIFocusEnvironment", "mapView"]
+- !private ["PSo18UIFocusEnvironment", "otherPhonesLocation"]
 - !private ["PSo18UIFocusEnvironment", "peerService"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "setRegion"]
@@ -929,6 +1013,8 @@ depends-member:
 - !private ["CSo7UILabel", "textColor"]
 - ["CSo11UIResponder", "CLLocation"]
 - ["CSo11UIResponder", "CLLocationCoordinate2D"]
+- !private ["CSo11UIResponder", "CLLocationCoordinate2DMake"]
+- !private ["CSo11UIResponder", "CLLocationDegrees"]
 - ["CSo11UIResponder", "CLLocationManager"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "MCServiceManager"]
@@ -959,6 +1045,7 @@ depends-member:
 - ["CSo11UIResponder", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["CSo11UIResponder", "mapType"]
 - ["CSo11UIResponder", "mapView"]
+- ["CSo11UIResponder", "otherPhonesLocation"]
 - ["CSo11UIResponder", "peerService"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "setRegion"]
@@ -970,6 +1057,8 @@ depends-member:
 - !private ["CSo11UIResponder", "userLocation"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "CLLocationCoordinate2D"]
+- !private ["PSo30UIResponderStandardEditActions", "CLLocationCoordinate2DMake"]
+- !private ["PSo30UIResponderStandardEditActions", "CLLocationDegrees"]
 - ["PSo30UIResponderStandardEditActions", "CLLocationManager"]
 - ["PSo30UIResponderStandardEditActions", "MCServiceManager"]
 - !private ["PSo30UIResponderStandardEditActions", "MKCoordinateRegion"]
@@ -993,6 +1082,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo30UIResponderStandardEditActions", "mapType"]
 - !private ["PSo30UIResponderStandardEditActions", "mapView"]
+- !private ["PSo30UIResponderStandardEditActions", "otherPhonesLocation"]
 - !private ["PSo30UIResponderStandardEditActions", "peerService"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "setRegion"]
@@ -1005,6 +1095,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - ["PSo16UIStateRestoring", "CLLocationCoordinate2D"]
+- !private ["PSo16UIStateRestoring", "CLLocationCoordinate2DMake"]
+- !private ["PSo16UIStateRestoring", "CLLocationDegrees"]
 - ["PSo16UIStateRestoring", "CLLocationManager"]
 - ["PSo16UIStateRestoring", "MCServiceManager"]
 - !private ["PSo16UIStateRestoring", "MKCoordinateRegion"]
@@ -1026,6 +1118,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "locationManagerDidResumeLocationUpdates"]
 - ["PSo16UIStateRestoring", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo16UIStateRestoring", "mapView"]
+- !private ["PSo16UIStateRestoring", "otherPhonesLocation"]
 - !private ["PSo16UIStateRestoring", "peerService"]
 - !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "setupCoreLocation"]
@@ -1033,6 +1126,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - ["PSo18UITraitEnvironment", "CLLocationCoordinate2D"]
+- !private ["PSo18UITraitEnvironment", "CLLocationCoordinate2DMake"]
+- !private ["PSo18UITraitEnvironment", "CLLocationDegrees"]
 - ["PSo18UITraitEnvironment", "CLLocationManager"]
 - ["PSo18UITraitEnvironment", "MCServiceManager"]
 - !private ["PSo18UITraitEnvironment", "MKCoordinateRegion"]
@@ -1056,6 +1151,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo18UITraitEnvironment", "mapType"]
 - !private ["PSo18UITraitEnvironment", "mapView"]
+- !private ["PSo18UITraitEnvironment", "otherPhonesLocation"]
 - !private ["PSo18UITraitEnvironment", "peerService"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "setRegion"]
@@ -1076,6 +1172,8 @@ depends-member:
 - !private ["CSo6UIView", "userLocation"]
 - ["CSo16UIViewController", "CLLocation"]
 - ["CSo16UIViewController", "CLLocationCoordinate2D"]
+- !private ["CSo16UIViewController", "CLLocationCoordinate2DMake"]
+- !private ["CSo16UIViewController", "CLLocationDegrees"]
 - ["CSo16UIViewController", "CLLocationManager"]
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "MCServiceManager"]
@@ -1104,6 +1202,7 @@ depends-member:
 - ["CSo16UIViewController", "locationManagerDidResumeLocationUpdates"]
 - ["CSo16UIViewController", "locationManagerShouldDisplayHeadingCalibration"]
 - ["CSo16UIViewController", "mapView"]
+- ["CSo16UIViewController", "otherPhonesLocation"]
 - ["CSo16UIViewController", "peerService"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "setupCoreLocation"]
@@ -1112,6 +1211,8 @@ depends-member:
 - ["CSo16UIViewController", ""]
 - !private ["Ps14_ArrayProtocol", "subscript"]
 - !private ["Ps23_BidirectionalIndexable", "subscript"]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addAnnotation"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "mapType"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setRegion"]
@@ -1122,27 +1223,37 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "components"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "floatValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "hasPrefix"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "components"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "floatValue"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "hasPrefix"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "components"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "floatValue"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "hasPrefix"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "components"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "floatValue"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "hasPrefix"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps26_ExpressibleByColorLiteral", "blue"]
 - !private ["Ps26_ExpressibleByColorLiteral", "green"]
 - !private ["Ps26_ExpressibleByColorLiteral", "red"]
 - !private ["Ps33_ExpressibleByStringInterpolation", "components"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "floatValue"]
 - !private ["Ps33_ExpressibleByStringInterpolation", "hasPrefix"]
 - !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "components"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "floatValue"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "hasPrefix"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - ["Ps9_Hashable", "CLLocationCoordinate2D"]
+- !private ["Ps9_Hashable", "CLLocationCoordinate2DMake"]
+- !private ["Ps9_Hashable", "CLLocationDegrees"]
 - ["Ps9_Hashable", "CLLocationManager"]
 - ["Ps9_Hashable", "MCServiceManager"]
 - !private ["Ps9_Hashable", "MKCoordinateRegion"]
@@ -1165,6 +1276,7 @@ depends-member:
 - !private ["Ps9_Hashable", "currentLocation"]
 - !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "desiredAccuracy"]
+- !private ["Ps9_Hashable", "floatValue"]
 - !private ["Ps9_Hashable", "green"]
 - !private ["Ps9_Hashable", "hasPrefix"]
 - !private ["Ps9_Hashable", "hybrid"]
@@ -1181,6 +1293,7 @@ depends-member:
 - !private ["Ps9_Hashable", "main"]
 - !private ["Ps9_Hashable", "mapType"]
 - !private ["Ps9_Hashable", "mapView"]
+- !private ["Ps9_Hashable", "otherPhonesLocation"]
 - !private ["Ps9_Hashable", "peerService"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "red"]
@@ -1204,6 +1317,7 @@ depends-member:
 - !private ["Ps17_MutableIndexable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "components"]
+- !private ["Ps21_ObjectiveCBridgeable", "floatValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "hasPrefix"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "latitude"]
@@ -1211,10 +1325,13 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps22_RandomAccessIndexable", "subscript"]
 - !private ["Ps26_RangeReplaceableIndexable", "subscript"]
+- !private ["Ps11_Strideable", "init"]
 depends-nominal:
+- !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
 - !private "Sa"
 - !private "Ps23BidirectionalCollection"
+- !private "Ps19BinaryFloatingPoint"
 - !private "Sb"
 - !private "PSo15CALayerDelegate"
 - !private "CSo10CLLocation"
@@ -1229,12 +1346,16 @@ depends-nominal:
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
+- !private "Sd"
 - "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Ps13FloatingPoint"
 - "Ps8Hashable"
 - !private "Ps25LosslessStringConvertible"
 - "PSo33MCNearbyServiceAdvertiserDelegate"
@@ -1264,6 +1385,8 @@ depends-nominal:
 - !private "Ps26RangeReplaceableCollection"
 - !private "Ps16RawRepresentable"
 - !private "Ps8Sequence"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
 - !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
@@ -1286,10 +1409,14 @@ depends-nominal:
 - "CSo16UIViewController"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps23_BidirectionalIndexable"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
@@ -1303,35 +1430,36 @@ depends-nominal:
 - "Ps21_ObjectiveCBridgeable"
 - !private "Ps22_RandomAccessIndexable"
 - !private "Ps26_RangeReplaceableIndexable"
+- !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Supporting_Files/Eaze-Bridging-Header.h"
-- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/ProgressView/Components/MRProgressOverlayView.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreBluetooth.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreBluetooth.apinotesc"
-- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Modules/PeerKit.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MultipeerConnectivity.apinotesc"
-- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
-- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-umbrella.h"
-- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MultipeerConnectivity.apinotesc"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Modules/PeerKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
-interface-hash: "254c5c177e40f500cab5a7327d76d4b5"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-umbrella.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Supporting_Files/Eaze-Bridging-Header.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/ProgressView/Components/MRProgressOverlayView.h"
+- "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Modules/module.modulemap"
+interface-hash: "94785f0a7c27c6139a50afa486361cda"
