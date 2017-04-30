@@ -164,6 +164,23 @@ final class DataStorage {
     var accTrimRoll  = 0
     
     
+    //MARK: - Responses - MSP_NAV_STATUS
+    
+    //used for reading nav state
+    var nav_state = ["None",
+    "RTH Start",
+    "RTH Enroute",
+    "PosHold infinite",
+    "PosHold timed",
+    "WP Enroute",
+    "Process next",
+    "Jump",
+    "Start Land",
+    "Land in Progress",
+    "Landed",
+    "Settling before land ",
+    "Start descent"]
+    
     //used for reading Nav Errors
     var nav_error = ["Navigation system is working",
     "Next waypoint distance is more than the safety limit, aborting mission",
@@ -179,7 +196,7 @@ final class DataStorage {
     "Landing is in progress, check attitude if possible."]
     
     
-    // Helper variables
+    //MARK: - Helper variables
     var boardName: String {
         return boards.find({$0.identifier == boardIdentifier})?.name ?? "Unknown Board"
     }
