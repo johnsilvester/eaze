@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520E82831EB6488800923934 /* ScratchPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520E82821EB6488800923934 /* ScratchPad.swift */; };
 		521077E91EAA665900176130 /* MCTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521077E81EAA665900176130 /* MCTestViewController.swift */; };
 		521077EF1EAA682600176130 /* ColorServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521077EE1EAA682600176130 /* ColorServiceManager.swift */; };
 		52208E591EAFB29500B3E9CE /* ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52208E581EAFB29500B3E9CE /* ControllerViewController.swift */; };
@@ -105,6 +106,7 @@
 /* Begin PBXFileReference section */
 		0216A47973A9545AB278BFC9 /* Pods-Eaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eaze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eaze/Pods-Eaze.debug.xcconfig"; sourceTree = "<group>"; };
 		317C2466AB74852CB9372668 /* Pods_Eaze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eaze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		520E82821EB6488800923934 /* ScratchPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchPad.swift; sourceTree = "<group>"; };
 		521077E81EAA665900176130 /* MCTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTestViewController.swift; sourceTree = "<group>"; };
 		521077EE1EAA682600176130 /* ColorServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorServiceManager.swift; sourceTree = "<group>"; };
 		52208E581EAFB29500B3E9CE /* ControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerViewController.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				52208E581EAFB29500B3E9CE /* ControllerViewController.swift */,
+				520E82821EB6488800923934 /* ScratchPad.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -843,6 +846,7 @@
 				FA2FDAAE1D114BAB0003327A /* MRIconView.m in Sources */,
 				FA108B2A1D589AA9007F92AA /* ModesConfigViewController.swift in Sources */,
 				FA2FDA9E1D114BAB0003327A /* ReceiverInputViewController.swift in Sources */,
+				520E82831EB6488800923934 /* ScratchPad.swift in Sources */,
 				FA2FDACD1D114BAB0003327A /* Constants.swift in Sources */,
 				FA2FDAC31D114BAB0003327A /* AppLog.swift in Sources */,
 				FA2FDA871D114BAB0003327A /* GlassBox.swift in Sources */,

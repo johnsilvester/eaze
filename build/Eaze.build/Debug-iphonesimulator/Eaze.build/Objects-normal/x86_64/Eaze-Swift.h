@@ -432,8 +432,8 @@ SWIFT_CLASS("_TtC4Eaze21ConnectViewController")
 
 @class MKMapView;
 @class NSTimer;
-@class CLLocationManager;
 @class MCServiceManager;
+@class CLLocationManager;
 @class CLLocation;
 @class UIStepper;
 
@@ -441,20 +441,26 @@ SWIFT_CLASS("_TtC4Eaze24ControllerViewController")
 @interface ControllerViewController : UIViewController <CLLocationManagerDelegate>
 @property (nonatomic, strong) IBOutlet MKMapView * _Null_unspecified mapView;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified statusLabel;
+/// Timer for follow me func - sent every 5 seconds
 @property (nonatomic, strong) NSTimer * _Nonnull slowTimer;
 @property (nonatomic) NSInteger navWPNumber;
 @property (nonatomic) double navAlt;
-@property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
 @property (nonatomic, readonly, strong) MCServiceManager * _Nonnull peerService;
+@property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
 @property (nonatomic) CLLocationCoordinate2D currentLocation;
 @property (nonatomic) CLLocationCoordinate2D otherPhonesLocation;
-- (void)viewDidLoad;
-- (void)sendFastDataRequest;
-- (void)sendSlowDataRequest;
-- (void)mspUpdated:(NSInteger)code;
+@property (nonatomic, copy) NSString * _Nonnull gpsMode;
+@property (nonatomic, copy) NSString * _Nonnull navState;
+@property (nonatomic) NSInteger action;
+@property (nonatomic) NSInteger wpNumber;
+@property (nonatomic, copy) NSString * _Nonnull navError;
+@property (nonatomic) NSInteger targetBearing;
 - (void)setBaseValues;
 - (void)setupCoreLocation;
 - (void)loadMap;
+- (void)viewDidLoad;
+- (void)sendSlowDataRequest;
+- (void)mspUpdated:(NSInteger)code;
 - (IBAction)getCurrentLocation:(id _Nonnull)sender;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (IBAction)browse:(id _Nonnull)sender;
