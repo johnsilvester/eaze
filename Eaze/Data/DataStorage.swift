@@ -139,6 +139,14 @@ final class DataStorage {
     // 119 MSP_BOXIDS
     var auxConfigIDs: [Int] = [] // For definitions, see Modes.md of the cleanflight wiki
     
+    // 121 MSP_NAV_STATUS
+    var GPSModeNavStatus = 0
+    var navStateNavStatus = 0
+    var actionNavStatus = 0
+    var wpNumberNavStatus = 0
+    var navErrorNavStatus = 0
+    var targetBearingNavStatus = 0//u16
+    
     //200 MSP_SET_RAW_RC
     var rcThrottle = 0
     var rcYaw = 0
@@ -167,7 +175,9 @@ final class DataStorage {
     //MARK: - Responses - MSP_NAV_STATUS
     
     //used for reading nav state
-    var nav_state = ["None",
+    var GPSModeMessages = ["None","PosHold","RTH","Mission"]
+    
+    var navStateMessages = ["None",
     "RTH Start",
     "RTH Enroute",
     "PosHold infinite",
@@ -182,7 +192,7 @@ final class DataStorage {
     "Start descent"]
     
     //used for reading Nav Errors
-    var nav_error = ["Navigation system is working",
+    var navErrorMessages = ["Navigation system is working",
     "Next waypoint distance is more than the safety limit, aborting mission",
     "GPS reception is compromised - pausing mission, COPTER IS ADRIFT!",
     "Error while reading next waypoint from memory, aborting mission.",

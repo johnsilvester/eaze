@@ -39,6 +39,13 @@ class ControllerViewController: UIViewController,CLLocationManagerDelegate, MSPU
     
     var otherPhonesLocation = (CLLocationCoordinate2D.init(latitude: 0, longitude: 0))
     
+    var gpsMode = dataStorage.GPSModeMessages[dataStorage.GPSModeNavStatus]
+    var navState = dataStorage.navStateMessages[dataStorage.navStateNavStatus]
+    var action = dataStorage.actionNavStatus
+    var wpNumber = dataStorage.wpNumberNavStatus
+    var navError = dataStorage.navErrorMessages[dataStorage.navErrorNavStatus]
+    var targetBearing = dataStorage.targetBearingNavStatus
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -119,8 +126,16 @@ class ControllerViewController: UIViewController,CLLocationManagerDelegate, MSPU
     func mspUpdated(_ code: Int) {
         switch code {
             
-        case MSP_SET_RAW_RC:
-            print("")
+        case MSP_NAV_STATUS:
+            gpsMode = dataStorage.GPSModeMessages[dataStorage.GPSModeNavStatus]
+            navState = dataStorage.navStateMessages[dataStorage.navStateNavStatus]
+            action = dataStorage.actionNavStatus
+            wpNumber = dataStorage.wpNumberNavStatus
+            navError = dataStorage.navErrorMessages[dataStorage.navErrorNavStatus]
+            targetBearing = dataStorage.targetBearingNavStatus
+            
+            print("GPS MODE: \(gpsMode)\n Nav State: \(navState)\n WP NUMBER: \(wpNumber)\n NAV ERR: \(navError)\n TARGET BEARING: \(targetBearing)\n ACTION: \(action)\n")
+        
         default:
             log(.Warn, "Invalid MSP code update sent to HomeViewController: \(code)")
         }

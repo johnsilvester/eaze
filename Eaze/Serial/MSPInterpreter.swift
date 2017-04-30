@@ -534,7 +534,13 @@ final class MSPInterpreter: BluetoothSerialDelegate {
             }
             
         case MSP_NAV_STATUS: //121
-            print("MSP NAV STATUS")
+            guard check(8) else { return }
+            dataStorage.GPSModeNavStatus = Int(data[0])
+            dataStorage.navStateNavStatus = Int(data[1])
+            dataStorage.actionNavStatus = Int(data[2])
+            dataStorage.wpNumberNavStatus = Int(data[3])
+            dataStorage.navStateNavStatus = Int(data[4])
+            dataStorage.targetBearingNavStatus = Int(getUInt16(data, offset: 6)) // might be 5 not 6
         
         case MSP_NAV_CONFIG: //122
             print("MSP NAV CONFIG")
