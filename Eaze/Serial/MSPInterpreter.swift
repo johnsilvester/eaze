@@ -697,7 +697,7 @@ final class MSPInterpreter: BluetoothSerialDelegate {
             buffer.append(Int16(dataStorage.loopTime).highByte)
             
         case MSP_SET_RC_TUNING: // 111
-            buffer.append(UInt8(dataStorage.rcRate * 100.0))
+            buffer.append((UInt8(dataStorage.rcRate * 100.0)))
             buffer.append(UInt8(dataStorage.rcExpo * 100.0))
             if dataStorage.apiVersion < "1.7.0" {
                 buffer.append(UInt8(dataStorage.rollRate * 100.0)) // roll & pitch rate in one
@@ -793,7 +793,40 @@ final class MSPInterpreter: BluetoothSerialDelegate {
             //AUX3
             buffer.append(dataStorage.rcAuxThree.specificByte(0))
             buffer.append(dataStorage.rcAuxThree.specificByte(1))
+        
+        case MSP_SET_WP: //209
+            buffer.append(UInt8(dataStorage.wpNumber))
             
+            buffer.append(UInt8(dataStorage.wpAction))
+            
+            buffer.append(Int32(dataStorage.wpLat).specificByte(0))
+            buffer.append(Int32(dataStorage.wpLat).specificByte(1))
+            buffer.append(Int32(dataStorage.wpLat).specificByte(2))
+            buffer.append(Int32(dataStorage.wpLat).specificByte(3))
+            
+            buffer.append(Int32(dataStorage.wpLon).specificByte(0))
+            buffer.append(Int32(dataStorage.wpLon).specificByte(1))
+            buffer.append(Int32(dataStorage.wpLon).specificByte(2))
+            buffer.append(Int32(dataStorage.wpLon).specificByte(3))
+            
+            buffer.append(Int32(dataStorage.wpAlt).specificByte(0))
+            buffer.append(Int32(dataStorage.wpAlt).specificByte(1))
+            buffer.append(Int32(dataStorage.wpAlt).specificByte(2))
+            buffer.append(Int32(dataStorage.wpAlt).specificByte(3))
+            
+            buffer.append(Int16(dataStorage.wpParameterOne).specificByte(0))
+            buffer.append(Int16(dataStorage.wpParameterOne).specificByte(1))
+            
+            buffer.append(Int16(dataStorage.wpParameterTwo).specificByte(0))
+            buffer.append(Int16(dataStorage.wpParameterTwo).specificByte(1))
+            
+            buffer.append(Int16(dataStorage.wpParameterThree).specificByte(0))
+            buffer.append(Int16(dataStorage.wpParameterThree).specificByte(1))
+            
+            buffer.append(UInt8(dataStorage.wpFlaf))
+            
+            
+        
         case MSP_SELECT_SETTING: // 210
             buffer.append(UInt8(dataStorage.profile))
             

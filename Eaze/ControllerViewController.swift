@@ -19,7 +19,7 @@ class ControllerViewController: UIViewController,CLLocationManagerDelegate, MSPU
     
     //MARK: MSP
     private let slowMSPCodes = [MSP_SET_WP,MSP_STATUS]
-    /// Timer for follow me func - sent every 5 seconds
+    ///Timer for follow me func - sent every 5 seconds
     var slowTimer = Timer()
     var navWPNumber = 0
     var navAlt = 100.0
@@ -91,6 +91,7 @@ class ControllerViewController: UIViewController,CLLocationManagerDelegate, MSPU
     
     //MARK - MSP - Implmentation
     func sendSlowDataRequest() {
+        
         for code in slowMSPCodes{
             switch code {
             case MSP_SET_WP:
