@@ -21,7 +21,15 @@ class ControllerViewController: UIViewController,CLLocationManagerDelegate, MSPU
   
     @IBOutlet var statusLabel: UILabel!
     
-    private let fastMSPCodes = [MSP_SET_RAW_RC,MSP_ALTITUDE]
+    private let fastMSPCodes = [MSP_STATUS]
+    
+    private let slowMSPCodes = [MSP_SET_WP,MSP_STATUS]
+    
+    var slowTimer = Timer()
+    
+    
+    var navWPNumber = 0
+    var navAlt = 100.0
     
     let locationManager = CLLocationManager()
     
@@ -41,11 +49,11 @@ class ControllerViewController: UIViewController,CLLocationManagerDelegate, MSPU
         
        // peerService.browse()
         
-        var fastUpdateTimer = Timer.scheduledTimer( timeInterval: 0.15,
-                                                                      target: self,
-                                                                      selector: #selector(self.sendFastDataRequest),
-                                                                      userInfo: nil,
-                                                                      repeats: true)
+//        var fastUpdateTimer = Timer.scheduledTimer( timeInterval: 0.15,
+//                                                                      target: self,
+//                                                                      selector: #selector(self.sendFastDataRequest),
+//                                                                      userInfo: nil,
+//                                                                      repeats: true)
         
         msp.addSubscriber(self, forCodes: fastMSPCodes)
         
@@ -59,6 +67,11 @@ class ControllerViewController: UIViewController,CLLocationManagerDelegate, MSPU
         
         //test code for splitting up set rc raw
         for code in fastMSPCodes{
+            if code == MSP_STATUS{
+                print("Reading MSP_STATUS")
+            }
+            
+            
             
             if code == MSP_SET_RAW_RC{
                 //ROLL/PITCH/YAW/THROTTLE/AUX1/AUX2/AUX3AUX4
@@ -78,6 +91,29 @@ class ControllerViewController: UIViewController,CLLocationManagerDelegate, MSPU
         
     }
     
+    func sendSlowDataRequest() {
+        for code in slowMSPCodes{
+            switch code {
+            case MSP_SET_WP:
+                
+                self.loadMap()
+                
+                dataStorage.wpNumber = navWPNumber
+                dataStorage.wpAction = 0 // ?
+                dataStorage.wpLat = currentLocation.latitude
+                dataStorage.wpLon = currentLocation.longitude
+                dataStorage.wpAlt = navAlt
+                
+                navWPNumber = navWPNumber + 1
+                
+            case MSP_STATUS:
+                print("sent Status")
+            default:
+                break
+            }
+        }
+    }
+    
     
     
     func mspUpdated(_ code: Int) {
@@ -85,9 +121,6 @@ class ControllerViewController: UIViewController,CLLocationManagerDelegate, MSPU
             
         case MSP_SET_RAW_RC:
             print("")
-        case MSP_ALTITUDE:
-            altitudeLabel.text = "Altitude: \(dataStorage.altitude)"
-            
         default:
             log(.Warn, "Invalid MSP code update sent to HomeViewController: \(code)")
         }
@@ -159,6 +192,39 @@ class ControllerViewController: UIViewController,CLLocationManagerDelegate, MSPU
     @IBAction func advertise(_ sender: Any) {
         peerService.advertise()
     }
+    
+    //MARK FOLLOW ME:
+
+    @IBAction func engageFollowMe(_ FMButton: UIButton){
+        
+        
+        slowTimer = Timer.scheduledTimer( timeInterval: 5,target: self,selector: #selector(sendSlowDataRequest),userInfo: nil,repeats: true)
+   
+    
+    }
+ 
+    
+    @IBAction func land(_ landButton: UIButton){
+        
+        slowTimer.invalidate()
+        
+        //set MSP to land! for later
+       
+        
+        
+    }
+    
+    
+    @IBAction func stepperValueChanged(_ altStepper: UIStepper) {
+        
+        
+        navAlt = altStepper.value
+        statusLabel.text = "Alt: \(altStepper.value) cm"
+        
+    }
+    
+    
+    
 }
 
 

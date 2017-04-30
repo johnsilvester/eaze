@@ -148,9 +148,36 @@ final class DataStorage {
     var rcAuxTwo = 0
     var rcAuxThree = 0
     
+    //209 MSP_SET_WP
+    var wpNumber = 0 //uchar
+    var wpAction = 0 //uchar
+    var wpLat = 0.0 // 32
+    var wpLon = 0.0 // 32
+    var wpAlt = 0.0 //in cm! // 32
+    var wpParameterOne = 0 // 16
+    var wpParameterTwo = 0 //16
+    var wpParameterThree = 0 // 16
+    var wpFlaf = 0 //uchar
+    
     // 240 MSP_ACC_TRIM
     var accTrimPitch = 0
     var accTrimRoll  = 0
+    
+    
+    //used for reading Nav Errors
+    var nav_error = ["Navigation system is working",
+    "Next waypoint distance is more than the safety limit, aborting mission",
+    "GPS reception is compromised - pausing mission, COPTER IS ADRIFT!",
+    "Error while reading next waypoint from memory, aborting mission.",
+    "Mission Finished.",
+    "Waiting for timed position hold.",
+    "Invalid Jump target detected, aborting mission.",
+    "Invalid Mission Step Action code detected, aborting mission.",
+    "Waiting to reach return to home altitude.",
+    "GPS fix lost, mission aborted - COPTER IS ADRIFT!",
+    "Copter is disarmed, navigation engine disabled.",
+    "Landing is in progress, check attitude if possible."]
+    
     
     // Helper variables
     var boardName: String {

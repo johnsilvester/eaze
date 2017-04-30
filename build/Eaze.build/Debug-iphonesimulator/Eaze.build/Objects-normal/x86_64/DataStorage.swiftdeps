@@ -192,6 +192,15 @@ depends-member:
 - ["C4Eaze11DataStorage", "vBatScale"]
 - ["C4Eaze11DataStorage", "vBatWarningCellVoltage"]
 - ["C4Eaze11DataStorage", "voltage"]
+- ["C4Eaze11DataStorage", "wpAction"]
+- ["C4Eaze11DataStorage", "wpAlt"]
+- ["C4Eaze11DataStorage", "wpFlaf"]
+- ["C4Eaze11DataStorage", "wpLat"]
+- ["C4Eaze11DataStorage", "wpLon"]
+- ["C4Eaze11DataStorage", "wpNumber"]
+- ["C4Eaze11DataStorage", "wpParameterOne"]
+- ["C4Eaze11DataStorage", "wpParameterThree"]
+- ["C4Eaze11DataStorage", "wpParameterTwo"]
 - ["C4Eaze11DataStorage", "yawExpo"]
 - ["C4Eaze11DataStorage", "yawRate"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -425,4 +434,4 @@ depends-external:
 - "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
 - "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/ProgressView/Components/MRProgressOverlayView.h"
 - "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Modules/module.modulemap"
-interface-hash: "ad46ab47921ebf87c626019ecc642976"
+interface-hash: "81e27899cc39dacf812629bf7621dcf7"

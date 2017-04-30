@@ -98,7 +98,10 @@ let MSP_PID             = 112
 let MSP_MISC            = 114
 let MSP_BOXNAMES        = 116
 let MSP_PIDNAMES        = 117
+let MSP_WP              = 121
 let MSP_BOXIDS          = 119
+let MSP_NAV_STATUS      = 121
+let MSP_NAV_CONFIG      = 122
 let MSP_SET_RAW_RC      = 200
 let MSP_SET_PID         = 202
 let MSP_SET_RC_TUNING   = 204 // not the same for all API versions
@@ -106,10 +109,14 @@ let MSP_ACC_CALIBRATION = 205
 let MSP_MAG_CALIBRATION = 206
 let MSP_SET_MISC        = 207
 let MSP_RESET_CONF      = 208
+let MSP_SET_WP          = 209
 let MSP_SELECT_SETTING  = 210
+let MSP_SET_HEAD        = 211
+let MSP_SET_NAV_CONFIG  = 215
 let MSP_SET_ACC_TRIM    = 239
 let MSP_ACC_TRIM        = 240
 let MSP_EEPROM_WRITE    = 250
+
 
 
 final class MSPInterpreter: BluetoothSerialDelegate {
@@ -517,12 +524,20 @@ final class MSPInterpreter: BluetoothSerialDelegate {
                 }
             }
             
+        case MSP_WP: //118
+            print("MSP WP")
+        
         case MSP_BOXIDS: // 119
             dataStorage.auxConfigIDs = []
             for boxID in data {
                 dataStorage.auxConfigIDs.append(Int(boxID))
             }
+            
+        case MSP_NAV_STATUS: //121
+            print("MSP NAV STATUS")
         
+        case MSP_NAV_CONFIG: //122
+            print("MSP NAV CONFIG")
             
         case MSP_SET_PID: // 202
             log("MSP_SET_PID received")
@@ -541,9 +556,18 @@ final class MSPInterpreter: BluetoothSerialDelegate {
             
         case MSP_RESET_CONF: // 208
             log("MSP_RESET_CONF received")
+        
+        case MSP_SET_WP: //209
+            print("MSP SET WP")
             
         case MSP_SELECT_SETTING: // 210
             log("MSP_SELECT_SETTING received")
+        
+        case MSP_SET_HEAD: //211
+            print("MSP SET HEAD")
+            
+        case MSP_SET_NAV_CONFIG: //215
+            print("MSP SET NAV CONFIG")
             
         case MSP_SET_ACC_TRIM: // 239
             log("MSP_SET_ACC_TRIM received")

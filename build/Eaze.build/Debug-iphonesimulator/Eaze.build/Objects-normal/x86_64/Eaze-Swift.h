@@ -431,25 +431,37 @@ SWIFT_CLASS("_TtC4Eaze21ConnectViewController")
 @end
 
 @class MKMapView;
+@class NSTimer;
 @class CLLocationManager;
 @class MCServiceManager;
 @class CLLocation;
+@class UIStepper;
 
 SWIFT_CLASS("_TtC4Eaze24ControllerViewController")
 @interface ControllerViewController : UIViewController <CLLocationManagerDelegate>
 @property (nonatomic, strong) IBOutlet MKMapView * _Null_unspecified mapView;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified statusLabel;
+@property (nonatomic, strong) NSTimer * _Nonnull slowTimer;
+@property (nonatomic) NSInteger navWPNumber;
+@property (nonatomic) double navAlt;
 @property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
 @property (nonatomic, readonly, strong) MCServiceManager * _Nonnull peerService;
 @property (nonatomic) CLLocationCoordinate2D currentLocation;
 @property (nonatomic) CLLocationCoordinate2D otherPhonesLocation;
 - (void)viewDidLoad;
+- (void)sendFastDataRequest;
+- (void)sendSlowDataRequest;
+- (void)mspUpdated:(NSInteger)code;
+- (void)setBaseValues;
 - (void)setupCoreLocation;
 - (void)loadMap;
 - (IBAction)getCurrentLocation:(id _Nonnull)sender;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (IBAction)browse:(id _Nonnull)sender;
 - (IBAction)advertise:(id _Nonnull)sender;
+- (IBAction)engageFollowMe:(UIButton * _Nonnull)FMButton;
+- (IBAction)land:(UIButton * _Nonnull)landButton;
+- (IBAction)stepperValueChanged:(UIStepper * _Nonnull)altStepper;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -652,7 +664,6 @@ SWIFT_CLASS("_TtC4Eaze20MCTestViewController")
 - (void)isConnectedWithManager:(MCServiceManager * _Nonnull)manager val:(NSInteger)val;
 @end
 
-@class NSTimer;
 @class UIImageView;
 
 SWIFT_CLASS("_TtC4Eaze11MessageView")

@@ -40,7 +40,10 @@ provides-top-level:
 - "MSP_MISC"
 - "MSP_BOXNAMES"
 - "MSP_PIDNAMES"
+- "MSP_WP"
 - "MSP_BOXIDS"
+- "MSP_NAV_STATUS"
+- "MSP_NAV_CONFIG"
 - "MSP_SET_RAW_RC"
 - "MSP_SET_PID"
 - "MSP_SET_RC_TUNING"
@@ -48,7 +51,10 @@ provides-top-level:
 - "MSP_MAG_CALIBRATION"
 - "MSP_SET_MISC"
 - "MSP_RESET_CONF"
+- "MSP_SET_WP"
 - "MSP_SELECT_SETTING"
+- "MSP_SET_HEAD"
+- "MSP_SET_NAV_CONFIG"
 - "MSP_SET_ACC_TRIM"
 - "MSP_ACC_TRIM"
 - "MSP_EEPROM_WRITE"
@@ -117,6 +123,8 @@ depends-top-level:
 - "MSP_MISC"
 - "MSP_MIXER"
 - "MSP_MODE_RANGE"
+- "MSP_NAV_CONFIG"
+- "MSP_NAV_STATUS"
 - "MSP_PID"
 - "MSP_PIDNAMES"
 - "MSP_PID_CONTROLLER"
@@ -133,10 +141,12 @@ depends-top-level:
 - "MSP_SET_BOARD_ALIGNMENT"
 - "MSP_SET_CF_SERIAL_CONFIG"
 - "MSP_SET_FEATURE"
+- "MSP_SET_HEAD"
 - "MSP_SET_LOOP_TIME"
 - "MSP_SET_MISC"
 - "MSP_SET_MIXER"
 - "MSP_SET_MODE_RANGE"
+- "MSP_SET_NAV_CONFIG"
 - "MSP_SET_PID"
 - "MSP_SET_PID_CONTROLLER"
 - "MSP_SET_RAW_RC"
@@ -144,7 +154,9 @@ depends-top-level:
 - "MSP_SET_REBOOT"
 - "MSP_SET_RX_CONFIG"
 - "MSP_SET_RX_MAP"
+- "MSP_SET_WP"
 - "MSP_STATUS"
+- "MSP_WP"
 - !private "MemoryLayout"
 - !private "MessageView"
 - !private "ModeRange"
@@ -211,6 +223,8 @@ depends-member:
 - !private ["Ps9AnyObject", "MSP_MISC"]
 - !private ["Ps9AnyObject", "MSP_MIXER"]
 - !private ["Ps9AnyObject", "MSP_MODE_RANGE"]
+- !private ["Ps9AnyObject", "MSP_NAV_CONFIG"]
+- !private ["Ps9AnyObject", "MSP_NAV_STATUS"]
 - !private ["Ps9AnyObject", "MSP_PID"]
 - !private ["Ps9AnyObject", "MSP_PIDNAMES"]
 - !private ["Ps9AnyObject", "MSP_PID_CONTROLLER"]
@@ -227,10 +241,12 @@ depends-member:
 - !private ["Ps9AnyObject", "MSP_SET_BOARD_ALIGNMENT"]
 - !private ["Ps9AnyObject", "MSP_SET_CF_SERIAL_CONFIG"]
 - !private ["Ps9AnyObject", "MSP_SET_FEATURE"]
+- !private ["Ps9AnyObject", "MSP_SET_HEAD"]
 - !private ["Ps9AnyObject", "MSP_SET_LOOP_TIME"]
 - !private ["Ps9AnyObject", "MSP_SET_MISC"]
 - !private ["Ps9AnyObject", "MSP_SET_MIXER"]
 - !private ["Ps9AnyObject", "MSP_SET_MODE_RANGE"]
+- !private ["Ps9AnyObject", "MSP_SET_NAV_CONFIG"]
 - !private ["Ps9AnyObject", "MSP_SET_PID"]
 - !private ["Ps9AnyObject", "MSP_SET_PID_CONTROLLER"]
 - !private ["Ps9AnyObject", "MSP_SET_RAW_RC"]
@@ -238,7 +254,9 @@ depends-member:
 - !private ["Ps9AnyObject", "MSP_SET_REBOOT"]
 - !private ["Ps9AnyObject", "MSP_SET_RX_CONFIG"]
 - !private ["Ps9AnyObject", "MSP_SET_RX_MAP"]
+- !private ["Ps9AnyObject", "MSP_SET_WP"]
 - !private ["Ps9AnyObject", "MSP_STATUS"]
+- !private ["Ps9AnyObject", "MSP_WP"]
 - !private ["Ps9AnyObject", "MSP_baudrate"]
 - !private ["Ps9AnyObject", "MemoryLayout"]
 - !private ["Ps9AnyObject", "MessageView"]
@@ -430,6 +448,8 @@ depends-member:
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_MISC"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_MIXER"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_MODE_RANGE"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_NAV_CONFIG"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_NAV_STATUS"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_PID"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_PIDNAMES"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_PID_CONTROLLER"]
@@ -446,10 +466,12 @@ depends-member:
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_BOARD_ALIGNMENT"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_CF_SERIAL_CONFIG"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_FEATURE"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_HEAD"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_LOOP_TIME"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_MISC"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_MIXER"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_MODE_RANGE"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_NAV_CONFIG"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_PID"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_PID_CONTROLLER"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_RAW_RC"]
@@ -457,7 +479,9 @@ depends-member:
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_REBOOT"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_RX_CONFIG"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_RX_MAP"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_SET_WP"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MSP_STATUS"]
+- !private ["P4Eaze23BluetoothSerialDelegate", "MSP_WP"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MemoryLayout"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "MessageView"]
 - !private ["P4Eaze23BluetoothSerialDelegate", "ModeRange"]
@@ -808,6 +832,8 @@ depends-member:
 - !private ["C4Eaze14MSPInterpreter", "MSP_MISC"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_MIXER"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_MODE_RANGE"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_NAV_CONFIG"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_NAV_STATUS"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_PID"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_PIDNAMES"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_PID_CONTROLLER"]
@@ -824,10 +850,12 @@ depends-member:
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_BOARD_ALIGNMENT"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_CF_SERIAL_CONFIG"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_FEATURE"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_HEAD"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_LOOP_TIME"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_MISC"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_MIXER"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_MODE_RANGE"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_NAV_CONFIG"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_PID"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_PID_CONTROLLER"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_RAW_RC"]
@@ -835,7 +863,9 @@ depends-member:
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_REBOOT"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_RX_CONFIG"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_SET_RX_MAP"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_SET_WP"]
 - !private ["C4Eaze14MSPInterpreter", "MSP_STATUS"]
+- !private ["C4Eaze14MSPInterpreter", "MSP_WP"]
 - !private ["C4Eaze14MSPInterpreter", "MemoryLayout"]
 - !private ["C4Eaze14MSPInterpreter", "MessageView"]
 - !private ["C4Eaze14MSPInterpreter", "ModeRange"]
@@ -1337,4 +1367,4 @@ depends-external:
 - "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
 - "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/ProgressView/Components/MRProgressOverlayView.h"
 - "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphonesimulator/PeerKit/PeerKit.framework/Modules/module.modulemap"
-interface-hash: "e5fb2bf889bb9441bd692d7615d4b6e7"
+interface-hash: "db7eb76d758788cf571326454a9a2057"

@@ -444,6 +444,9 @@ SWIFT_CLASS("_TtC4Eaze24ControllerViewController")
 @property (nonatomic) CLLocationCoordinate2D currentLocation;
 @property (nonatomic) CLLocationCoordinate2D otherPhonesLocation;
 - (void)viewDidLoad;
+- (void)sendFastDataRequest;
+- (void)mspUpdated:(NSInteger)code;
+- (void)setBaseValues;
 - (void)setupCoreLocation;
 - (void)loadMap;
 - (IBAction)getCurrentLocation:(id _Nonnull)sender;

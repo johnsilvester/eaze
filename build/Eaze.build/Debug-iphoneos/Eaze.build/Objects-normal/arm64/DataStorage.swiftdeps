@@ -110,6 +110,7 @@ depends-member:
 - ["C4Eaze11DataStorage", "activeChannels"]
 - ["C4Eaze11DataStorage", "activeFlightModes"]
 - ["C4Eaze11DataStorage", "activeSensors"]
+- ["C4Eaze11DataStorage", "altitude"]
 - ["C4Eaze11DataStorage", "amperage"]
 - ["C4Eaze11DataStorage", "apiVersion"]
 - ["C4Eaze11DataStorage", "attitude"]
@@ -162,8 +163,15 @@ depends-member:
 - ["C4Eaze11DataStorage", "pitchRate"]
 - ["C4Eaze11DataStorage", "placeHolder2"]
 - ["C4Eaze11DataStorage", "profile"]
+- ["C4Eaze11DataStorage", "rcAuxOne"]
+- ["C4Eaze11DataStorage", "rcAuxThree"]
+- ["C4Eaze11DataStorage", "rcAuxTwo"]
 - ["C4Eaze11DataStorage", "rcExpo"]
+- ["C4Eaze11DataStorage", "rcPitch"]
 - ["C4Eaze11DataStorage", "rcRate"]
+- ["C4Eaze11DataStorage", "rcRoll"]
+- ["C4Eaze11DataStorage", "rcThrottle"]
+- ["C4Eaze11DataStorage", "rcYaw"]
 - ["C4Eaze11DataStorage", "rollPitchRate"]
 - ["C4Eaze11DataStorage", "rollRate"]
 - ["C4Eaze11DataStorage", "rssi"]
@@ -418,4 +426,4 @@ depends-external:
 - "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Headers/PeerKit-Swift.h"
 - "/Users/John/Documents/FlyPhone/Development/eaze/Eaze/Third_Party/ProgressView/Components/MRProgressOverlayView.h"
 - "/Users/John/Documents/FlyPhone/Development/eaze/build/Debug-iphoneos/PeerKit/PeerKit.framework/Modules/module.modulemap"
-interface-hash: "904eb39fe17b270c20b0f09f1a95fd3a"
+interface-hash: "ad46ab47921ebf87c626019ecc642976"
